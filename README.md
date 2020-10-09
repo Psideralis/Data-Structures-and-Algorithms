@@ -4,14 +4,36 @@ Psideralis
 ## License
 GNU General Public License 3.0
 ## Version
-0.0.01
+00.00.000.001
+## Status
+Public
 ## Description
-	Algorithm = Data structure + Control Structures + Operations
-		Data structure = Data elements + Structure
-		Control structure = (Conditionals + Consequents) + Structure
-		Operations = Data + Transformations
-## Data structures
+	Algorithm = Data structure + Control Structure + Operations
+		Data structure = Data Element + Structure
 
+## Data Types
+	- Bit
+	- Byte
+	- Boolean
+	- Character
+	- String
+	- Integer
+	- Float
+	- Struct*
+	- Object*
+
+*Not data types but data elements in data structures.
+## Control Structures
+	- Conditional
+	- Iterative 
+	- Recursive
+
+## Operations
+	- Logical
+	- Arithmetical
+	- Algebraic
+
+## Data structures
 ### Static:
 	- Set
 	- List
@@ -19,14 +41,17 @@ GNU General Public License 3.0
 	- Ordered List
 	- Stack
 	- Queues
+	- Dictionary
+	- Multimap
 ### Dynamic:
 	- Linked Lists
 	- Double Linked Lists
 	- Generalized Linked Lists
 	- Dynamic Table
 	- Heap
-	- Stacks
-	- Queues
+	- Stack
+	- Dynamic Queues
+	- Dynamic Multimap
 ### Trees:
 	- Binary Tree
 	- Balanced Tree
@@ -36,6 +61,22 @@ GNU General Public License 3.0
 
 ## Algorithms
 
+### Selection
+	- Indexed
+	- Random
 ### Search
-
+	- General Search
+	- Local Search
+	- Max
+	- Min
+	- N-Higher
+	- N-Lower
+### Combinatorics
+	- Combination
+	- Permutation
 ### Clasification
+	- Random sorting
+	- Ascendent sorting
+	- Descendent sorting
+	- Splitted Grouping
+	- Joined Grouping
