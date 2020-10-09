@@ -1,4 +1,4 @@
-# Data-Structures
+# Data-Structures & Algorithms
 ## Author
 Psideralis
 ## License
@@ -10,15 +10,16 @@ GNU General Public License 3.0
 		Data structure = Data elements + Structure
 		Control structure = (Conditionals + Consequents) + Structure
 		Operations = Data + Transformations
+## Data structures
 
-##Static:
+### Static:
 	- Set
 	- List
 	- ArrayList
 	- Ordered List
 	- Stack
 	- Queues
-##Dynamic:
+### Dynamic:
 	- Linked Lists
 	- Double Linked Lists
 	- Generalized Linked Lists
@@ -26,9 +27,15 @@ GNU General Public License 3.0
 	- Heap
 	- Stacks
 	- Queues
-##Trees:
+### Trees:
 	- Binary Tree
 	- Balanced Tree
-##Graphs:
+### Graphs:
 	- Graphs
 	- Digraphs
+
+## Algorithms
+
+### Search
+
+### Clasification
