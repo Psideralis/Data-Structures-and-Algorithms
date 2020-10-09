@@ -1,10 +1,11 @@
-# Data-Structures & Algorithms
+# Data Structures & Algorithms
 ## Author
 Psideralis
 ## License
 GNU General Public License 3.0
 ## Version
 00.00.000.001
+Mayor.Minor.Revision.Daily
 ## Status
 Public
 ## Description
