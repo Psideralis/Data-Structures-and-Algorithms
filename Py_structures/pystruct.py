@@ -35,6 +35,7 @@
         # Digraphs  
 
 # NON-CLASSICAL DATA STRUCTURES
+    # PENDANT
 
 #*********************************************  
 

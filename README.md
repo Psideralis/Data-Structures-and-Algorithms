@@ -4,7 +4,7 @@ Psideralis
 ## License
 GNU General Public License 3.0
 ## Version
-00.00.000.001 </br>
+00.00.000.002 </br>
 Mayor.Minor.Revision.Daily
 ## Status
 Public - Unfinished
@@ -63,6 +63,7 @@ Public - Unfinished
 	- Graphs
 	- Digraphs
 ### Non-Clasical Data Structures
+	- Pendant
 
 ## Algorithms
 ### Non-mutative

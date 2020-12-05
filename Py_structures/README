@@ -1,4 +1,0 @@
-# List - Mutable,Ordered []
-# Tuple - Unmutable,Ordered ()
-# Set - Unordered { }
-# Dict {key: item,... }
