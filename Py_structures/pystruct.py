@@ -39,6 +39,19 @@
 
 #*********************************************  
 
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+__author__ = "Psideralis"
+__copyright__ = "Copyright 2020, Psideralis"
+__credits__ = ["Psideralis"]
+__license__ = "GPL 3.0"
+__version__ = " 00.00.000.001"
+__maintainer__ = "Psideralis"
+__email__ = "psideralis@gmail.com"
+__status__ = "Development"
+
+
 # STATIC STRUCTURES
 class Set:
     def _init__(self):
