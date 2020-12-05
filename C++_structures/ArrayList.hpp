@@ -1,3 +1,25 @@
+/* *********************************************
+Author: Psideralis
+License: GNU GPL 3.0
+File name: algebra.hpp
+Description:
+********************************************* */ 
+
+/* *********************************************
+DEFINES:
+
+MACROS:
+
+STRUCTS:
+
+ENUMS:
+
+TYPES:
+
+CLASSES:
+
+********************************************* */ 
+
 #ifndef ARRAY_HPP
 #define ARRAY_HPP
 

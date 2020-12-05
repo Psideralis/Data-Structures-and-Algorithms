@@ -4,13 +4,13 @@ Psideralis
 ## License
 GNU General Public License 3.0
 ## Version
-00.00.000.001
+00.00.000.001 </br>
 Mayor.Minor.Revision.Daily
 ## Status
-Public
+Public - Unfinished
 ## Description
-	Algorithm = Data structure + Control Structure + Operations
-		Data structure = Data Element + Structure
+	Algorithm = Control structures + Data Structures + Operations
+	Data structure = Data Element + Structure
 
 ## Data Types
 	- Bit
@@ -22,9 +22,11 @@ Public
 	- Float
 	- Struct*
 	- Object*
-
 *Not data types but data elements in data structures.
+
 ## Control Structures
+	- Procedural 
+	- Functional
 	- Conditional
 	- Iterative 
 	- Recursive
@@ -35,7 +37,8 @@ Public
 	- Algebraic
 
 ## Data structures
-### Static:
+### Classic Data Stuctures
+#### Static:
 	- Set
 	- List
 	- ArrayList
@@ -44,7 +47,7 @@ Public
 	- Queues
 	- Dictionary
 	- Multimap
-### Dynamic:
+#### Dynamic:
 	- Linked Lists
 	- Double Linked Lists
 	- Generalized Linked Lists
@@ -53,31 +56,66 @@ Public
 	- Stack
 	- Dynamic Queues
 	- Dynamic Multimap
-### Trees:
+#### Trees:
 	- Binary Tree
 	- Balanced Tree
-### Graphs:
+#### Graphs:
 	- Graphs
 	- Digraphs
+### Non-Clasical Data Structures
 
 ## Algorithms
-
-### Selection
-	- Indexed
-	- Random
-### Search
-	- General Search
-	- Local Search
+### Non-mutative
+#### Search
+	- General search
+	- Local search
+	- General grouped search
+	- Local grouped search
 	- Max
 	- Min
-	- N-Higher
-	- N-Lower
-### Combinatorics
-	- Combination
-	- Permutation
-### Clasification
+	- Local max
+	- Local min
+	- N-max
+	- N-min
+#### Selection
+	- Indexed
+	- Random
+	- Indexed grouped
+	- Random grouped
+
+### Mutative
+#### Addition
+	- Insert
+	- Remove
+	- Grouped insert
+	- Grouped remove
+#### Substitution
+	- Indexed
+	- Random
+	- Indexed grouped
+	- Random grouped
+#### Clasification
 	- Random sorting
 	- Ascendent sorting
 	- Descendent sorting
-	- Splitted Grouping
-	- Joined Grouping
+	- Local ascendent sorting
+	- Local descendent sorting
+	- Indexed grouped sorting
+	- Splitted grouping
+	- Joined grouping
+
+### Transmutative
+#### Combinatorics
+	- General combination
+	- Local combination
+	- Indexed grouped combination
+	- Random grouped combination
+	- General ordered list
+	- Local ordered list
+	- Indexed grouped ordered list
+	- Random grouped ordered list
+	- General permutation
+	- Local permutation
+	- Indexed grouped permutation
+	- Random grouped permutation
+
