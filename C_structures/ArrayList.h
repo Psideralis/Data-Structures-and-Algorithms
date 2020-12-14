@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: ArrayList.h
 Description:
 ********************************************* */ 
 
@@ -16,15 +16,15 @@ ENUMS:
 
 TYPES:
 
-CLASSES:
-
 ********************************************* */ 
+#ifndef ARRAYLIST_C
+#define ARRAYLIST_C
 
-public class ArrayList<T> {
-    
-    
-    public static void main(String[] args) {
-      System.out.println("Hello World");
-    }
-  }
-  
+typedef struct sArrayList{
+    tArrayList* next;
+    void myFunction(){
+
+    };
+} tArrayList;
+
+#endif

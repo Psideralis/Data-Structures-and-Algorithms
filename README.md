@@ -4,13 +4,14 @@ Psideralis
 ## License
 GNU General Public License 3.0
 ## Version
-00.00.000.002 </br>
+00.00.000.003 </br>
 Mayor.Minor.Revision.Daily
 ## Status
-Public - Unfinished
+Public - Progress 10%
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
-	Data structure = Data Element + Structure
+	Data structure := Data Element + Structure
+	Data structure = Data structure + Operation 
 
 ## Data Types
 	- Bit
@@ -20,9 +21,11 @@ Public - Unfinished
 	- String
 	- Integer
 	- Float
+	- Array*
 	- Struct*
+	- Union*
 	- Object*
-*Not data types but data elements in data structures.
+*Not primitive data types but data elements in data structures.
 
 ## Control Structures
 	- Procedural 
@@ -65,7 +68,7 @@ Public - Unfinished
 ### Non-Clasical Data Structures
 	- Pendant
 
-## Algorithms
+## Classic Algorithms
 ### Non-mutative
 #### Search
 	- General search
@@ -120,3 +123,90 @@ Public - Unfinished
 	- Indexed grouped permutation
 	- Random grouped permutation
 
+## Modern Algorithms
+### Computational Mathematics & Logic + Visualizations Tools
+PREVIEW: 2021
+-----------------------------------------------------------------------------------------------
+#### Computational Logic
+	-https://gitlab.com/Psideralis
+#### Computational Mathematics
+	-https://gitlab.com/Psideralis
+
+### Scientific Informatics & Visualizations Tools
+PREVIEW: 2025
+-----------------------------------------------------------------------------------------------
+#### Computational Physics
+	- Not included. Contact Psideralis for further information.
+		- Classical & analytical mechanics
+		- Quantum mechanics
+		- Relativistic mechanics
+		- Quantum relativistic mechanics
+#### Computational Chemistry & Chemioinformatics
+	- Not included. Contact Psideralis for further information.
+		- Reaction dynamics
+		- Molecular dynamics
+#### Computational Biology & Bioinformatics
+	- Not included. Contact Psideralis for further information.
+		- Genetic informatics & genomics
+		- Proteomics & protein docking
+		- Transcriptomics & metabolomics
+		- Cellular dynamics
+		- Bioetological dynamics
+#### Computational Geology
+	- Not included. Contact Psideralis for further information.
+		- Structural dynamics
+### Computational Engineering
+#### Continuum Medium Analysis & CAE (Computer Aided Engineering)
+	- Not included. Contact Psideralis for further information.
+		- Solid dynamics
+		- Fluid dynamics
+		- Mechanical & thermal & electrodynamical stress analysis
+#### Systems Dynamics
+	- Not included. Contact Psideralis for further information.
+		- Continuous systems
+		- Discrete systems
+#### Computer Aided Design and Manufacturing
+	- Not included. Contact Psideralis for further information.
+		- Computer digital control and analysis
+		
+### Artificial Intelligence and Robotics
+PREVIEW: 2022-2023
+-----------------------------------------------------------------------------------------------
+#### Machine Learning (Predictive Analytics)
+	- Not included. Contact Psideralis for further information.
+		- Recommendations systems
+			- Content based
+			- Collaborative filtering
+				- Memory based
+				- Model based
+		- Linear regression
+		- Logistic regression
+		- Decision trees and Random forests
+		- Suported vector machines
+		- K-Means clustering
+		- Principal component analysis
+		- Neural networks
+		- Genetic algorithms
+		- Bayesian analysis
+#### Machine Vision
+	- Not included. Contact Psideralis for further information.
+		- Object recognition
+		- Face recognition
+		- Attributes analysis
+#### Machine Audition
+	- Not included. Contact Psideralis for further information.
+		- Sound recognition
+		- Speech recognition
+		- Attributes analysis
+#### Natural Language Processing
+	- Not included. Contact Psideralis for further information.
+		- Text content analysis
+		- Speech & text synthesis
+#### Cognitive Agents
+	- Not included. Contact Psideralis for further information.
+		- Social services
+		- Social dynamics
+		- Knowledge based agency
+#### Machinery and Systems Control
+	- Not included. Contact Psideralis for further information.
+		- Computer digital control and analysis

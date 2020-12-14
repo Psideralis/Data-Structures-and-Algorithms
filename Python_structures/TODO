@@ -1,0 +1,15 @@
+Python data types:
+    str
+    int
+    float
+    complex
+    list - Mutable,Ordered []
+    tuple - Unmutable,Ordered ()
+    range
+    dict {key: item,... }
+    set - Unordered { }
+    frozenset
+    bool
+    bytes
+    bytearray
+    memoryview
