@@ -25,3 +25,8 @@ Finish Daily 003:
     Pendant:
         -Python structs
         -Non classic data structures
+    Option (?):
+	-Benchmark test
+		-Numeric processing
+		-String processing
+		-Object processing

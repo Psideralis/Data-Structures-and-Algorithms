@@ -128,9 +128,9 @@ Public - Progress 10%
 PREVIEW: 2021
 -----------------------------------------------------------------------------------------------
 #### Computational Logic
-	-https://gitlab.com/Psideralis
+	https://gitlab.com/Psideralis/math-utilities
 #### Computational Mathematics
-	-https://gitlab.com/Psideralis
+	https://gitlab.com/Psideralis/math-utilities
 
 ### Scientific Informatics & Visualizations Tools
 PREVIEW: 2025
