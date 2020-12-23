@@ -69,6 +69,7 @@ Public - Progress 10%
 	- Pendant
 ### Cryptostructures
 	- Not included. Contact Psideralis for further information.
+		-Hash Tables
 
 ## Classic Algorithms
 ### Non-mutative
@@ -134,7 +135,7 @@ PREVIEW: 2021
 #### Computational Mathematics
 	https://gitlab.com/Psideralis/math-utilities
 
-### Scientific Informatics & Visualizations Tools
+### Scientific Informatics + Visualizations Tools
 PREVIEW: 2025
 -----------------------------------------------------------------------------------------------
 #### Computational Physics
@@ -158,18 +159,21 @@ PREVIEW: 2025
 	- Not included. Contact Psideralis for further information.
 		- Structural dynamics
 ### Computational Engineering
+PREVIEW: 2025
+-----------------------------------------------------------------------------------------------
 #### Continuum Medium Analysis & CAE (Computer Aided Engineering)
 	- Not included. Contact Psideralis for further information.
 		- Solid dynamics
 		- Fluid dynamics
-		- Mechanical & thermal & electrodynamical stress analysis
+		- Mechanical & thermal & electrodynamical & gravitational stress analysis
 #### Systems Dynamics
 	- Not included. Contact Psideralis for further information.
 		- Continuous systems
 		- Discrete systems
+		- Non-linear systems
 #### Computer Aided Design and Manufacturing
 	- Not included. Contact Psideralis for further information.
-		- Computer digital control and analysis
+		- Digital computer control and analysis
 		
 ### Artificial Intelligence and Robotics
 PREVIEW: 2022-2023
@@ -209,6 +213,7 @@ PREVIEW: 2022-2023
 		- Social services
 		- Social dynamics
 		- Knowledge based agency
+		- Preferenced based agency
 #### Machinery and Systems Control
 	- Not included. Contact Psideralis for further information.
-		- Computer digital control and analysis
+		- Digital computer robotic control and analysis
