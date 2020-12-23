@@ -2,7 +2,7 @@
 ## Author
 Psideralis
 ## License
-GNU General Public License 3.0
+GNU General Public License 3.0 & Psideralis Copyright Privative License
 ## Version
 00.00.000.003 </br>
 Mayor.Minor.Revision.Daily
