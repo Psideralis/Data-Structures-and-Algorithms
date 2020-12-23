@@ -67,6 +67,8 @@ Public - Progress 10%
 	- Digraphs
 ### Non-Clasical Data Structures
 	- Pendant
+### Cryptostructures
+	- Not included. Contact Psideralis for further information.
 
 ## Classic Algorithms
 ### Non-mutative
