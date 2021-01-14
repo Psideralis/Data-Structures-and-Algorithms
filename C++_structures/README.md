@@ -5,7 +5,7 @@ C++ data types:
     bool
     float
     double
-    boid
+    void
 
 User defined:
     array
