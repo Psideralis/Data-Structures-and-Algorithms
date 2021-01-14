@@ -41,28 +41,26 @@ Public - Progress 10%
 
 ## Data structures
 ### Classic Data Stuctures
-#### Static:
-	- Set
-	- List
-	- ArrayList
-	- Ordered List
-	- Stack
-	- Queues
+#### Static (Dimensions: 1,2,3,n)*:
+	- Set*
+	- ArrayList*
+	- Ordered List*
+	- Stack*
+	- Queues*
 	- Dictionary
 	- Multimap
 #### Dynamic:
-	- Linked Lists
-	- Double Linked Lists
-	- Generalized Linked Lists
+	- Linked Lists*
+	- Double Linked Lists*
+	- Generalized Linked Lists*
 	- Dynamic Table
 	- Heap
 	- Stack
 	- Dynamic Queues
 	- Dynamic Multimap
-#### Trees:
+#### Graphs:
 	- Binary Tree
 	- Balanced Tree
-#### Graphs:
 	- Graphs
 	- Digraphs
 ### Non-Clasical Data Structures
