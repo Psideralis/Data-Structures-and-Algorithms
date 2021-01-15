@@ -1,32 +1,34 @@
 Entry 4/07/2020
 Finish Daily 001:
     Pendent:
-        - C++ formating
+        - C++ skeleton & formating
         - Python skeleton
 
     Optional (?):
-        - Java
-        - C#
+        - Java skeleton
+        - C# skeleton
 
 Entry 5/12/2020
 Finish Daily 002:
     Pendent:
         - C skeleton
-        - Python structs
         - Java skeleton
         - C# skeleton
 
     Option (?):
         - C formatting
         - Python formatting
+        - Java formatting
+        - C# formatting
 
 Entry 14/12/2020
-Finish Daily 003:
+Finish Nigthly 001:
     Pendant:
+        -C++ structs
+        -C structs
         -Python structs
-        -Non classic data structures
     Option (?):
-	-Benchmark test
-		-Numeric processing
-		-String processing
-		-Object processing
+	-Benchmark
+		-Numeric processing skeleton & formatting
+		-String processing skeleton & formatting
+		-Object processing skeleton & formatting

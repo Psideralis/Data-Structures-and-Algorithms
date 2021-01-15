@@ -27,16 +27,11 @@
         # Stack
         # Dynamic Queues
         # Dynamic Multimap
-    # TRESS
+    # GRAPHS
         # Binary Tree
         # Balanced Tree
-    # GRAPHS
     	# Graphs
         # Digraphs  
-
-# NON-CLASSICAL DATA STRUCTURES
-    # PENDANT
-
 #*********************************************  
 
 #!/usr/bin/env python

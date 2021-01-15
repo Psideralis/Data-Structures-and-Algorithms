@@ -1,15 +1,17 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
-Description: An Multimap is a not one to one 
-mapping. It maps multiple keys to multiple 
-values.
+File name: TridimensionalinkedGrid.hpp
+Description: A tridimensional linked grid is
+a grid of elements of the same or different
+type thath are linked in 6 grades of liberty
+to a partner element.
 ********************************************* */ 
 
 /* *********************************************
 DEFINES:
-
+	SET_HPP
+	STD
 MACROS:
 
 STRUCTS:
@@ -19,12 +21,13 @@ ENUMS:
 TYPES:
 
 CLASSES:
-
+	Set<T>
 ********************************************* */ 
 
+#ifndef TRIGRIDLINKED_HPP
+#define TRIGRIDLINKED_HPP
 
-#ifndef MULTIMAP_HPP
-#define MULTIMAP_HPP
+#include "../Static/Element.hpp"
 
 #ifndef STD
 #define STD
@@ -36,14 +39,27 @@ CLASSES:
 #endif
 
 template <typename T>
-class Multimap {
+class TriGridLinked {
 	public:
 		/* CONSTRUCTORES */
-        Multimap(){};
-        ~Multimap(){};
-		Multimap(const Multimap &cpy){};
+		TriGridLinked(int size, T set){
+            this->entry = new T*[size];
+            for (int i = 0; i < size ; i++){
+                this->entry[i] = new T[size]; 
+            }
+            for (int i = 0; i < size ; i++){
+                for (int j = 0; j < size ; j++){
+                    this->entry[i][j] = set;
+                }
+            }
+        };
+		~TriGridLinked(){
+		};
+		TriGridLinked(const TriGridLinked &cpy){
+		};
 		/* ATRIBUTOS */
-
+		T* entry;
+		int size;	
 		/* MÉTODOS */
 			/* NON MUTATIVE */
 				/* SEARCH */

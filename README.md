@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Data Structures & Algorithms
 ## Author
 Psideralis
@@ -8,7 +7,7 @@ GNU General Public License 3.0 & Psideralis Copyright Privative License
 00.00.000.003 </br>
 Mayor.Minor.Revision.Daily
 ## Status
-Public - Progress 10%
+Public - Progress 15%
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
 	Data structure := Data Element + Structure
@@ -42,33 +41,51 @@ Public - Progress 10%
 
 ## Data structures
 ### Classic Data Stuctures
-#### Static (Dimensions: 1,2,3,n)*:
-	- Set*
-	- ArrayList*
-	- Ordered List*
-	- Stack*
-	- Queues*
+#### Static:
+	- Set
+	- Array List
+	- Ordered List
+	- Stack
+	- Queue
 	- Dictionary
 	- Multimap
+	- Table
+	- Bidimensional Array Grid
+	- Tridimensional Array Grid
+	- Generalized Array Grid
 #### Dynamic:
-	- Linked Lists*
-	- Double Linked Lists*
-	- Generalized Linked Lists*
-	- Dynamic Table
+	- Single Linked List
+	- Double Linked List
+	- Generalized Linked List
+	- Bidimensional Linked Grid
+	- Tridimensional Linked Grid
+	- Generalized Linked Grid
 	- Heap
-	- Stack
-	- Dynamic Queues
-	- Dynamic Multimap
+	- Multiple Linked Stacks
+	- Multiple Linked Queues
+	- Generalized Linked Multimap
+	- Generalized Linked Table
 #### Graphs:
 	- Binary Tree
 	- Balanced Tree
 	- Graphs
 	- Digraphs
+	- Pantographs
+	- Cost Graph
+	- Cost Digraph
+	- Cost Pantograph
 ### Non-Clasical Data Structures
-	- Pendant
+	- Not included. Contact Psideralis for further information.
+		- Data Constructs
+		- Data Architectures
+		- Data Complexes
 ### Cryptostructures
 	- Not included. Contact Psideralis for further information.
-		-Hash Tables
+		- Hash Tables
+		- Cipher Generalized Linked Grids
+		- Cipher Generalized Linked Lists
+		- Non-Repudiational Multiple Linked Queues & Stacks
+		- Restricted Generalized Linked Multimaps & Dictionaries
 
 ## Classic Algorithms
 ### Non-mutative
@@ -83,11 +100,17 @@ Public - Progress 10%
 	- Local min
 	- N-max
 	- N-min
+	- Hierarchical
+	- Binary
+	- Level
 #### Selection
 	- Indexed
 	- Random
 	- Indexed grouped
 	- Random grouped
+	- Hierarchical
+	- Binary
+	- Level
 
 ### Mutative
 #### Addition
@@ -95,11 +118,17 @@ Public - Progress 10%
 	- Remove
 	- Grouped insert
 	- Grouped remove
+	- Hierarchy insert / remove
+	- Binary insert / remove
+	- Level insert / remove
 #### Substitution
 	- Indexed
 	- Random
 	- Indexed grouped
 	- Random grouped
+	- Hierarchy
+	- Binary
+	- Level
 #### Clasification
 	- Random sorting
 	- Ascendent sorting
@@ -109,6 +138,9 @@ Public - Progress 10%
 	- Indexed grouped sorting
 	- Splitted grouping
 	- Joined grouping
+	- Hierarchy
+	- Binary
+	- Level
 
 ### Transmutative
 #### Combinatorics
@@ -123,130 +155,4 @@ Public - Progress 10%
 	- General permutation
 	- Local permutation
 	- Indexed grouped permutation
-=======
-# Data Structures & Algorithms
-## Author
-Psideralis
-## License
-GNU General Public License 3.0 & Psideralis Copyright Privative License
-## Version
-00.00.000.003 </br>
-Mayor.Minor.Revision.Daily
-## Status
-Public - Progress 10%
-## Description
-	Algorithm = Control structures + Data Structures + Operations
-	Data structure := Data Element + Structure
-	Data structure = Data structure + Operation 
-
-## Data Types
-	- Bit
-	- Byte
-	- Boolean
-	- Character
-	- String
-	- Integer
-	- Float
-	- Array*
-	- Struct*
-	- Union*
-	- Object*
-*Not primitive data types but data elements in data structures.
-
-## Control Structures
-	- Procedural 
-	- Functional
-	- Conditional
-	- Iterative 
-	- Recursive
-
-## Operations
-	- Logical
-	- Arithmetical
-	- Algebraic
-
-## Data structures
-### Classic Data Stuctures
-#### Static (Dimensions: 1,2,3,n)*:
-	- Set*
-	- ArrayList*
-	- Ordered List*
-	- Stack*
-	- Queues*
-	- Dictionary
-	- Multimap
-#### Dynamic:
-	- Linked Lists*
-	- Double Linked Lists*
-	- Generalized Linked Lists*
-	- Dynamic Table
-	- Heap
-	- Stack
-	- Dynamic Queues
-	- Dynamic Multimap
-#### Graphs:
-	- Binary Tree
-	- Balanced Tree
-	- Graphs
-	- Digraphs
-### Non-Clasical Data Structures
-	- Pendant
-### Cryptostructures
-	- Not included. Contact Psideralis for further information.
-		-Hash Tables
-
-## Classic Algorithms
-### Non-mutative
-#### Search
-	- General search
-	- Local search
-	- General grouped search
-	- Local grouped search
-	- Max
-	- Min
-	- Local max
-	- Local min
-	- N-max
-	- N-min
-#### Selection
-	- Indexed
-	- Random
-	- Indexed grouped
-	- Random grouped
-
-### Mutative
-#### Addition
-	- Insert
-	- Remove
-	- Grouped insert
-	- Grouped remove
-#### Substitution
-	- Indexed
-	- Random
-	- Indexed grouped
-	- Random grouped
-#### Clasification
-	- Random sorting
-	- Ascendent sorting
-	- Descendent sorting
-	- Local ascendent sorting
-	- Local descendent sorting
-	- Indexed grouped sorting
-	- Splitted grouping
-	- Joined grouping
-
-### Transmutative
-#### Combinatorics
-	- General combination
-	- Local combination
-	- Indexed grouped combination
-	- Random grouped combination
-	- General ordered list
-	- Local ordered list
-	- Indexed grouped ordered list
-	- Random grouped ordered list
-	- General permutation
-	- Local permutation
-	- Indexed grouped permutation
->>>>>>> 92619419c25b1971884f028353a042f2251df8db
 	- Random grouped permutation

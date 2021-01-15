@@ -3,12 +3,16 @@ Author: Psideralis
 License: GNU GPL 3.0
 File name: ArrayList.hpp
 Description: An Arraylist is an implementation
-of a List by means of an array.
+of a List by means of an array. It is 
+specialized for mixed typed elements. It is
+no ordered, for ordered elements see:
+OrderedList.
 ********************************************* */ 
 
 /* *********************************************
 DEFINES:
-
+	ARRAYLITS?HPP
+	STD
 MACROS:
 
 STRUCTS:
@@ -18,13 +22,13 @@ ENUMS:
 TYPES:
 
 CLASSES:
-
+	ArrayList
 ********************************************* */ 
 
 #ifndef ARRAYLIST_HPP
 #define ARRAYLIST_HPP
 
-#include "List.hpp"
+#include "Element.hpp"
 
 #ifndef STD
 #define STD
@@ -35,181 +39,105 @@ CLASSES:
     using namespace std;
 #endif
 
-template <typename T>
-class ArrayList :public List<T> {
+class ArrayList {
 	public:
 		/* CONSTRUCTORES */
 		ArrayList(){
-			int ext;
-			cout << "Ingrese la extensión del arreglo: ";
-			cin >> ext;
-			this->ext = ext;
-			this->Array = new T[this->ext];
-			for (int i = 0; i < this->ext; i++){
+			int size;
+			cout << "Ingrese la dimension del arreglo: ";
+			cin >> size;
+			this->size = size;
+			this->index = 0;
+			this->entry = new Element[this->size];
+			for (int i = 0; i < this->size; i++){
 				cout << "Ingrese el valor de indice " << i << ": ";
-				cin >> this->Array[i];
+				cin >> this->entry->item;
 			}
 		};
-		ArrayList(int ext, bool zero){
-			this->index = ext;
-			this->Array = new T[this->ext];
-			for (int i = 0; i < this->ext; i++){
+		ArrayList(int size, bool zero){
+			this->size = size;
+			this->entry = new Element[this->size];
+			for (int i = 0; i < this->size; i++){
 				if(zero == 0){
-					this->Array[i]=0;
+					this->entry[i].item = NULL;
 				}else{
 					cout << "Ingrese el valor de indice " << i << ": ";
-					cin >> this->Array[i];
+					cin >> this->entry[i].item;
 				}
 			}
 		};
 		~ArrayList(){
+			for (int i = 0; i < this->size; i++){
+					this->entry[i].item = NULL;
+			}
+			this->entry = NULL;
+			this->size = 0;
 			this->index = 0;
-			this->ext = 0;
-			this->emptyList();
-			this->Array = NULL;
 		};
 		ArrayList(const ArrayList &cpy){
-			cpy->index = this->index;
-			cpy->ext = this->ext;
-			cpy->Array = new T[this->ext];
-			for (int i = 0 ; i < this->ext ; i ++){
-				cpy->Array[i] = this->Array[i];
+			this->index  = cpy.size;
+			this->size = cpy.size;
+			this->entry = new Element[this->size];
+			for (int i = 0 ; i < this->size ; i ++){
+				this->entry[i].item = cpy.entry[i].item;
 			}
 		};
 		/* ATRIBUTOS */
-		T* entry;
+		Element* entry;
 		int index;
-		int ext;
+		int size;
 		/* MÉTODOS */
-		void exchange(int i , int j){
-			int temp = this->Array[i];
-			this->Array[i] = this->Array[j];
-			this->Array[j] = temp;
-		}
-
-		int counterList(){
-			return this->index;	
-		}
-
-		void emptyList(){
-			for (int i = 0 ; i < this->index ; i ++){
-				this->Array[i] = 0;
-			}
-		};
-
-		void ListInsert(T n, int i){
-			ArrayList* temp;
-			temp = this;
-			this->Array = new T[this->index+1];
-			for (int j = 0 ; j < this->index+1 ; j ++){
-				if (j = i){
-					this->Array[j] = n;
-				}else{
-					this->Array[j] = temp->Array[i];
-				}
-			}		
-		};
-		void ListInsert(T n){
-			ArrayList* temp;
-			temp = this;
-			this->Array = new T[this->index+1];
-			for (int j = 0 ; j < this->index ; j ++){
-					this->Array[j] = temp->Array[j];
-			}
-			this->Array[this->index+1]=n;
-		};
-
-		void ListDelete(T n ,int i){
-			ArrayList* temp;
-			temp = this;
-			bool found = false;
-			if (this->Array[i] == n){
-				found = true;
-			}else{
-				return;
-			}
-			if (found == true){
-				this->Array = new T[this->index-1];
-				for (int j = 0 ; j < this->index-1 ; j ++){
-					if (j != i){
-						this->Array[j] = temp->Array[j];
-					}
-				}
-			}	
-		};
-		void ListDelete(T n){
-			ArrayList* temp;
-			temp = this;
-			bool found = false;
-			int k = 0;
-			for (int j = 0 ; j < this->index ; j ++){
-				if (this->Array[j] == n){
-					k = j;
-					found = true;
-				}
-				else {
-					return;
-				}
-			}
-			if (found == true){
-				this->Array = new T[this->index-1];
-				for (int j = 0 ; j < this->index-1 ; j ++){
-					if (j != k){
-						this->Array[j] = temp->Array[j];
-					}
-				}
-			}	
-		};
-
-		T get(int i){
-			return this->Array[i];
-		}
-
-		int find(T n){
-			for (int i = 0 ; i < index ; i ++){
-				if(this->Array[i] == n){
-					return n;
-				}
-			}
-		};
-
-		T next(int i){
-			return this->Array[i+1];
-		};
-		T previous(int i){
-			return this->Array[i-1];
-		};
-
-		T myr(){
-			int mayor = this->Array[0];
-			for (int i = 0; i < this->counterList() ; i ++){
-				if (this->Array[i]>mayor){
-					mayor = this->Array[i];
-				}
-			}
-			return mayor;
-		};
-
-		T min(){
-			int minor = this->Array[0];
-			for (int i = 0; i < this->counterList() ; i ++){
-				if (this->Array[i]<minor){
-					minor = this->Array[i];
-				}
-			}
-			return minor;
-		};
-
-		void printList(){
-			cout << "[";
-			for (int i = 0 ; i < index ; i ++){
-					cout <<this->Array[i];
-					if (i != index-1){
-						cout << ",";
-					}
-			}
-			cout << "]" << endl;
-		};
+			/* NON MUTATIVE */
+				/* SEARCH */
+		void generalSearch();
+		void localSearch();
+		void generalGroupedSearch();
+		void localGroupedSearch();
+		void MaxSearch();
+		void MinSearch();
+		void localMaxSearch();
+		void localMinSearch();
+		void nMaxSearch();
+		void nMINearch();
+				/* SELECTION */
+		void indexedSelection();
+		void randomSelection();
+		void indexedGroupedSelection();
+		void randomGroupedSelection();
+			/* MUTATIVE */
+				/* ADDITION */
+		void insert();
+		void remove();
+		void groupedInsert();
+		void groupedRemove();
+				/* SUBSTITUTION */
+		void indexedSubstitution();
+		void randomSubstitution();
+		void indexedGroupedSubstitution();
+		void randomGroupedSubstitution();
+				/* CLASSIFICATION */
+		void randomSorting();
+		void ascendentSorting();
+		void descendentSorting();
+		void localAscendentSorting();
+		void localDescendentSorting();
+		void indexedGroupingSorting();
+		void splittedGroupingSorting();
+		void joinedGroupingSorting();
+			/* TRANSMUTATIVE */
+				/* COMBINATORICS */
+		void generalCombination();
+		void localCombination();
+		void indexedGroupingCombination();
+		void randomGroupingCombination();
+		void generalOrderedList();
+		void localOrderedList();
+		void indexedGroupedOrderedList();
+		void randomGroupedOrderedList();
+		void generalPermuation();
+		void localPermutation();
+		void indexedGroupedPermuation();
+		void randomGroupedPermutation();
 	private:
 	protected:
 };

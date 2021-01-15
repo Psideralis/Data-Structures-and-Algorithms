@@ -1,15 +1,26 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
-Description: An Multimap is a not one to one 
-mapping. It maps multiple keys to multiple 
-values.
+File name: 2DGrid.hpp
+Description: A 2DGrid is a grouping of elements
+of the same type, especialized for numbers but
+a set can have any type as long as all its
+elements are of the same type. It is not
+natively ordered neither it has repeated
+elements. For repeated elements see: ArrayList,
+for ordered elementes see: OrderedList.
+There is an OrderedSet in Psideralis math
+utilities if needed.
+
+A set can be made up of sets. So classes can
+be made up of sets and a universe can be made
+up of classes.
 ********************************************* */ 
 
 /* *********************************************
 DEFINES:
-
+	SET_HPP
+	STD
 MACROS:
 
 STRUCTS:
@@ -19,12 +30,13 @@ ENUMS:
 TYPES:
 
 CLASSES:
-
+	Set<T>
 ********************************************* */ 
 
+#ifndef GRID2D_HPP
+#define GRID2D_HPP
 
-#ifndef MULTIMAP_HPP
-#define MULTIMAP_HPP
+#include "../Static/Element.hpp"
 
 #ifndef STD
 #define STD
@@ -36,14 +48,27 @@ CLASSES:
 #endif
 
 template <typename T>
-class Multimap {
+class Grid2D {
 	public:
 		/* CONSTRUCTORES */
-        Multimap(){};
-        ~Multimap(){};
-		Multimap(const Multimap &cpy){};
+		Grid2D(int size, T set){
+            this->entry = new T*[size];
+            for (int i = 0; i < size ; i++){
+                this->entry[i] = new T[size]; 
+            }
+            for (int i = 0; i < size ; i++){
+                for (int j = 0; j < size ; j++){
+                    this->entry[i][j] = set;
+                }
+            }
+        };
+		~Grid2D(){
+		};
+		Grid2D(const Grid2D &cpy){
+		};
 		/* ATRIBUTOS */
-
+		T* entry;
+		int size;	
 		/* MÉTODOS */
 			/* NON MUTATIVE */
 				/* SEARCH */
@@ -99,5 +124,4 @@ class Multimap {
 	private:
 	protected:
 };
-
 #endif

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
@@ -39,46 +38,5 @@ class GeneralizedPosition{
 	GeneralizedPosition<T>** previousSequence;
 	GeneralizedPosition<T>** nextSequence;
 };
-=======
-/* *********************************************
-Author: Psideralis
-License: GNU GPL 3.0
-File name: ArrayList.hpp
-Description: An Arraylist is an implementation
-of a List by means of an array.
-********************************************* */ 
 
-/* *********************************************
-DEFINES:
-
-MACROS:
-
-STRUCTS:
-
-ENUMS:
-
-TYPES:
-
-CLASSES:
-
-********************************************* */ 
-
-#ifndef GENERALIZED_HPP
-#define GENERALIZED_HPP
-
-template <typename T>
-class GeneralizedPosition{
-	public:
-	GeneralizedPosition(){};
-	~GeneralizedPosition(){};
-	GeneralizedPosition(const GeneralizedPosition &cpy){
-		cpy->content = this->content;
-		cpy->next = this->next;
-		cpy->previous = this->previous;
-	};
-	T content;
-	GeneralizedPosition<T>** previousSequence;
-	GeneralizedPosition<T>** nextSequence;
-};
->>>>>>> 92619419c25b1971884f028353a042f2251df8db
 #endif
