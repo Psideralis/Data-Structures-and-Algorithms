@@ -1,5 +1,5 @@
-#ifndef GRAPH_STRUCTS
-#define GRAPH_STRUCTS
+#ifndef GRAPHPP_STRUCTS
+#define GRAPHPP_STRUCTS
 
 #include "../Graphs/BinaryTree.hpp"
 #include "../Graphs/CostDigraph.hpp"

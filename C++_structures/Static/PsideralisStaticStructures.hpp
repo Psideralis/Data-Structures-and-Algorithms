@@ -1,5 +1,5 @@
-#ifndef STATIC_STRUCTS
-#define STATIC_STRUCTS
+#ifndef STATICPP_STRUCTS
+#define STATICPP_STRUCTS
 
 #include "../Static/ArrayList.hpp"
 #include "../Static/BidimensionalArrayGrid.hpp"

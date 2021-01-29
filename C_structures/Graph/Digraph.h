@@ -17,8 +17,8 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef LINKEDLIST_C
-#define LINKEDLIST_C
+#ifndef DIGRAPH_C
+#define DIGRAPH_C
 
 typedef struct SLinkedList{
     TLinkedList* next;

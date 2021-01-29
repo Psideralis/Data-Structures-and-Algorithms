@@ -17,8 +17,8 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef LINKEDLIST_C
-#define LINKEDLIST_C
+#ifndef BINARYTREE_C
+#define BINARYTREE_C
 
 typedef struct SLinkedList{
     TLinkedList* next;
