@@ -4,7 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/C++_structures/**"
+                "${workspaceFolder}/C++_structures/**",
+                "/usr/include/**",
+                "/usr/include/**/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

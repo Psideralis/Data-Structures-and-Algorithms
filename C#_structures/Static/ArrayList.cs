@@ -22,8 +22,6 @@ TYPES:
 
 class Program
 {
-    
-    
     public Program(){
 
     }

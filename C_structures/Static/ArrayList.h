@@ -17,14 +17,27 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef ARRAYLIST_C
-#define ARRAYLIST_C
+#ifndef ARRAYLIST_H
+#define ARRAYLIST_H
 
-typedef struct sArrayList{
-    tArrayList* next;
-    void myFunction(){
+typedef struct element_s{
+    void* item;
+} element_t;
 
-    };
-} tArrayList;
+typedef struct arrayList_s{
+    int size;
+    element_t* entry;
+    arrayList_s(int size, element_t* entry){
+        this->size = size;
+        this->entry = new element_t[this->size]();
+        for (int i = 0; i < size; i++){
+            this->entry[i] = entry[i];
+        }
+    }
+    ~arrayList_s(){
+        this->size = 0;
+        this->entry = nullptr;
+    }
+}arrayList_t;
 
 #endif

@@ -43,6 +43,7 @@ Public - Progress 15%
 ### Classic Data Stuctures
 #### Static:
 	- Set
+	- Ordered Ser (Psideralis Math Utilities)
 	- Array List
 	- Ordered List
 	- Stack
@@ -63,6 +64,8 @@ Public - Progress 15%
 	- Heap
 	- Multiple Linked Stacks
 	- Multiple Linked Queues
+	- Multiple Linked Generalized Linked List
+	- Multiple Linked Generalized Linked Grid
 	- Generalized Linked Multimap
 	- Generalized Linked Table
 #### Graphs:
@@ -71,9 +74,9 @@ Public - Progress 15%
 	- Graphs
 	- Digraphs
 	- Pantographs
-	- Cost Graph
-	- Cost Digraph
-	- Cost Pantograph
+	- Graph w/FunctionCost
+	- Digraph w/FunctionCost
+	- Pantograph w/FunctionCost
 ### Non-Clasical Data Structures
 	- Not included. Contact Psideralis for further information.
 		- Data Constructs
@@ -82,10 +85,12 @@ Public - Progress 15%
 ### Cryptostructures
 	- Not included. Contact Psideralis for further information.
 		- Hash Tables
-		- Cipher Generalized Linked Grids
-		- Cipher Generalized Linked Lists
-		- Non-Repudiational Multiple Linked Queues & Stacks
-		- Restricted Generalized Linked Multimaps & Dictionaries
+		- Cipher Multiple Linked Generalized Linked Grids
+		- Cipher Multiple Linked Generalized Linked Lists
+		- Non-Repudiational Multiple Linked Queues
+		- Non-Repudiational Multiple Linked Stacks
+		- Restricted Generalized Linked Multimaps
+		- Restricted Generalized Linked Dictionaries
 
 ## Classic Algorithms
 ### Non-mutative

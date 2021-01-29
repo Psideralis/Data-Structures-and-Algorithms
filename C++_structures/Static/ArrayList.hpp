@@ -84,7 +84,6 @@ class ArrayList {
 		};
 		/* ATRIBUTOS */
 		Element* entry;
-		int index;
 		int size;
 		/* MÉTODOS */
 			/* NON MUTATIVE */
