@@ -1,3 +1,3 @@
-struct Swift_structures {
+struct StructureCollection {
     var text = "Hello, World!"
 }

@@ -4,7 +4,7 @@ ALL: BUILD RUN CLEAN
 init:
 	swift package init
 
-init_exec:
+exec:
 	swift package init --type=executable
 
 BUILD:
