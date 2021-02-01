@@ -37,7 +37,7 @@ namespace CSharp_structures
         int size;
         T[] entry;
         /* METHODS */
-        static void Main(string[] args)
+        void Main(string[] args)
         {
             Console.WriteLine("Hello World!");    
         }

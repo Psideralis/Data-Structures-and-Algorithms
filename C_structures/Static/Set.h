@@ -36,17 +36,25 @@ TYPES:
 typedef struct set_s{
     int size;
     void** entry;
-    set_s(int size, void** entry){
-        this->size = size;
-        this->entry = new void*[this->size]();
-        for (int i = 0; i < size; i++){
-            this->entry[i] = entry[i];
-        }
-    }
-    ~set_s(){
-        this->size = 0;
-        this->entry = nullptr;
-    }
+    void (*set_t)(set_t,int ,void**);
+    void (*del_set_t)(set_t);
 }set_t;
+
+PSI_RET set_s(set_t self, int size, void** entry){
+    self.size = size;
+    void** entries[self.size];
+    self.entry = entries;
+    for (int i = 0; i < size; i++){
+        self.entry[i] = entry[i];
+    }
+    return NO_ERROR;
+}
+
+PSI_RET del_set_s(set_t self){
+    self.size = 0;
+    self.entry = ((void*)0);
+    return NO_ERROR;
+}
+
 
 #endif

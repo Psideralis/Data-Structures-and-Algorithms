@@ -1,6 +1,3 @@
-#ifndef PSIDERALIS_CSTRUCTS
-#define PSIDERALIS_CSTRUCTS
-
 typedef enum PSI_RET_e{
     _EXCP = 6,
     _EXCP = 5,
@@ -16,10 +13,3 @@ typedef enum PSI_RET_e{
     _ERROR = -5,
     _ERROR = -6,
 } PSI_RET;
-
-#include "Dynamic/PsideralisDynamicStructures.h"
-#include "Graph/PsideralisGraphStructures.h"
-#include "Static/PsideralisStaticStructures.h"
-
-
-#endif

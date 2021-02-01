@@ -20,8 +20,13 @@ CLASSES:
 
 ********************************************* */ 
 package Collection.Static;
+import Collection.*;
 
 public class Queue<T> {
+
+    PSI_RET myfunc(){
+      return PSI_RET.NO_ERROR;
+    }
 
     public static void main(String[] args) {
       System.out.println("Hello World");
