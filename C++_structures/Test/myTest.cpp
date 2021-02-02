@@ -9,9 +9,9 @@
 #elif WINDOWS
     #include "windows.h"
 #elif MACOS
-    #import "mach.h"
-    #import "Foundation/Foundation.h"
-    #import "Cocoa/Cocoa.h"
+    #include "mach.h"
+    #include "Foundation/Foundation.h"
+    #include "Cocoa/Cocoa.h"
 #endif
 
 #ifndef STDCPP
