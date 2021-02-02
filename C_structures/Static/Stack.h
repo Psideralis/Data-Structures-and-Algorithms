@@ -17,14 +17,13 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef LINKEDLIST_C
-#define LINKEDLIST_C
+#ifndef STACK_C
+#define STACK_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
-
-    };
-} TLinkedList;
+typedef struct stack_s{
+    
+    PSI_RET (*new_stack)(stack_t);
+    PSI_RET (*del_stack)(stack_t);
+} stack_t;
 
 #endif

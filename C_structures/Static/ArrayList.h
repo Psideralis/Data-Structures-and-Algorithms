@@ -21,23 +21,29 @@ TYPES:
 #define ARRAYLIST_H
 
 typedef struct element_s{
+    Bit_t isEmpty;
     void* item;
 } element_t;
 
 typedef struct arrayList_s{
+    Bit_t isEmpty;
     int size;
     element_t* entry;
-    arrayList_s(int size, element_t* entry){
-        this->size = size;
-        this->entry = new element_t[this->size]();
-        for (int i = 0; i < size; i++){
-            this->entry[i] = entry[i];
-        }
-    }
-    ~arrayList_s(){
-        this->size = 0;
-        this->entry = nullptr;
-    }
+    PSI_RET (*new_arrayList_t)(arrayList_t, int, element_t);
+    PSI_RET (*del_arrayList_t)(arrayList_t);
 }arrayList_t;
+
+PSI_RET new_arrayList_t(arrayList_t self, int size, element_t* entry){
+    self.size = size;
+    self.entry = entry;
+    for (int i = 0; i < size; i++){
+        self.entry[i] = entry[i];
+    }
+}
+    
+PSI_RET del_arrayList_t(arrayList_t self){
+    self.size = 0;
+    self.entry = PSI_null;
+}
 
 #endif

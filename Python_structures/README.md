@@ -2,7 +2,8 @@
 ## Author
 Psideralis
 ## License
-GNU General Public License 3.0
+GNU General Public License 3.0 & Psideralis Copyright Privative License
+## Description
 
 ## Manual
     # usr/bin/python
@@ -147,3 +148,11 @@ GNU General Public License 3.0
     myDigraph = myDigraph.indexSubstitution()
     myDigraph = myDigraph.ascendentSort()
 -------------------------------------------------------------------------
+
+### Installation
+
+### Uninstallation
+
+### Test
+
+### Benchmark

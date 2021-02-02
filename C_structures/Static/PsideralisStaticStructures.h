@@ -11,5 +11,8 @@
 #include "Static/Set.h"
 #include "Static/Stack.h"
 #include "Static/Table.h"
+#include "Static/BidimensionalArrayGrid.h"
+#include "Static/TridimensionalArrayGrid.h"
+#include "Static/GeneralizedArrayGrid.h"
 
 #endif

@@ -1,0 +1,16 @@
+./C_structures/Benchmark
+./C_structures/Test
+./C_structures/C_Native_Types
+./C++_structures/Benchmark
+./C++_structures/C++_Native_Types
+./CSharp_structures/bin
+./CSharp_structures/obj
+./CSharp_structures/CSharp_Native_Types
+./Java/Java_Native_Types
+./Objective-C-C++_structures/Benchmark
+./Objective-C-C++_structures/Test
+./Python_structures/Benchmark
+./Python_structures/Test
+./Python_structures/Python_Native_Types
+./Swift_structures/Benchmark
+./Swift_structures/myTest

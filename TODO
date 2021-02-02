@@ -1,14 +1,14 @@
-Entry 4/07/2020, 5/12/2020, 29/01/2021
-Finish Daily 001, 002, 003:
+Entry 4/07/2020, 5/12/2020, 29/01/2021, 02/02/2021
+Finish Daily 001, 002, 003, 004:
     Pendent:
-        - C skeleton & formating
-        - C++ skeleton & formating
-        - C# skeleton & formating
-        - Objective-C skeleton & formating
-        - Objective-C++ skeleton & formating
-        - Java skeleton & formating
-        - Python skeleton & formating
-        - Swift skeleton & formating
+        - C skeleton & formating & README.md
+        - C++ skeleton & formating & README.md
+        - C# skeleton & formating & README.md
+        - Objective-C skeleton & formating & README.md
+        - Objective-C++ skeleton & formating & README.md
+        - Java skeleton & formating & README.md
+        - Python skeleton & formating & README.md
+        - Swift skeleton & formating & README.md
 
 Entry 14/12/2020
 Finish Nigthly 001:
@@ -16,9 +16,15 @@ Finish Nigthly 001:
         -C content
         -C++ content
         -C# content
+        -Objective-C/C++ content
+        ---------------------
+        -Java content
+        -Swift content
+        -Python content
     Option (?):
-	-Benchmark
+	-Benchmark (Time,Space)
 		-Numeric processing skeleton & formatting
 		-String processing skeleton & formatting
         -Alphanumeric processing skeleton & formatting
+        -Struct processing skeleton & formatting  
 		-Object processing skeleton & formatting

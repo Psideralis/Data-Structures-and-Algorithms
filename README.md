@@ -4,10 +4,10 @@ Psideralis
 ## License
 GNU General Public License 3.0 & Psideralis Copyright Privative License
 ## Version
-00.00.000.003 </br>
+00.00.000.004 </br>
 Mayor.Minor.Revision.Daily
 ## Status
-Public - Progress 15%
+Public - Progress 20%
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
 	Data structure := Data Element + Structure
