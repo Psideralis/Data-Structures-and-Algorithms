@@ -1,0 +1,1 @@
+require 'psi_collection'

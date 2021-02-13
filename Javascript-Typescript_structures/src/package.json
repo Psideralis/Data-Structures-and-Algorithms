@@ -1,0 +1,7 @@
+{
+  "name": "psi_collection",
+  "version": "1.0.0",
+  "description": "A Typescript collection of data structures and classic algorithms.",
+  "main": "dist/psi_collection.js",
+  "types": "dist/psi_collection.d.ts"
+}
