@@ -47,7 +47,6 @@ class ArrayList {
 			cout << "Ingrese la dimension del arreglo: ";
 			cin >> size;
 			this->size = size;
-			this->index = 0;
 			this->entry = new Element[this->size];
 			for (int i = 0; i < this->size; i++){
 				cout << "Ingrese el valor de indice " << i << ": ";
