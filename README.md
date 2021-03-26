@@ -4,23 +4,42 @@ Psideralis
 ## License
 GNU General Public License 3.0 & Psideralis Commune Public License
 ## Version
-00.00.000.004
+00.00.000.005
 ## Status
 Public - Progress 20%
 ## Description
-	Algorithm = Control structures + Data Structures + Operations
-	Data structure := Data Element + Structure
-	Data structure = Data structure + Operation 
-
+	Algorithm = Control structures + Data Artifact + Operations
+	Data Artifacts:
+		Data structure := Data Elements + Structure
+			Data structure = Data structure + Algorithms
+		Data Construct := Data Structures + Structure
+			Data Construct = Data Construct + Algorithms
+		Data Architecture := Data Constructs + Structure
+			Data Architecture = Data Architecture + Algorithms
+		Data Complexes := Data Architectures + Structure
+			Data Complexes = Data Complexes + Algorithms
+		Data Conglomerates := Data Complexes + Structure
+			Data Conglomerates = Data Conglomerates + Algorithms
 ## Data Types
 	- Bit
 	- Byte
+	- Word
+		-Dword
+		-Qword
+		-Oword
 	- Boolean
 	- Character
 	- String
 	- Chord
+	- Numeric
+		-Unsigned
+		-Signed
 	- Integer
+		-Short
+		-Long
 	- Float
+		-Single
+		-Double
 	- Array*
 	- Struct*
 	- Union*
@@ -72,6 +91,7 @@ Public - Progress 20%
 	- Triple Linked Table
 	- Linked Array Grid 3D
 	- Linked Array Grid 4D
+	- Multiple Linked Array Grids
 #### Graphs:
 	- Binary Tree
 	- Balanced Tree
@@ -84,21 +104,16 @@ Public - Progress 20%
 ### Non-Clasical Data Structures
 	- Not included. Contact Psideralis for further information.
 		- Data Constructs
-			Relational Linked Data Structures
 		- Data Architectures
-			Relational Linked Data Constructs
 		- Data Complexes
-			Relational Linked Data Architectures
 		- Data Conglomerates
-			Relational Linked Data Complexes
 ### Cryptostructures
 	- Not included. Contact Psideralis for further information.
 		- Hash Tables
-		- Cipher Multiple Linked Grids
+		- Cipher Multiple Linked Array Grids
 		- Cipher Multiple Linked Lists
 		- Non-Repudiational Multiple Linked Queues
 		- Non-Repudiational Multiple Linked Stacks
-		- Restricted Linked Dictionaries
 		- Restricted Linked Multimaps
 ## Classic Algorithms
 ### Non-mutative
