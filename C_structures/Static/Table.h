@@ -20,10 +20,12 @@ TYPES:
 #ifndef TABLE_C
 #define TABLE_C
 
+typedef struct cell_s{
+    void* value;    
+} cell_t;
+
 typedef struct table_s{
-    
-    PSI_RET (*new_table)(table_t);
-    PSI_RET (*del_table)(table_t);
+    cell_t* cell[];    
 } table_t;
 
 #endif

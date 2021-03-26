@@ -2,7 +2,7 @@
 ## Author
 Psideralis
 ## License
-GNU General Public License 3.0 & Psideralis Copyright Privative License
+GNU General Public License 3.0 & Psideralis Commune Public License
 ## Description
 
 ## Manual

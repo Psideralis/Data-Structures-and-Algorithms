@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: Graph.ts
+File name: Dynamic.ts
 Description:
 ********************************************* */ 
 /* *********************************************
@@ -11,7 +11,6 @@ OBJECT:
 
 ********************************************* */ 
 
-export namespace GraphPsideralisCollection { 
-
+export class PSI_LinkedList{
 
 }

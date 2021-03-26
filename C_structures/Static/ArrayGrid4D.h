@@ -17,13 +17,15 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef GENGRID_C
-#define GENGRID_C
+#ifndef ARRAYGRID4D_C
+#define ARRAYGRID4D_C
 
-typedef struct genArrayGrid_s{
-    
-    PSI_RET (*new_genArrayGrid)(genArrayGrid_t);
-    PSI_RET (*new_genArrayGrid)(genArrayGrid_t);
-} genArrayGrid_t;
+typedef struct cube_s{
+    void* entry;
+} cube_t;
+
+typedef struct arrayGrid4D_s{
+    cube_t**** cube;
+} arrayGrid4D_t;
 
 #endif

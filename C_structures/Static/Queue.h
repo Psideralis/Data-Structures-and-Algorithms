@@ -22,8 +22,6 @@ TYPES:
 
 typedef struct queue_s{
     
-    PSI_RET (*new_queue)(queue_t);
-    PSI_RET (*del_queue)(queue_t);
 } queue_t;
 
 #endif

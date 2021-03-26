@@ -3,6 +3,7 @@ ALL: BUILD RUN
 
 BUILD:
 	tsc $(file).ts
+	tsc --module commonjs $(file).ts
 
 RUN:
 	node $(file).js

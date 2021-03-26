@@ -17,14 +17,11 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef LINKEDLIST_C
-#define LINKEDLIST_C
+#ifndef HEAP_C
+#define HEAP_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
-
-    };
-} TLinkedList;
+typedef struct heap_s{
+    
+} heap_t;
 
 #endif

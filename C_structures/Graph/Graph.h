@@ -20,11 +20,8 @@ TYPES:
 #ifndef GRAPH_C
 #define GRAPH_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct graph_s{
 
-    };
-} TLinkedList;
+} graph_t;
 
 #endif

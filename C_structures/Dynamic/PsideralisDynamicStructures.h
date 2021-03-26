@@ -1,17 +1,17 @@
-#ifndef GRAPH_STRUCTS
-#define GRAPH_STRUCTS
+#ifndef DYNAMIC_C_STRUCTS
+#define DYNAMIC_C_STRUCTS
 
 #include "Dynamic/BidimensionalLinkedGrid.h"
 #include "Dynamic/DoubleLinkedList.h"
 #include "Dynamic/DynamicTable.h"
-#include "Dynamic/GeneralizedLinkedGrid.h"
-#include "Dynamic/GeneralizedLinkedList.h"
-#include "Dynamic/GeneralizedLinkedMultimap.h"
-#include "Dynamic/GeneralizedLinkedTable.h"
-#include "Dynamic/Heap.h"
+#include "Dynamic/TetradimensionalLinkedGrid.h"
+#include "Dynamic/TetradimensionalLinkedList.h"
+#include "Dynamic/TetradimensionalLinkedMultimap.h"
+#include "Dynamic/TetradimensionalLinkedTable.h"
+#include "Dynamic/DynamicHeap.h"
 #include "Dynamic/LinkedList.h"
-#include "Dynamic/MultipleLinkedGeneralizedLinkedGrid.h"
-#include "Dynamic/MultipleLinkedGeneralizedLinkedList.h"
+#include "Dynamic/MultipleLinkedTetradimensionalLinkedGrid.h"
+#include "Dynamic/MultipleLinkedTetradimensionalLinkedList.h"
 #include "Dynamic/MultipleLinkedQueue.h"
 #include "Dynamic/MultipleLinkedStack.h"
 #include "Dynamic/SingleLinkedList.h"

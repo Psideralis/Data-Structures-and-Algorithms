@@ -20,11 +20,8 @@ TYPES:
 #ifndef TREE_C
 #define TREE_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct tree_s{
 
-    };
-} TLinkedList;
+} tree_t;
 
 #endif

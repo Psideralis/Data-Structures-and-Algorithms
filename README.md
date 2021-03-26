@@ -2,10 +2,9 @@
 ## Author
 Psideralis
 ## License
-GNU General Public License 3.0 & Psideralis Copyright Privative License
+GNU General Public License 3.0 & Psideralis Commune Public License
 ## Version
-00.00.000.004 </br>
-Mayor.Minor.Revision.Daily
+00.00.000.004
 ## Status
 Public - Progress 20%
 ## Description
@@ -19,6 +18,7 @@ Public - Progress 20%
 	- Boolean
 	- Character
 	- String
+	- Chord
 	- Integer
 	- Float
 	- Array*
@@ -42,32 +42,36 @@ Public - Progress 20%
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
+	- Point2D, Point3D, Point4D, PointND (Psideralis Math Utilities)
+	- Vector2D, Vector3D, Vector4D, VectorND (Psideralis Math Utilities)
+	- Matrix2D, Matrix3D, Matrix4D, MatrixND (Psideralis Math Utilities)
+	- TensorO4 (Psideralis Math Utilities)
 	- Set
-	- Ordered Ser (Psideralis Math Utilities)
+	- Ordered Set (Psideralis Math Utilities)
+	- Tuple
+	- Ordered Tuple (Psideralis Math Utilities)
 	- Array List
 	- Ordered List
 	- Stack
 	- Queue
+	- Map
 	- Dictionary
 	- Multimap
 	- Table
-	- Bidimensional Array Grid
-	- Tridimensional Array Grid
-	- Generalized Array Grid
+	- Array Grid 3D
+	- Array Grid 4D
 #### Dynamic:
 	- Single Linked List
 	- Double Linked List
-	- Generalized Linked List
-	- Bidimensional Linked Grid
-	- Tridimensional Linked Grid
-	- Generalized Linked Grid
-	- Heap
+	- Triple Linked List
+	- Multiple Linked Linked List
 	- Multiple Linked Stacks
 	- Multiple Linked Queues
-	- Multiple Linked Generalized Linked List
-	- Multiple Linked Generalized Linked Grid
-	- Generalized Linked Multimap
-	- Generalized Linked Table
+	- Heap
+	- Triple Linked Multimap
+	- Triple Linked Table
+	- Linked Array Grid 3D
+	- Linked Array Grid 4D
 #### Graphs:
 	- Binary Tree
 	- Balanced Tree
@@ -80,18 +84,22 @@ Public - Progress 20%
 ### Non-Clasical Data Structures
 	- Not included. Contact Psideralis for further information.
 		- Data Constructs
+			Relational Linked Data Structures
 		- Data Architectures
+			Relational Linked Data Constructs
 		- Data Complexes
+			Relational Linked Data Architectures
+		- Data Conglomerates
+			Relational Linked Data Complexes
 ### Cryptostructures
 	- Not included. Contact Psideralis for further information.
 		- Hash Tables
-		- Cipher Multiple Linked Generalized Linked Grids
-		- Cipher Multiple Linked Generalized Linked Lists
+		- Cipher Multiple Linked Grids
+		- Cipher Multiple Linked Lists
 		- Non-Repudiational Multiple Linked Queues
 		- Non-Repudiational Multiple Linked Stacks
-		- Restricted Generalized Linked Multimaps
-		- Restricted Generalized Linked Dictionaries
-
+		- Restricted Linked Dictionaries
+		- Restricted Linked Multimaps
 ## Classic Algorithms
 ### Non-mutative
 #### Search
@@ -118,7 +126,13 @@ Public - Progress 20%
 	- Level
 
 ### Mutative
-#### Addition
+#### Setter
+	- Single item
+	- Grouped items
+	- Hierarchy item
+	- Binary item
+	- Level item
+#### Addition OR Removal
 	- Insert
 	- Remove
 	- Grouped insert
@@ -126,6 +140,12 @@ Public - Progress 20%
 	- Hierarchy insert / remove
 	- Binary insert / remove
 	- Level insert / remove
+#### Exchange
+	- Exhange
+	- Grouped exchange
+	- Hierarchy exchange
+	- Binary exchange
+	- Level exchange
 #### Substitution
 	- Indexed
 	- Random

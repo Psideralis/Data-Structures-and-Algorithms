@@ -1,5 +1,5 @@
-#ifndef GRAPH_STRUCTS
-#define GRAPH_STRUCTS
+#ifndef GRAPH_C_STRUCTS
+#define GRAPH_C_STRUCTS
 
 #include "Graph/BinaryTree.h"
 #include "Graph/Digraph.h"

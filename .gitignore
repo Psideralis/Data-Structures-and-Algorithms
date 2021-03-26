@@ -25,3 +25,5 @@ Swift_structures/Benchmark/**
 Swift_structures/myTest/**
 Swift_structures/StructureCollection/Test/**
 Rust_structures/Rust_NativeTypes
+main.cpp
+main

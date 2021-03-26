@@ -20,6 +20,7 @@ TYPES:
 
 using System;
 
+
 namespace CSharp_structures
 {
     class Set<T>
@@ -36,6 +37,8 @@ namespace CSharp_structures
         /* ATRIBUTES */
         int size;
         T[] entry;
+
+
         /* METHODS */
         void Main(string[] args)
         {

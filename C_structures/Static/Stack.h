@@ -20,10 +20,22 @@ TYPES:
 #ifndef STACK_C
 #define STACK_C
 
+
+typedef struct element_s{;
+    void* item;
+} element_t;
+
 typedef struct stack_s{
-    
-    PSI_RET (*new_stack)(stack_t);
-    PSI_RET (*del_stack)(stack_t);
-} stack_t;
+    int size;
+    element_t* entry;
+}stack_t;
+
+void stack_t_push(stack_t* self, element_t element){
+
+}
+
+void stack_t_pop(stack_t* self, element_t element){
+
+}
 
 #endif

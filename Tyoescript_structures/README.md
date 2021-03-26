@@ -1,10 +1,10 @@
-# Javascript-Typescript Data Structures and Algorithms
+# Typescript Data Structures and Algorithms
 ## Author
 Psideralis
 ## License
 GNU General Public License 3.0 & Psideralis Copyright Privative License
 ## Description
-A Javascript-Typescript collection of data structures and classic algorithms.
+A Typescript collection of data structures and classic algorithms.
 
 ## Manual
 

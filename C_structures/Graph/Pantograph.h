@@ -17,14 +17,11 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef GRAPH_C
-#define GRAPH_C
+#ifndef PANTOGRAPH_C
+#define PANTOGRAPH_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct pantograph_s{
 
-    };
-} TLinkedList;
+} pantograph_t;
 
 #endif

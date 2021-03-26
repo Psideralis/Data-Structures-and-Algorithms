@@ -1,7 +1,20 @@
 #ifndef PSIDERALIS_CSTRUCTS
 #define PSIDERALIS_CSTRUCTS
 
-#define PSI_null ((void*)0);
+#ifndef CSTD
+#define CSTD
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#endif
+
+typedef enum PSI_BOOL_e{
+    PSI_true = 1,
+    PSI_false = 0
+} PSI_BOOL;
+
+typedef char* PSI_string;
+typedef PSI_string* PSI_chord;
 
 typedef unsigned char byte_t;
 typedef byte_t word_t[2];
@@ -35,74 +48,43 @@ typedef struct BitFlag_s{
     unsigned char bit_t : 1;
 } BitFlag_t;
 
-typedef struct DBitFlags_s{
+typedef struct DuoBitFlag_s{
     unsigned char bit_flag1 : 1;
     unsigned char bit_flag2 : 1;    
-} DBitFlags_t;
+} DBitFlag_t;
 
-typedef struct TBitFlags_s{
+typedef struct TriBitFlag_s{
     unsigned char bit_flag1 : 1;
     unsigned char bit_flag2 : 1;    
     unsigned char bit_flag3 : 1;    
-} TBitFlags_t;
+} TBitFlag_t;
 
-typedef struct NibbleFlags_s{
+typedef struct NibbleFlag_s{
     unsigned char bit_flag1 : 1;
     unsigned char bit_flag2 : 1;    
     unsigned char bit_flag3 : 1;
     unsigned char bit_flag4 : 1;    
-} NibbleFlags_t;
-
-typedef struct ByteFlags_s{
-    unsigned char bit_flag1 : 1;
-    unsigned char bit_flag2 : 1;
-    unsigned char bit_flag3 : 1;
-    unsigned char bit_flag4 : 1;
-    unsigned char bit_flag5 : 1;
-    unsigned char bit_flag6 : 1;
-    unsigned char bit_flag7 : 1;
-    unsigned char bit_flag8 : 1;
-} ByteFlags_t;
-
-typedef struct WordFlags_s{
-    ByteFlags_t wflags[2];
-} WordFlags_t;
-
-typedef struct DWordFlags_s{
-    WordFlags_t dflags[2];
-} DWordFlags_t;
-
-typedef struct QWordFlags_s{
-    DWordFlags_t qflags[2];
-} QWordFlags_t;
-
-
-typedef struct OWordFlags_s{
-    QWordFlags_t oflags[2];
-} OWordFlags_t;
-
-typedef struct HWordFlags_s{
-    OWordFlags_t hflags[2];
-} HWordFlags_t;
+} NibbleFlas_t;
 
 typedef enum PSI_RET_e{
-    _EXCP = 6,
-    _EXCP = 5,
-    _EXCP = 4,
-    _EXCP = 3,
-    _EXCP = 2,
-    _EXCP = 1,
+    _EXCP6 = 6,
+    _EXCP5 = 5,
+    _EXCP4 = 4,
+    _EXCP3 = 3,
+    _EXCP2 = 2,
+    ZERODIV_EXCP = 1,
     NO_ERROR = 0,
     NULLPTR_ERROR = -1,
-    _ERROR = -2,
-    _ERROR = -3,
-    _ERROR = -4,
-    _ERROR = -5,
-    _ERROR = -6,
+    CAST_ERROR = -2,
+    _ERROR3 = -3,
+    _ERROR4 = -4,
+    _ERROR5 = -5,
+    _ERROR6 = -6
 } PSI_RET;
 
+/*
 #include "Dynamic/PsideralisDynamicStructures.h"
 #include "Graph/PsideralisGraphStructures.h"
 #include "Static/PsideralisStaticStructures.h"
-
+*/
 #endif

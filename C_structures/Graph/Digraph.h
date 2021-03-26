@@ -20,11 +20,8 @@ TYPES:
 #ifndef DIGRAPH_C
 #define DIGRAPH_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct digraph_s{
 
-    };
-} TLinkedList;
+} digraph_t;
 
 #endif

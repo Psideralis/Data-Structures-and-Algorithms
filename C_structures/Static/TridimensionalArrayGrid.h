@@ -17,15 +17,15 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef TRIGRID_C
-#define TRIGRID_C
+#ifndef ARRAYGRID3D_C
+#define ARRAYGRID3D_C
 
-typedef struct triArrayGrid_s{
+typedef struct cube_s{
+    void* entry;
+} cube_t;
 
-    void (*new_triArrayGrid)(triArrayGrid_t);
-    void (*new_triArrayGrid)(triArrayGrid_t);
-} triArrayGrid_t;
-
-
+typedef struct arrayGrid3D_s{
+    cube_t*** cube;
+} arrayGrid3D_t;
 
 #endif

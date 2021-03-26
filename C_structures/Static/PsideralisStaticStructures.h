@@ -1,5 +1,5 @@
-#ifndef STATIC_STRUCTS
-#define STATIC_STRUCTS
+#ifndef STATIC_C_STRUCTS
+#define STATIC_C_STRUCTS
 
 #include "Static/ArrayList.h"
 #include "Static/Dictionary.h"
@@ -13,6 +13,6 @@
 #include "Static/Table.h"
 #include "Static/BidimensionalArrayGrid.h"
 #include "Static/TridimensionalArrayGrid.h"
-#include "Static/GeneralizedArrayGrid.h"
+#include "Static/TetradimensionalArrayGrid.h"
 
 #endif

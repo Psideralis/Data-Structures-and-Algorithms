@@ -20,11 +20,8 @@ TYPES:
 #ifndef BINARYTREE_C
 #define BINARYTREE_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct binaryTree_s{
 
-    };
-} TLinkedList;
+} binaryTree_t;
 
 #endif

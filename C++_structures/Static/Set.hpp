@@ -2,19 +2,14 @@
 Author: Psideralis
 License: GNU GPL 3.0
 File name: Set.hpp
-Description: A set is a grouping of elements
-of the same type, especialized for numbers but
-a set can have any type as long as all its
-elements are of the same type. It is not
-natively ordered neither it has repeated
-elements. For repeated elements see: ArrayList,
-for ordered elementes see: OrderedList.
-There is an OrderedSet in Psideralis math
-utilities if needed.
+Description: A set is a grouping of numeric
+elements or sets. It is not natively ordered
+and it have no repeated elements. 
 
-A set can be made up of sets. So classes can
-be made up of sets and a universe can be made
-up of classes.
+There is an OrderedSet in Psideralis math
+utilities if needed. For repeated elements
+see Tuple or ArrayList.
+
 ********************************************* */ 
 
 /* *********************************************
@@ -36,6 +31,8 @@ CLASSES:
 #ifndef SET_HPP
 #define SET_HPP
 
+#include "Map.hpp"
+
 #ifndef STD
 #define STD
     #include "stdlib.h"
@@ -45,47 +42,196 @@ CLASSES:
     using namespace std;
 #endif
 
-template <typename T>
 class Set {
 	public:
-		/* CONSTRUCTORES */
-		Set(int size){
-			this->entry = new T[size];
-			for(int i = 0; i<size ;i++){
-			this->entry[i] = 0;
-			}
+		/* CONSTRUCTORS */
+		Set(){};
+		int intType(int i){
+
+		}
+		double doubleType(double d){
+
+		}
+		Set setType(Set s){
+		}
+		template <typename T>
+		void push(T t) {}
+		template <typename T, typename... Args>
+		void push(T t, Args... args) {
+			push(t);
+			push(args...);
+		}
+		template <typename T>
+		Set(T t){
+			push(t); 
 		};
-		Set(int size, T* elements){
-			this->entry = new T[size];
-			for(int i = 0; i<size ;i++){
-			this->entry[i] = elements[i];
-			}
+		template <typename T, typename... Args>
+		Set(T t, Args... args) {
+			push(t);
+			push(args...);
 		};
-		Set(int size, int init){
-			this->entry = new T[size];
-			for(int i = 0; i<size ;i++){
-			this->entry[i] = init;
-			init = init + 1;
-			}
-		};
-		Set(int init, int end, int step){
-			this->entry = new T[(end-init)/step];
-			for(int i = 0; i<((end-init)/step) ;i++){
-			this->entry[i] = init;
-			init = init + step;
-			}
+		template<typename ... Args>   
+		Set(Args... args){
+			push(args);
 		};
 		~Set(){
-			this->entry = NULL;
+			this->counter = 0;
+			this->size = 0;
 		};
 		Set(const Set &cpy){
+			this->counter = counter;
 			this->entry = cpy.entry;
 			this->size = cpy.size;
 		};
-		/* ATRIBUTOS */
-		T* entry;
-		int size;	
-		/* MÉTODOS */
+		/* ATTRIBUTES */
+		Map entry;
+		int size;
+		int counter;
+		/* METHODS */
+		template <>
+		void push(int i){ intType(i); }
+		void push(double d){ doubleType(d); }
+		void push(Set s){ setType(s); }
+		// GETTER
+		template<class T>
+		T get_Item(size_t pos) {}
+		template<>	long get_Item(size_t pos) { return (integer.count(pos) != 0) ? integer[pos].to_long() : _NULL; }
+		template<>	std::string get_Item(size_t pos) { return (string.count(pos) != 0) ? string[pos].to_string() : "-1"; }
+		// SETTER
+		template<typename T>
+		void set_Item(size_t pos, T Item) { }
+		template<> 	void set_Item(size_t pos, long Item) { integer.at(pos) = Item; }
+		template<> 	void set_Item(size_t pos, int Item) { integer.at(pos) = Item; }
+		/* OPERATORS */	
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Element& operator[](const int index){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator==(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator=(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator=(const ArrayList* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator+(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator+(const ArrayList* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator-(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator-(const ArrayList* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator*(const int &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator*(const int* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator*(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator*(const ArrayList* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator/(const int &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator/(const int* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator/(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator/(const ArrayList* &rhs){};
+		/* ALGORITHMS */
 			/* NON MUTATIVE */
 				/* SEARCH */
 		void generalSearch();

@@ -17,14 +17,11 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef LINKEDLIST_C
-#define LINKEDLIST_C
+#ifndef ORDEREDLIST_C
+#define ORDEREDLIST_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct orderedList_s{
 
-    };
-} TLinkedList;
+} oderedList_t;
 
 #endif

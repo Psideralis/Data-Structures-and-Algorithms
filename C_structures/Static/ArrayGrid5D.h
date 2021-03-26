@@ -17,14 +17,15 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef LINKEDLIST_C
-#define LINKEDLIST_C
+#ifndef ARRAYGRID5D_C
+#define ARRAYGRID5D_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct cube_s{
+    void* entry;
+} cube_t;
 
-    };
-} TLinkedList;
+typedef struct arrayGrid5D_s{
+    cube_t**** cube;
+} arrayGrid5D_t;
 
 #endif

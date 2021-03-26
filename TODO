@@ -16,17 +16,21 @@ Finish Daily 001, 002, 003, 004, 005:
 Entry 14/12/2020
 Finish Nigthly 001:
     Pendant:
-        -C content
-        -C++ content
-        -C# content
-        -Objective-C/C++ content
-        ---------------------
-        -Java content
+        -C content                          ☐
+        -C++ content                        ☐
+        --------------------- MILESTONE 1
+        -C# content                         
+        -Objective-C/C++ content            
+        --------------------- MILESTONE 2
+        -Java content                       ☐
+        -Python content                     ☐
         -Swift content
-        -Python content
-        -Javascript-Typescript content
+        --------------------- MILESTONE 3
+        -Javascript-Typescript content      ☐
+        --------------------- MILESTONE 4
         -Ryby content
         -Rust content
+        --------------------- MILESTONE 5
     Option (?):
 	-Benchmark (Time,Space)
 		-Numeric processing skeleton & formatting

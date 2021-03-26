@@ -41,7 +41,7 @@ CLASSES:
 
 class ArrayList {
 	public:
-		/* CONSTRUCTORES */
+		/* CONSTRUCTORS */
 		ArrayList(){
 			int size;
 			cout << "Ingrese la dimension del arreglo: ";
@@ -71,20 +71,147 @@ class ArrayList {
 			}
 			this->entry = NULL;
 			this->size = 0;
-			this->index = 0;
 		};
 		ArrayList(const ArrayList &cpy){
-			this->index  = cpy.size;
 			this->size = cpy.size;
 			this->entry = new Element[this->size];
 			for (int i = 0 ; i < this->size ; i ++){
 				this->entry[i].item = cpy.entry[i].item;
 			}
 		};
-		/* ATRIBUTOS */
+		/* ATTRIBUTES */
 		Element* entry;
 		int size;
-		/* MÉTODOS */
+		/* METHODS */
+			/* OPERATORS */	
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Element& operator[](const int index){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator==(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator=(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator=(const ArrayList* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator+(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator+(const ArrayList* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator-(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator-(const ArrayList* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator*(const int &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator*(const int* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator*(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator*(const ArrayList* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator/(const int &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator/(const int* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator/(const ArrayList &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayList& operator/(const ArrayList* &rhs){};
 			/* NON MUTATIVE */
 				/* SEARCH */
 		void generalSearch();
