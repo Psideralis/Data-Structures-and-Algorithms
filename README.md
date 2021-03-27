@@ -10,7 +10,7 @@ Public - Progress 20%
 ## Description
 	Algorithm = Control structures + Data Artifact + Operations
 	Data Artifacts:
-		Data structure := Data Elements + Structure
+		Data structure := Data Types + Structure
 			Data structure = Data structure + Algorithms
 		Data Construct := Data Structures + Structure
 			Data Construct = Data Construct + Algorithms
@@ -57,6 +57,7 @@ Public - Progress 20%
 	- Logical
 	- Arithmetical
 	- Algebraic
+	- Statistical
 
 ## Data structures
 ### Classic Data Stuctures

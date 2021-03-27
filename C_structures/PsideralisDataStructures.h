@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdarg.h>
 #endif
 
 typedef enum PSI_BOOL_e{
@@ -76,7 +77,7 @@ typedef enum PSI_RET_e{
     NO_ERROR = 0,
     NULLPTR_ERROR = -1,
     CAST_ERROR = -2,
-    _ERROR3 = -3,
+    TYPE_ERROR = -3,
     _ERROR4 = -4,
     _ERROR5 = -5,
     _ERROR6 = -6
@@ -85,6 +86,7 @@ typedef enum PSI_RET_e{
 /*
 #include "Dynamic/PsideralisDynamicStructures.h"
 #include "Graph/PsideralisGraphStructures.h"
-#include "Static/PsideralisStaticStructures.h"
 */
+#include "Static/PsideralisStaticStructures.h"
+
 #endif

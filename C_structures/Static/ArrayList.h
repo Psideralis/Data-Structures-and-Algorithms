@@ -7,31 +7,52 @@ same type. It is not natively ordered and do
 not have repeated elements.
 ********************************************* */ 
 
+
 /* *********************************************
 DEFINES:
-	ARRAYLIST_H
+	ARRAYLITS_H
 MACROS:
 
 STRUCTS:
-    element_s
-    arraylist_s
+    arrayList_s
 ENUMS:
 
 TYPES:
-    element_t
-    arraylist_t
+    arrayList_t
 FUNCTIONS:
-    INMUTATIVE:
-        SEARCH
-        SELECTION
-    MUTATIVE:
-        SETTER
-        ADDITION OR REMOVE
-        ECHANGE
-        SUBSTITUTION
-        CLASSIFICATION
-    TRANSMUTATIVE:
-        COMBINATORICS
+    BASICS
+        zeroalloc
+        zeroinit
+        rangeinit
+            int
+            double
+        init
+            int
+            double
+            set_t
+        new
+            args_list
+            set_array
+        dealloc
+        del
+    MISCELANEOUS
+        empty
+        set
+        get
+        resizeEmpty
+        resizeZero
+    ALGORITHMS
+        INMUTATIVE:
+            search
+            selection
+        MUTATIVE:
+            setter
+            addition or remove
+            exchange
+            substitution
+            classification
+        TRANSMUTATIVE:
+            combinatorics
 ********************************************* */ 
 #include "../PsideralisDataStructures.h"
 
@@ -147,50 +168,6 @@ void arrayList_t_set_int(arrayList_t* self, int i, int value){
 void arrayList_t_set_double(arrayList_t* self, int i, double value){
     self->entry[i].item = (void*)&value;
 };
-
-int getVoidPtr(arrayList_t self, int i){
-    return (self.entry[i].item));
-}
-
-int getIntValue(arrayList_t self, int i){
-    return *((int*)(self.entry[i].item));
-}
-
-int getIntPtr(arrayList_t self, int i){
-    return ((int*)(self.entry[i].item));
-}
-
-int getCharValue(arrayList_t self, int i){
-    return *((char*)(self.entry[i].item));
-}
-
-int getCharPtr(arrayList_t self, int i){
-    return ((char*)(self.entry[i].item));
-}
-
-int getStringValue(arrayList_t self, int i){
-    return *((PSI_string*)(self.entry[i].item));
-}
-
-int getStringPtr(arrayList_t self, int i){
-    return ((PSI_string*)(self.entry[i].item));
-}
-
-int getChordValue(arrayList_t self, int i){
-    return *((PSI_chord*)(self.entry[i].item));
-}
-
-int getChordPtr(arrayList_t self, int i){
-    return ((PSI_chord*)(self.entry[i].item));
-}
-
-int getIntValue(arrayList_t self, int i){
-    return *((int*)(self.entry[i].item));
-}
-
-int getIntPtr(arrayList_t self, int i){
-    return ((int*)(self.entry[i].item));
-}
 
 
 #endif
