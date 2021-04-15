@@ -54,14 +54,14 @@ Public - Progress 20%
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
-	- Point2D, Point3D, Point4D, PointND 		(Psideralis Math Utilities)
-	- Vector2D, Vector3D, Vector4D, VectorND 	(Psideralis Math Utilities)
-	- Matrix2D, Matrix3D, Matrix4D, MatrixND 	(Psideralis Math Utilities)
-	- TensorO4 									(Psideralis Math Utilities)
+	- Point2D, Point3D, Point4D, PointND	(Psideralis Math Utilities)
+	- Vector2D, Vector3D, Vector4D, VectorND	(Psideralis Math Utilities)
+	- Matrix2D, Matrix3D, Matrix4D, MatrixND	(Psideralis Math Utilities)
+	- TensorO4	(Psideralis Math Utilities)
 	- Set
-	- Ordered Set 								(Psideralis Math Utilities)
+	- Ordered Set	(Psideralis Math Utilities)
 	- Tuple
-	- Ordered Tuple 							(Psideralis Math Utilities)
+	- Ordered Tuple	(Psideralis Math Utilities)
 	- Array List
 	- Ordered List
 	- Stack
