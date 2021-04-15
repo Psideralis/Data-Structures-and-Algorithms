@@ -62,6 +62,7 @@ FUNCTIONS:
 ********************************************* */ 
 
 #include "Map.h"
+#include "PsideralisDataStructures.h"
 
 #ifndef SET_H
 #define SET_H

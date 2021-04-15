@@ -8,18 +8,9 @@ GNU General Public License 3.0 & Psideralis Commune Public License
 ## Status
 Public - Progress 20%
 ## Description
-	Algorithm = Control structures + Data Artifact + Operations
-	Data Artifacts:
+	Algorithm = Control structures + Data Structure + Operations
 		Data structure := Data Types + Structure
-			Data structure = Data structure + Algorithms
-		Data Construct := Data Structures + Structure
-			Data Construct = Data Construct + Algorithms
-		Data Architecture := Data Constructs + Structure
-			Data Architecture = Data Architecture + Algorithms
-		Data Complexes := Data Architectures + Structure
-			Data Complexes = Data Complexes + Algorithms
-		Data Conglomerates := Data Complexes + Structure
-			Data Conglomerates = Data Conglomerates + Algorithms
+		Data structure = Data structure + Algorithms
 ## Data Types
 	- Bit
 	- Byte
@@ -59,17 +50,18 @@ Public - Progress 20%
 	- Algebraic
 	- Statistical
 
+# ARTIFACTS
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
-	- Point2D, Point3D, Point4D, PointND (Psideralis Math Utilities)
-	- Vector2D, Vector3D, Vector4D, VectorND (Psideralis Math Utilities)
-	- Matrix2D, Matrix3D, Matrix4D, MatrixND (Psideralis Math Utilities)
-	- TensorO4 (Psideralis Math Utilities)
+	- Point2D, Point3D, Point4D, PointND 		(Psideralis Math Utilities)
+	- Vector2D, Vector3D, Vector4D, VectorND 	(Psideralis Math Utilities)
+	- Matrix2D, Matrix3D, Matrix4D, MatrixND 	(Psideralis Math Utilities)
+	- TensorO4 									(Psideralis Math Utilities)
 	- Set
-	- Ordered Set (Psideralis Math Utilities)
+	- Ordered Set 								(Psideralis Math Utilities)
 	- Tuple
-	- Ordered Tuple (Psideralis Math Utilities)
+	- Ordered Tuple 							(Psideralis Math Utilities)
 	- Array List
 	- Ordered List
 	- Stack
@@ -96,19 +88,14 @@ Public - Progress 20%
 #### Graphs:
 	- Binary Tree
 	- Balanced Tree
-	- Graphs
-	- Digraphs
-	- Pantographs
-	- Graph w/FunctionCost
-	- Digraph w/FunctionCost
-	- Pantograph w/FunctionCost
-### Non-Clasical Data Structures
+	- Graphs w/FunctionCost
+	- Digraphs w/FunctionCost
+	- Pantographs w/FunctionCost
+### Non-classic Data Structures
+	- Pendant.
+## Netstructures
 	- Not included. Contact Psideralis for further information.
-		- Data Constructs
-		- Data Architectures
-		- Data Complexes
-		- Data Conglomerates
-### Cryptostructures
+## Cryptostructures
 	- Not included. Contact Psideralis for further information.
 		- Hash Tables
 		- Cipher Multiple Linked Array Grids
@@ -116,6 +103,24 @@ Public - Progress 20%
 		- Non-Repudiational Multiple Linked Queues
 		- Non-Repudiational Multiple Linked Stacks
 		- Restricted Linked Multimaps
+## Netcryptostructures
+	- Not included. Contact Psideralis for further information.
+
+## Data Artifacts
+	- Not included. Contact Psideralis for further information.
+		- Data Constructs
+		- Data Architectures
+		- Data Complexes
+		- Data Conglomerates
+		- Data Constrictions
+## Netartifacts
+	- Not included. Contact Psideralis for further information.
+## Cryptoartifacts
+	- Not included. Contact Psideralis for further information.
+## Netcryptoartifacts
+	- Not included. Contact Psideralis for further information.
+
+# ALGORITHMS
 ## Classic Algorithms
 ### Non-mutative
 #### Search
@@ -182,7 +187,6 @@ Public - Progress 20%
 	- Hierarchy
 	- Binary
 	- Level
-
 ### Transmutative
 #### Combinatorics
 	- General combination
@@ -197,3 +201,6 @@ Public - Progress 20%
 	- Local permutation
 	- Indexed grouped permutation
 	- Random grouped permutation
+
+## Non-classic Algorithms
+	-Pendant
