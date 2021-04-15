@@ -95,8 +95,10 @@ Public - Progress 20%
 	- Not included. Contact Psideralis for further information.
 ## Netstructures
 	- Not included. Contact Psideralis for further information.
+	- Uses Server Utilities.
 ## Cryptostructures
 	- Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math & Cryptographic Utilities.
 		- Hash Tables
 		- Cipher Multiple Linked Array Grids
 		- Cipher Multiple Linked Lists
@@ -105,7 +107,7 @@ Public - Progress 20%
 		- Restricted Linked Multimaps
 ## Netcryptostructures
 	- Not included. Contact Psideralis for further information.
-
+	- Uses Psideralis Math, Server & Cryptographic Utilities.
 ## Data Artifacts
 	- Not included. Contact Psideralis for further information.
 		- Data Constructs
@@ -115,10 +117,13 @@ Public - Progress 20%
 		- Data Constrictions
 ## Netartifacts
 	- Not included. Contact Psideralis for further information.
+	- Uses Server Utilities.
 ## Cryptoartifacts
 	- Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math & Cryptographic Utilities.
 ## Netcryptoartifacts
 	- Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math, Server & Cryptographic Utilities.
 
 # ALGORITHMS
 ## Classic Algorithms
