@@ -92,7 +92,7 @@ Public - Progress 20%
 	- Digraphs w/FunctionCost
 	- Pantographs w/FunctionCost
 ### Non-classic Data Structures
-	- Pendant.
+	- Not included. Contact Psideralis for further information.
 ## Netstructures
 	- Not included. Contact Psideralis for further information.
 ## Cryptostructures
