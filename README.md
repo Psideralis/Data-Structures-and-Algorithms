@@ -12,16 +12,16 @@ Public - Progress 25%
 		Data structure := Data Types + Structure
 		Data structure = Data structure + Algorithms
 ## Languages
-	- C				☐ 	25%
+	- C			☐ 	25%
 	- C++			☐ 	25%
 	- C#			☐ 	2%
-	- Objective-C	☐ 	2%
+	- Objective-C		☐ 	2%
 		- Objective-C++	☐ 
 	- Swift			☐ 	2%
 	- Java			☐ 	2%
 	- Python		☐ 	2%
 	- Ruby			☐ 	2%
-	- Typescript	☐ 	10%
+	- Typescript		☐ 	10%
 		- Javascript	☐
 ## Data Types
 	- Bit
