@@ -2,12 +2,28 @@
 ## Author
 Psideralis
 ## License
-GNU General Public License 3.0 & Psideralis Copyright Privative License
+GNU General Public License 3.0 & Psideralis Copyright Commune Public License
 ## Description
 A Typescript collection of data structures and classic algorithms.
 
-## Manual
+## Data Types
+### Native
+    - Number
+    - String
+    - Boolean
+    - Void
+    - Null
+    - Undefined
+### User Defined
+    - Enumerations
+    - Classes
+    - Intefaces
+    - Arrays
+    - Tuples
 
+## Manual
+### Compilation
+    tsc
 ### Installation
     Local:
     npm install --save psi_collection

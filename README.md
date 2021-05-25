@@ -11,6 +11,18 @@ Public - Progress 20%
 	Algorithm = Control structures + Data Structure + Operations
 		Data structure := Data Types + Structure
 		Data structure = Data structure + Algorithms
+## Languages
+	- C				☐ 	25%
+	- C++			☐ 	25%
+	- C#			☐ 	2%
+	- Objective-C	☐ 	2%
+		- Objective-C++	☐ 
+	- Swift			☐ 	2%
+	- Java			☐ 	2%
+	- Python		☐ 	2%
+	- Ruby			☐ 	2%
+	- Typescript	☐ 	10%
+		- Javascript	☐
 ## Data Types
 	- Bit
 	- Byte
@@ -21,7 +33,6 @@ Public - Progress 20%
 	- Boolean
 	- Character
 	- String
-	- Chord
 	- Numeric
 		-Unsigned
 		-Signed
@@ -32,6 +43,7 @@ Public - Progress 20%
 		-Single
 		-Double
 	- Array*
+	- Tuple*
 	- Struct*
 	- Union*
 	- Object*
@@ -123,7 +135,7 @@ Public - Progress 20%
 	- Uses Psideralis Math & Cryptographic Utilities.
 ## Netcryptoartifacts
 	- Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math, Server & Cryptographic Utilities.
+	- Uses Psideralis Math & Cryptographic Utilities.
 
 # ALGORITHMS
 ## Classic Algorithms
