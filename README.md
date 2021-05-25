@@ -6,7 +6,7 @@ GNU General Public License 3.0 & Psideralis Commune Public License
 ## Version
 00.00.000.005
 ## Status
-Public - Progress 20%
+Public - Progress 25%
 ## Description
 	Algorithm = Control structures + Data Structure + Operations
 		Data structure := Data Types + Structure
