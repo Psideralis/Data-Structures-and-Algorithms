@@ -60,6 +60,7 @@ Public - Progress 25%
 	- Logical
 	- Arithmetical
 	- Algebraic
+	- Geometric
 	- Statistical
 
 # ARTIFACTS
@@ -92,11 +93,11 @@ Public - Progress 25%
 	- Multiple Linked Stacks
 	- Multiple Linked Queues
 	- Heap
-	- Triple Linked Multimap
-	- Triple Linked Table
+	- Multiple Linked Multimap
+	- Multiple Linked Table
 	- Linked Array Grid 3D
 	- Linked Array Grid 4D
-	- Multiple Linked Array Grids
+	- Multiple Linked Array Grid
 #### Graphs:
 	- Binary Tree
 	- Balanced Tree
@@ -107,19 +108,12 @@ Public - Progress 25%
 	- Not included. Contact Psideralis for further information.
 ## Netstructures
 	- Not included. Contact Psideralis for further information.
-	- Uses Server Utilities.
 ## Cryptostructures
 	- Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math & Cryptographic Utilities.
-		- Hash Tables
-		- Cipher Multiple Linked Array Grids
-		- Cipher Multiple Linked Lists
-		- Non-Repudiational Multiple Linked Queues
-		- Non-Repudiational Multiple Linked Stacks
-		- Restricted Linked Multimaps
 ## Netcryptostructures
 	- Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math, Server & Cryptographic Utilities.
+	- Uses Psideralis Math & Cryptographic Utilities.
 ## Data Artifacts
 	- Not included. Contact Psideralis for further information.
 		- Data Constructs
@@ -129,7 +123,6 @@ Public - Progress 25%
 		- Data Constrictions
 ## Netartifacts
 	- Not included. Contact Psideralis for further information.
-	- Uses Server Utilities.
 ## Cryptoartifacts
 	- Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math & Cryptographic Utilities.
