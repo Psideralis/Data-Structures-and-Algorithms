@@ -24,3 +24,13 @@ A Javascript collection of data structures and classic algorithms.
         - RegExp
 
 ## Manual
+### Compilation
+
+### Installation
+
+### Uninstallation
+
+### Test
+
+### Benchmark
+

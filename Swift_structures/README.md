@@ -4,6 +4,7 @@ Psideralis
 ## License
 GNU General Public License 3.0 & Psideralis Copyright Commune Public License
 ## Description
+A Swift collection of data structures and classic algorithms.
 
 ## Data Types
 ### Native

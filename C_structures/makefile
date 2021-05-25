@@ -1,40 +1,38 @@
 
-ALL: BUILD RUN CLEAN
+ALL: build 
 
-LINUX_TEST:
+test:	
+ifeq ($(platform),LINUX)
 	gcc ./Test/test.c -o test -I ./
-	./test
-
-LINUX_BENCHMARK:
-	gcc ./Benchmark/benchmark.c -o benchmark -I ./
-	./benchmark
-
-WIN_TEST:
+else ifeq ($(platform),WINDOWS)
 	cl ./Test/test.c /Fe test /Zi -I ../
-	test.exe
+else ifeq ($(platform),MAC)
+	gcc ./Test/test.c -o test -I ./
+else
+	echo "NO PLATFORM."
+endif
 
-WIN_BENCHMARK:
+benchmark:
+ifeq ($(platform),LINUX)
+	gcc ./Benchmark/benchmark.c -o benchmark -I ./
+else ifeq ($(platform),WINDOWS)
 	cl ./Benchmark/benchmark.c/Fe benchmark /Zi -I ../
-	benchmark.exe
-	
-BUILD:
-	cl main.c /Fe main /Zi -I ../
+else ifeq ($(platform),MAC)
+	gcc ./Benchmark/benchmark.c -o benchmark -I ./
+else
+	echo "NO PLATFORM."	
+endif
 
-LINUX_BUILD:
+build:
+ifeq ($(platform),LINUX)
 	gcc main.c -o main -I ./
-
-RUN:
-	./main
-	
-WIN_CLEAN:
-	del test.obj
-	del benchmark.obj
-	del test.exe
-	del benchmark.exe
-
-LINUX_CLEAN:
-	rm test
-	rm benchmark
+else ifeq ($(platform),WINDOWS)
+	cl main.c /Fe main /Zi -I ../
+else ifeq ($(platform),MAC)
+	gcc main.c -o main -I ./
+else
+	echo "NO PLATFORM."	
+endif
 
 install:
 ifeq ($(platform),LINUX)
@@ -45,10 +43,11 @@ else ifeq ($(platform),MAC)
 
 else
 	echo "NO PLATFORM."
+endif
 
 
 uninstall:
-	ifeq ($(platform),LINUX)
+ifeq ($(platform),LINUX)
 
 else ifeq ($(platform),WINDOWS)
 
@@ -56,3 +55,4 @@ else ifeq ($(platform),MAC)
 
 else
 	echo "NO PLATFORM."
+endif

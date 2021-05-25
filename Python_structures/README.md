@@ -5,7 +5,57 @@ Psideralis
 GNU General Public License 3.0 & Psideralis Copyright Privative License
 ## Description
 
+### Types
+
+## Native
+    - str
+    - int
+    - float
+    - complex
+    - list - Mutable,Ordered []
+    - tuple - Unmutable,Ordered ()
+    - range
+    - dict {key: item,... }
+    - set - Unordered { }
+    - frozenset
+    - bool
+    - bytes
+    - bytearray
+    - memoryview
+
 ## Manual
+### Install
+
+    make build platform="LINUX" OR "WINDOWS" OR "MAC"
+    make install platform="LINUX" OR "WINDOWS" OR "MAC"
+
+    or
+
+    Windows:
+        install.bat
+
+    Linux & Mac:
+        install.sh
+
+### Uninstall
+
+    make uninstall platform="LINUX" OR "WINDOWS" OR "MAC"
+ 
+    or
+
+    Windows:
+        uninstall.bat
+
+    Linux & Mac:
+        uninstall.sh
+
+### Test
+    psi_test.py
+
+### Benchmark
+    psi_benchmark.py
+
+### Examples
     # usr/bin/python
 -------------------------------------------------------------------------
     param1 = {1,2,3,4,5}
@@ -148,11 +198,3 @@ GNU General Public License 3.0 & Psideralis Copyright Privative License
     myDigraph = myDigraph.indexSubstitution()
     myDigraph = myDigraph.ascendentSort()
 -------------------------------------------------------------------------
-
-### Installation
-
-### Uninstallation
-
-### Test
-
-### Benchmark

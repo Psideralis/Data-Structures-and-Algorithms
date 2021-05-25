@@ -2,9 +2,35 @@
 ## Author
 Psideralis
 ## License
-GNU General Public License 3.0 & Psideralis Copyright Privative License
+GNU General Public License 3.0 & Psideralis Commune Public License
 ## Description
+A C# collection of data structures and classic algorithms.
 
+## Types
+### Native
+    - byte
+    - sbyte 
+    - short
+    - ushort
+    - int
+    - uint
+    - long
+    - ulong
+    - float
+    - double
+    - decimal
+    - char
+    - bool
+    - object
+    - string
+    - DateTime
+
+### User defined:
+    - enum
+    - struct
+    - array
+    - pointers
+    
 ## Manual
 
 ### Installation

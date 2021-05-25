@@ -1,0 +1,5 @@
+/home/lit/VSCode/DataStructures&Algorithms/Data-Structures-and-Algorithms/CSharp_structures/obj/Debug/net5.0/CSharp_structures.csprojAssemblyReference.cache
+/home/lit/VSCode/DataStructures&Algorithms/Data-Structures-and-Algorithms/CSharp_structures/obj/Debug/net5.0/CSharp_structures.GeneratedMSBuildEditorConfig.editorconfig
+/home/lit/VSCode/DataStructures&Algorithms/Data-Structures-and-Algorithms/CSharp_structures/obj/Debug/net5.0/CSharp_structures.AssemblyInfoInputs.cache
+/home/lit/VSCode/DataStructures&Algorithms/Data-Structures-and-Algorithms/CSharp_structures/obj/Debug/net5.0/CSharp_structures.AssemblyInfo.cs
+/home/lit/VSCode/DataStructures&Algorithms/Data-Structures-and-Algorithms/CSharp_structures/obj/Debug/net5.0/CSharp_structures.csproj.CoreCompileInputs.cache
