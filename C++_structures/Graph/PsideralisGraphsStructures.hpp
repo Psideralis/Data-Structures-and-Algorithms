@@ -1,13 +1,13 @@
 #ifndef GRAPHPP_STRUCTS
 #define GRAPHPP_STRUCTS
 
-#include "../Graphs/BinaryTree.hpp"
-#include "../Graphs/CostDigraph.hpp"
-#include "../Graphs/CostGraph.hpp"
-#include "../Graphs/CostPantograph.hpp"
-#include "../Graphs/Digraph.hpp"
-#include "../Graphs/Graph.hpp"
-#include "../Graphs/Pantograph.hpp"
-#include "../Graphs/Tree.hpp"
+#include "BinaryTree.hpp"
+#include "CostDigraph.hpp"
+#include "CostGraph.hpp"
+#include "CostPantograph.hpp"
+#include "Digraph.hpp"
+#include "Graph.hpp"
+#include "Pantograph.hpp"
+#include "Tree.hpp"
 
 #endif

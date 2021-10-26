@@ -4,7 +4,7 @@ License: GNU GPL 3.0
 File name: Set.h
 Description: A set is a grouping of numeric
 elements or sets. It is not natively ordered
-and it have no repeated elements. 
+and it have no repeated elements.
 
 There is an OrderedSet in Psideralis math
 utilities if needed. For repeated elements
@@ -22,6 +22,9 @@ MACROS:
 
 STRUCTS:
     set_s
+    light_set_t
+    carrier_set_t
+    xcarrier_set_t
 ENUMS:
 
 TYPES:
@@ -67,6 +70,27 @@ FUNCTIONS:
 #ifndef SET_H
 #define SET_H
 
+/*
+Name: set_t	
+Description: A set struct.
+Properties:
+    size: an integer with the size of the set.
+    entry: a pointer to a map_t struct that holds
+        an integer with the position in the set
+        and the correspondent entry.
+    set_t_link: a void pointer for linking 
+        porposes.
+Memory load:
+
+            Defined     Full
+    int:    4bytes ->  same
+    map_t*: 8bytes ->  8bytes:key+8bytes:value+4bytes*keys+[4,12]*values;
+    void*:  8bites ->  uknown
+    Total:  20bytes->  min: 36bytes+4bytes*keys+[4,12]*values, max: uknown
+
+    2 000 000 000 int entries no link:
+       8GB (8 000 000 036 bytes)
+*/
 typedef struct set_s{
     int size;
     map_t* entry;
@@ -74,30 +98,95 @@ typedef struct set_s{
 }set_t;
 
 /*
-Name:	
-Description:
-Input:
-Output:
+Name: light_set_t	
+Description: A light set struct.
+Properties:
+    size: an integer with the size of the set.
+    entry: a void pointer to value. No indexing
+        included.
+    set_t_link: a void pointer for linking 
+        porposes.
+Memory load:
+
+            Defined     Full
+    int:    4bytes ->  same
+    void*:  8bytes ->  8bytes:entry+[4,8]*entries;
+    void*:  8bites ->  uknown
+    Total:  20bytes->  min: 28bytes+[4,8]*entries, max: uknown
+
+    2 000 000 000 int entries no link:
+       4GB (4 000 000 028)
+*/
+typedef struct light_set_s{
+    unsigned int size;
+    void* entry;
+    void* set_t_link;
+}light_set_s;
+
+/*
+Name: carrier_set_t	
+Description: A carrier set struct.
+Properties:
+    size: an long double size.
+    entry: a void pointer to value. No indexing
+        included.
+    set_t_link: a void pointer for linking 
+        porposes.
+Memory load:
+
+            Defined     Full
+    int:    4bytes ->  same
+    void*:  8bytes ->  8bytes:entry+[4,8]*entries;
+    void*:  8bites ->  uknown
+    Total:  20bytes->  min: 28bytes+[4,8]*entries, max: uknown
+
+    2 000 000 000 long double entries no link:
+       12GB (12 000 000 028)
+*/
+typedef struct carrier_set_s{
+    long double size;
+    void* entry;
+    void* set_t_link;
+}carrier_set_s;
+
+/*
+Name: set_emptySet
+Description: Initialize set_t with size defined
+    with index null values.
+Input: a set_t struct.
+Output: PSI_RET
+    NO_ERROR
+    NULLPTR_ERROR
+    NOTINIT_ERROR
 Example:
+
 */
 PSI_RET set_t_emptySet(set_t* self){
-    if(self->entry != NULL){
-        for(int i =0 ; i < self->size; i++){
-            self->entry->key[i] = i;
-            self->entry->value[i] = (void*)0;
+    if (self->size != 0){
+        if(self->entry != NULL){
+            for(int i = 0 ; i < self->size; i++){
+                self->entry->key[i] = i;
+                self->entry->value[i] = (void*)0;
+            }
+            return NO_ERROR;
+        }else {
+            return NULLPTR_ERROR;
         }
-        return NO_ERROR;
-    }else {
-        return NULLPTR_ERROR;
+    }else{
+        return NOTINIT_ERROR;
     }
 }
 
 /*
-Name:	
-Description:
-Input:
+Name: set_t_zero_alloc
+Description: Initialize set_t with null index
+    and null values if entry null, otherwise
+    entry null.
+Input: a set_t struct.
 Output:
+    NO_ERROR
 Example:
+
 */
 PSI_RET set_t_zero_alloc(set_t* self){
     if(self->entry != NULL){
@@ -113,47 +202,71 @@ PSI_RET set_t_zero_alloc(set_t* self){
 }
 
 /*
-Name:	
-Description:
-Input:
+Name: set_t_emptyKeys
+Description: Empty the keys of a set_t with size
+    defined, otherwise if entry not null keys
+    to zero.
+Input: a set_t struct.
 Output:
+    NO_ERROR
+    NULLPTR_ERROR
+    NOTINIT_ERROR
 Example:
+    
 */
 PSI_RET set_t_emptyKeys(set_t* self){
-    if(self->entry != NULL){
-        for(int i =0 ; i < self->size; i++){
-            self->entry->key[i] = 0;
+    if (self->size != 0){
+        if(self->entry != NULL){
+            for(int i =0 ; i < self->size; i++){
+                self->entry->key[i] = 0;
+            }
+            return NO_ERROR;
+        }else {
+            return NULLPTR_ERROR;
         }
-        return NO_ERROR;
-    }else {
-        return NULLPTR_ERROR;
+    }else{
+        return NOTINIT_ERROR;
     }
 }
 
 /*
-Name:	
-Description:
-Input:
+Name: set_t_emptyValues
+Description: Empty the values of a set_t with size
+    defined, otherwise if entry not null values
+    to zero.
+Input: a set_t struct.
 Output:
+    NO_ERROR
+    NULLPTR_ERROR
+    NOTINIT_ERROR
 Example:
 */
 PSI_RET set_t_emptyValues(set_t* self){
-    if(self->entry != NULL){
-        for(int i =0 ; i < self->size; i++){
-            self->entry->value[i] = (void*)0;
+    if (self->size != 0){
+        if(self->entry != NULL){
+            for(int i =0 ; i < self->size; i++){
+                self->entry->value[i] = (void*)0;
+            }
+            return NO_ERROR;
+        }else {
+            return NULLPTR_ERROR;
         }
-        return NO_ERROR;
-    }else {
-        return NULLPTR_ERROR;
+    }else{
+        return NOTINIT_ERROR;
     }
 }
 
 /*
-Name:	
-Description:
-Input:
+Name: set_t_null_init
+Description: Initialized a null set_t with used defined size
+    and void value entries, otherwise if set_t not null
+    resize and fill with void value entries.
+Input: a set_t struct and int with set size.
 Output:
+    NULLPTR_ERROR
+    NO_ERROR
 Example:
+
 */
 PSI_RET set_t_null_init(set_t* self, int size){ 
     if(self->entry != NULL){

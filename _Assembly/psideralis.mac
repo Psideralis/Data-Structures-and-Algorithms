@@ -1,0 +1,20 @@
+;/* *********************************************
+;Author: Psideralis
+;License: GNU GPL 3.0
+;File name: psideralis.mac
+;Description: Macros for NASM.
+;
+;TODO:
+;
+;********************************************* */ 
+
+%ifndef MACROS_MAC 
+    %define MACROS_MAC
+
+        %macro Get_PTR 1
+            push [%1]
+        %endmacro
+
+
+
+%endif

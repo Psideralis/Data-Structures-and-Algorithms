@@ -14,6 +14,22 @@ typedef enum PSI_BOOL_e{
     PSI_false = 0
 } PSI_BOOL;
 
+typedef enum PSI_RET_e{
+    _EXCP6 = 6,
+    _EXCP5 = 5,
+    _EXCP4 = 4,
+    _EXCP3 = 3,
+    _EXCP2 = 2,
+    ZERODIV_EXCP = 1,
+    NO_ERROR = 0,
+    NULLPTR_ERROR = -1,
+    CAST_ERROR = -2,
+    TYPE_ERROR = -3,
+    NOTINIT_ERROR = -4,
+    _ERROR5 = -5,
+    _ERROR6 = -6
+} PSI_RET;
+
 typedef char* PSI_string;
 typedef PSI_string* PSI_chord;
 
@@ -67,26 +83,8 @@ typedef struct NibbleFlag_s{
     unsigned char bit_flag4 : 1;    
 } NibbleFlas_t;
 
-typedef enum PSI_RET_e{
-    _EXCP6 = 6,
-    _EXCP5 = 5,
-    _EXCP4 = 4,
-    _EXCP3 = 3,
-    _EXCP2 = 2,
-    ZERODIV_EXCP = 1,
-    NO_ERROR = 0,
-    NULLPTR_ERROR = -1,
-    CAST_ERROR = -2,
-    TYPE_ERROR = -3,
-    _ERROR4 = -4,
-    _ERROR5 = -5,
-    _ERROR6 = -6
-} PSI_RET;
-
-/*
 #include "Dynamic/PsideralisDynamicStructures.h"
 #include "Graph/PsideralisGraphStructures.h"
-*/
 #include "Static/PsideralisStaticStructures.h"
 
 #endif

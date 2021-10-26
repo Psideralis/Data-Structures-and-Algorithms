@@ -32,7 +32,7 @@ Finish Nigthly 001:
         -Rust content
         --------------------- MILESTONE 5
     Option (?):
-	-Benchmark (Time,Space)
+	-Benchmark (Time,Space,Language,Collections)
 		-Numeric processing skeleton & formatting
 		-String processing skeleton & formatting
         -Alphanumeric processing skeleton & formatting

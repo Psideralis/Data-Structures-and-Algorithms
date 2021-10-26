@@ -1,0 +1,21 @@
+;/* *********************************************
+;Author: Psideralis
+;License: GNU GPL 3.0
+;File name: psideralis_S.mac
+;Description: Macros and process for MASM.
+;
+;TODO:
+;
+;********************************************* */ 
+
+IFNDEF MACROS_MAC
+    DEF MACROS_MAC
+
+        my_Macro MACROS_MAC
+
+        ENDM
+
+
+
+
+ENDIF

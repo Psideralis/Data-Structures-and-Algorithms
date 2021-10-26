@@ -39,6 +39,7 @@ A C collection of data structures and classic algorithms.
     - float
     - double
     - long double
+    - long long double
 
 ### User Defined:
     - unions

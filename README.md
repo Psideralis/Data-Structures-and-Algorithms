@@ -16,13 +16,13 @@ Public - Progress 25%
 	- C++			☐ 	25%
 	- C#			☐ 	2%
 	- Objective-C		☐ 	2%
-		- Objective-C++	☐ 
+	- Objective-C++		☐ 	2%
 	- Swift			☐ 	2%
 	- Java			☐ 	2%
 	- Python		☐ 	2%
 	- Ruby			☐ 	2%
 	- Typescript		☐ 	10%
-		- Javascript	☐
+	- Javascript		☐	2%
 ## Data Types
 	- Bit
 	- Byte
@@ -44,6 +44,7 @@ Public - Progress 25%
 		-Double
 	- Array*
 	- Tuple*
+	- Enum*
 	- Struct*
 	- Union*
 	- Object*

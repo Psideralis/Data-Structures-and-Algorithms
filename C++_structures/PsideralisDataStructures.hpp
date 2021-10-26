@@ -102,7 +102,7 @@ typedef enum PSI_RET_e{
 } PSI_RET;
 
 #include "Dynamic/PsideralisDynamicStructures.hpp"
-#include "Graphs/PsideralisGraphsStructures.hpp"
+#include "Graph/PsideralisGraphsStructures.hpp"
 #include "Static/PsideralisStaticStructures.hpp"
 
 #endif

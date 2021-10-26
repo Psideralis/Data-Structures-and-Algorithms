@@ -1,0 +1,20 @@
+;/* *********************************************
+;Author: Psideralis
+;License: GNU GPL 3.0
+;File name: 
+;Description: 
+;
+;TODO:
+;
+;********************************************* */ 
+
+.ifndef MACROS_MAC
+    .def MACROS_MAC
+
+        .macro my_Macro
+
+        .endm
+
+
+
+.endif
