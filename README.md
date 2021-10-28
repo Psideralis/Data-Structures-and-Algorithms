@@ -64,6 +64,7 @@ Public - Progress 25%
 	- Algebraic
 	- Geometric
 	- Statistical
+	- Analog Signal Processing
 	- Digital Signal Processing
 	- Artificial Intelligence
 
@@ -71,7 +72,7 @@ Public - Progress 25%
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
-	- Point2D, Point3D, Point4D, PointND	(Psideralis Math Utilities)
+	- Point2D, Point3D, Point4D, PointND		(Psideralis Math Utilities)
 	- Vector2D, Vector3D, Vector4D, VectorND	(Psideralis Math Utilities)
 	- Matrix2D, Matrix3D, Matrix4D, MatrixND	(Psideralis Math Utilities)
 	- TensorO3	(Psideralis Math Utilities)
@@ -112,7 +113,7 @@ Public - Progress 25%
 ### Non-classic Data Structures
 #### Media:
 	- Color
-	- Texture 2D, Texture 3D
+	- Texture2D, Texture3D, Texture4D
 	- Image
 	- UI Control
 	- Window
@@ -127,17 +128,18 @@ Public - Progress 25%
 	- Audio
 	- Equalizer
 	- Effects
-### Human Recognition:
+#### Human Recognition:
 	- Face
 	- Voice
+	- Movement
 ## Netstructures
-	- Structures that operate natively with the network via IP, port and certificate. Not included. Contact Psideralis for further information.
+- Structures that operate natively with the network via IP, port and certificate. Not included. Contact Psideralis for further information.
 ## Cryptostructures
-	- Structures that operate natively with security standards via trusted certificates and digital signatures. Not included. Contact Psideralis for further information.
-		- Uses Psideralis Math & Binary Utilities.
+- Structures that operate natively with security standards via trusted certificates and digital signatures. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math & Binary Utilities.
 ## Netcryptostructures
-	- Structures that operate natively with network and security standards. Not included. Contact Psideralis for further information.
-		- Uses Psideralis Math & Binary Utilities.
+- Structures that operate natively with network and security standards. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math & Binary Utilities.
 
 # DATA ARTIFACTS
 	Data artifact := Data Structures + Complex Structure + Complex Operations
@@ -148,13 +150,13 @@ Public - Progress 25%
 		- Data Conglomerates
 		- Data Constrictions
 ## Netartifacts
-	- Artifacts that operate natively with the network. Not included. Contact Psideralis for further information.
+- Artifacts that operate natively with the network. Not included. Contact Psideralis for further information.
 ## Cryptoartifacts
-	- Artifacts that operate natively with security standard. Not included. Contact Psideralis for further information.
-		- Uses Psideralis Math & Binary Utilities.
+- Artifacts that operate natively with security standard. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math & Binary Utilities.
 ## Netcryptoartifacts
-	- Artifacts that operate natively with network and security standards. Not included. Contact Psideralis for further information.
-		- Uses Psideralis Math & Binary Utilities.
+- Artifacts that operate natively with network and security standards. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math & Binary Utilities.
 
 # ALGORITHMS
 ## Classic Algorithms
