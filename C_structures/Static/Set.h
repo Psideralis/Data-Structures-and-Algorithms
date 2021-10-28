@@ -16,10 +16,10 @@ PENDANT:
 ********************************************* */ 
 
 /* *********************************************
-DEFINES:
-	SET_H
-MACROS:
+INCLUDES:
 
+MACROS:
+	SET_H
 STRUCTS:
     set_s
     light_set_t
@@ -92,7 +92,7 @@ Memory load:
        8GB (8 000 000 036 bytes)
 */
 typedef struct set_s{
-    int size;
+    unsigned int size;
     map_t* entry;
     void* set_t_link;
 }set_t;
@@ -120,8 +120,8 @@ Memory load:
 typedef struct light_set_s{
     unsigned int size;
     void* entry;
-    void* set_t_link;
-}light_set_s;
+    void* light_set_t_link;
+}light_set_t;
 
 /*
 Name: carrier_set_t	
@@ -146,8 +146,8 @@ Memory load:
 typedef struct carrier_set_s{
     long double size;
     void* entry;
-    void* set_t_link;
-}carrier_set_s;
+    void* carrier_set_t_link;
+}carrier_set_t;
 
 /*
 Name: set_emptySet

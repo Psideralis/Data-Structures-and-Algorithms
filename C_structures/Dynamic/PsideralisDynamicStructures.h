@@ -1,3 +1,23 @@
+/* *********************************************
+Author: Psideralis
+License: GNU GPL 3.0
+File name: PsideralisDynamictructures.hpp
+Description:
+********************************************* */ 
+
+/* *********************************************
+INCLUDES:
+
+MACROS:
+
+STRUCTS:
+
+ENUMS:
+
+TYPES:
+
+********************************************* */ 
+
 #ifndef DYNAMIC_C_STRUCTS
 #define DYNAMIC_C_STRUCTS
 

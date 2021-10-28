@@ -37,8 +37,6 @@ namespace CSharp_structures
         /* ATRIBUTES */
         int size;
         T[] entry;
-
-
         /* METHODS */
         void Main(string[] args)
         {

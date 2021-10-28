@@ -1,12 +1,12 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: Table.hpp
 Description:
 ********************************************* */ 
 
 /* *********************************************
-DEFINES:
+INCLUDES:
 
 MACROS:
 
@@ -21,11 +21,16 @@ TYPES:
 #define TABLE_C
 
 typedef struct cell_s{
-    void* value;    
+    unsigned int value_size;
+    void* value;
+    void* cell_t_link;   
 } cell_t;
 
 typedef struct table_s{
-    cell_t* cell[];    
+    int row_size;
+    int columns_size;
+    cell_t** cell;   
+    void* table_t_link;
 } table_t;
 
 #endif

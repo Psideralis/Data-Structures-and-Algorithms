@@ -1,5 +1,5 @@
-Entry 4/07/2020, 5/12/2020, 29/01/2021, 02/02/2021, 13/02/2021
-Finish Daily 001, 002, 003, 004, 005:
+Entry 4/07/2020, 5/12/2020, 29/01/2021, 02/02/2021, 13/02/2021, 26/10/21
+Finish Daily 001, 002, 003, 004, 005, 006:
     Pendent:
         - C skeleton & formating & README.md
         - C++ skeleton & formating & README.md
@@ -19,20 +19,19 @@ Finish Nigthly 001:
         -C content                          ☐
         -C++ content                        ☐
         --------------------- MILESTONE 1
-        -C# content                         
-        -Objective-C/C++ content            
+        -C# content                         ☐  
+        -Objective-C/C++ content            ☐
         --------------------- MILESTONE 2
         -Java content                       ☐
         -Python content                     ☐
-        -Swift content
+        -Swift content                      ☐
+        -Rust content                       ☐
         --------------------- MILESTONE 3
+        -Ryby content                       ☐
         -Javascript-Typescript content      ☐
-        --------------------- MILESTONE 4
-        -Ryby content
-        -Rust content
-        --------------------- MILESTONE 5
+
     Option (?):
-	-Benchmark (Time,Space,Language,Collections)
+	-Benchmark (Time,Space,Language,Collections,Compilers,Architectures,Operative Systems)
 		-Numeric processing skeleton & formatting
 		-String processing skeleton & formatting
         -Alphanumeric processing skeleton & formatting

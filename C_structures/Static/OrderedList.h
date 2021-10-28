@@ -1,12 +1,12 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: OrderedList.hpp
 Description:
 ********************************************* */ 
 
 /* *********************************************
-DEFINES:
+INCLUDES:
 
 MACROS:
 
@@ -21,7 +21,9 @@ TYPES:
 #define ORDEREDLIST_C
 
 typedef struct orderedList_s{
-
+    unsigned int entry_size;
+    map_t entry;
+    void* oderedList_t_link;
 } oderedList_t;
 
 #endif

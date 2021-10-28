@@ -1,3 +1,23 @@
+/* *********************************************
+Author: Psideralis
+License: GNU GPL 3.0
+File name: PsideralisGraphStructures.hpp
+Description:
+********************************************* */ 
+
+/* *********************************************
+INCLUDES:
+
+MACROS:
+
+STRUCTS:
+
+ENUMS:
+
+TYPES:
+
+********************************************* */ 
+
 #ifndef GRAPH_C_STRUCTS
 #define GRAPH_C_STRUCTS
 

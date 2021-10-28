@@ -6,7 +6,7 @@ Description:
 ********************************************* */ 
 
 /* *********************************************
-DEFINES:
+INCLUDES:
 
 MACROS:
 
@@ -20,9 +20,15 @@ TYPES:
 #ifndef MAP_C
 #define MAP_C
 
+typedef struct value_s{
+    unsigned int value_size;
+    void* value;
+    void* value_t_link;
+} value_t;
 typedef struct map_s{
-    int* key;
-    void** value;
+    unsigned int* key;
+    value_t* value;
+    void* map_t_link;
 } map_t;
 
 #endif

@@ -29,6 +29,7 @@ A C# collection of data structures and classic algorithms.
     - enum
     - struct
     - array
+    - record
     - pointers
     
 ## Manual

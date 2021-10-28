@@ -1,12 +1,12 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: Multimap.hpp
 Description:
 ********************************************* */ 
 
 /* *********************************************
-DEFINES:
+INCLUDES:
 
 MACROS:
 
@@ -17,16 +17,17 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
+
+#include "Map.h"
+
 #ifndef MULTIMAP_C
 #define MULTIMAP_C
 
-typedef struct value_s{
-    void* value;
-} value_t;
-
 typedef struct multiMap_s{
-    void* key;
+    unsigned int* key_size;
+    void* keys;
     value_t** entries;
+    void* multiMap_t_link;
 } multiMap_t;
 
 void multiMap_t_zinit(){}

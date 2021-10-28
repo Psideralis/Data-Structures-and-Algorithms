@@ -9,10 +9,10 @@ not have repeated elements.
 
 
 /* *********************************************
-DEFINES:
-	ARRAYLITS_H
-MACROS:
+INCLUDES:
 
+MACROS:
+	ARRAYLITS_H
 STRUCTS:
     arrayList_s
 ENUMS:
@@ -54,18 +54,20 @@ FUNCTIONS:
         TRANSMUTATIVE:
             combinatorics
 ********************************************* */ 
-#include "../PsideralisDataStructures.h"
 
 #ifndef ARRAYLIST_H
 #define ARRAYLIST_H
 
-typedef struct element_s{
+typedef struct arrayElement_s{
+    unsigned int item_size;
     void* item;
-}element_t;
+    void* arrayElement_t_link;
+}arrayElement_t;
 
 typedef struct arrayList_s{
-    int size = 0;
-    element_t* entry = (element_t* )NULL;
+    unsigned int arrayList_size;
+    arrayElement_t* entry;
+    void* arrayList_t_link;
 }arrayList_t;
 
 PSI_RET arrayList_t_new(arrayList_t* self, int size, element_t* entry){

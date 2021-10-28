@@ -8,9 +8,8 @@ GNU General Public License 3.0 & Psideralis Commune Public License
 ## Status
 Public - Progress 25%
 ## Description
-	Algorithm = Control structures + Data Structure + Operations
-		Data structure := Data Types + Structure
-		Data structure = Data structure + Algorithms
+	Algorithm = Control structures + Data Structures + Operations
+		Data structure := Data Types + Structures
 ## Languages
 	- C			☐ 	25%
 	- C++			☐ 	25%
@@ -21,8 +20,9 @@ Public - Progress 25%
 	- Java			☐ 	2%
 	- Python		☐ 	2%
 	- Ruby			☐ 	2%
-	- Typescript		☐ 	10%
+	- Rust			☐ 	2%
 	- Javascript		☐	2%
+	- Typescript		☐ 	10%
 ## Data Types
 	- Bit
 	- Byte
@@ -48,6 +48,7 @@ Public - Progress 25%
 	- Struct*
 	- Union*
 	- Object*
+	- Interface*
 *Not primitive data types but data elements in data structures.
 
 ## Control Structures
@@ -63,15 +64,17 @@ Public - Progress 25%
 	- Algebraic
 	- Geometric
 	- Statistical
+	- Digital Signal Processing
+	- Artificial Intelligence
 
-# ARTIFACTS
+# DATA STRUCTURES
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
 	- Point2D, Point3D, Point4D, PointND	(Psideralis Math Utilities)
 	- Vector2D, Vector3D, Vector4D, VectorND	(Psideralis Math Utilities)
 	- Matrix2D, Matrix3D, Matrix4D, MatrixND	(Psideralis Math Utilities)
-	- TensorO4	(Psideralis Math Utilities)
+	- TensorO3	(Psideralis Math Utilities)
 	- Set
 	- Ordered Set	(Psideralis Math Utilities)
 	- Tuple
@@ -105,31 +108,53 @@ Public - Progress 25%
 	- Graphs w/FunctionCost
 	- Digraphs w/FunctionCost
 	- Pantographs w/FunctionCost
+
 ### Non-classic Data Structures
-	- Not included. Contact Psideralis for further information.
+#### Media:
+	- Color
+	- Texture 2D, Texture 3D
+	- Image
+	- UI Control
+	- Window
+	- Graphic Enviroment
+	- Video
+	- Scene
+	- Light
+	- Vertex Sequencer
+	- Shader
+	- Tracer
+	- Filters
+	- Audio
+	- Equalizer
+	- Effects
+### Human Recognition:
+	- Face
+	- Voice
 ## Netstructures
-	- Not included. Contact Psideralis for further information.
+	- Structures that operate natively with the network via IP, port and certificate. Not included. Contact Psideralis for further information.
 ## Cryptostructures
-	- Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math & Cryptographic Utilities.
+	- Structures that operate natively with security standards via trusted certificates and digital signatures. Not included. Contact Psideralis for further information.
+		- Uses Psideralis Math & Binary Utilities.
 ## Netcryptostructures
-	- Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math & Cryptographic Utilities.
-## Data Artifacts
-	- Not included. Contact Psideralis for further information.
+	- Structures that operate natively with network and security standards. Not included. Contact Psideralis for further information.
+		- Uses Psideralis Math & Binary Utilities.
+
+# DATA ARTIFACTS
+	Data artifact := Data Structures + Complex Structure + Complex Operations
+	-  Not included. Contact Psideralis for further information.
 		- Data Constructs
 		- Data Architectures
 		- Data Complexes
 		- Data Conglomerates
 		- Data Constrictions
 ## Netartifacts
-	- Not included. Contact Psideralis for further information.
+	- Artifacts that operate natively with the network. Not included. Contact Psideralis for further information.
 ## Cryptoartifacts
-	- Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math & Cryptographic Utilities.
+	- Artifacts that operate natively with security standard. Not included. Contact Psideralis for further information.
+		- Uses Psideralis Math & Binary Utilities.
 ## Netcryptoartifacts
-	- Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math & Cryptographic Utilities.
+	- Artifacts that operate natively with network and security standards. Not included. Contact Psideralis for further information.
+		- Uses Psideralis Math & Binary Utilities.
 
 # ALGORITHMS
 ## Classic Algorithms
@@ -214,4 +239,4 @@ Public - Progress 25%
 	- Random grouped permutation
 
 ## Non-classic Algorithms
-	-Pendant
+	- Not included. Contact Psideralis for further information.

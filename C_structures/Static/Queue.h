@@ -1,12 +1,12 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: Queue.hpp
 Description:
 ********************************************* */ 
 
 /* *********************************************
-DEFINES:
+INCLUDES:
 
 MACROS:
 
@@ -21,7 +21,10 @@ TYPES:
 #define QUEUE_C
 
 typedef struct queue_s{
-    
+    void* base;
+    int** allocBlock_sizes;
+    void** allocBlock;
+    void* queue_t_link;
 } queue_t;
 
 #endif

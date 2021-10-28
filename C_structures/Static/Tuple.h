@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: Set.h
+File name: Tuple.h
 Description: A tuple is a grouping of mixed
 elements. It is not natively ordered and can
 have repeated elements.
@@ -10,7 +10,7 @@ have repeated elements.
 
 
 /* *********************************************
-DEFINES:
+INCLUDES:
 	TUPLE_H
 MACROS:
 
@@ -62,9 +62,9 @@ FUNCTIONS:
 #define TUPLE_H
 
 typedef struct tuple_s{
-    int size;
+    int tuple_size;
     map_t* entry;
-    void* set_t_link;
+    void* tuple_t_link;
 }tuple_t;
 
 #endif

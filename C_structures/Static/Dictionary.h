@@ -1,12 +1,12 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: Dictionary.hpp
 Description:
 ********************************************* */ 
 
 /* *********************************************
-DEFINES:
+INCLUDES:
 
 MACROS:
 
@@ -20,14 +20,16 @@ TYPES:
 #ifndef DICTIONARY_C
 #define DICTIONARY_C
 
-
-typedef struct value_s{
-    void* value;
-} value_t;
+typedef struct reference_s{
+    unsigned int entry_size;
+    char* entry;
+    void* reference_t_link;
+} reference_t;
 
 typedef struct dictionary_s{
-    int* key;
-    value_t** entries;
+    void* term;
+    reference_t* extension;
+    void* dictionary_t_link;
 } dictionary_t;
 
 void dictionary_t_zinit(){}
