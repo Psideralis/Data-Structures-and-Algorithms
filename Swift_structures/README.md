@@ -25,6 +25,8 @@ A Swift collection of data structures and classic algorithms.
     - Dictionaries
     - Enumerations
     - Structures
+    - Classes
+    - Protocols
 
 ## Manual
 

@@ -1,9 +1,0 @@
-:: UNINSTALL BATCH
-echo Uninstalling
-:: REMOVE ENVIROMENT VARIABLES
-set %PATH%=
-:: REMOVE DIRECTORIES
-rd 
-:: CONFIRM
-where 
-:: TEST

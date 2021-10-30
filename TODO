@@ -5,12 +5,11 @@ Finish Daily 001, 002, 003, 004, 005, 006:
         - C++ skeleton & formating & README.md
         - C# skeleton & formating & README.md
         - Objective-C skeleton & formating & README.md
-        - Objective-C++ skeleton & formating & README.md
-        - Java skeleton & formating & README.md
-        - Javascript-Typescript skeleton & formating & README.md
-        - Python skeleton & formating & README.md
         - Swift skeleton & formating & README.md
-        - Ruby skeleton & formating & README.md
+        - Java skeleton & formating & README.md
+        - Javascript skeleton & formating & README.md
+        - Typescript skeleton & formating & README.md
+        - Python skeleton & formating & README.md
         - Rust skeleton & formating & README.md
 
 Entry 14/12/2020
@@ -27,13 +26,12 @@ Finish Nigthly 001:
         -Swift content                      ☐
         -Rust content                       ☐
         --------------------- MILESTONE 3
-        -Ryby content                       ☐
         -Javascript-Typescript content      ☐
 
     Option (?):
-	-Benchmark (Time,Space,Language,Collections,Compilers,Architectures,Operative Systems)
+	-Benchmark (Time[Processing, Scheduling],Space[Memory],Language,Collections,Compilers,Architectures[64,ARM],Operative Systems[Windows, MacOS, Linux])
 		-Numeric processing skeleton & formatting
 		-String processing skeleton & formatting
         -Alphanumeric processing skeleton & formatting
-        -Struct processing skeleton & formatting  
+        -Struct processing skeleton & formatting
 		-Object processing skeleton & formatting

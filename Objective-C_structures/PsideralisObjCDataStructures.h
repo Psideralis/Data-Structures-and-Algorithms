@@ -51,5 +51,4 @@ typedef ptr_oword_t* ptr_hword_t[2];
 #include "Graph/PsideralisObjCGraphStructures.h"
 #include "Static/PsideralisObjCStaticStructures.h"
 
-
 #endif
