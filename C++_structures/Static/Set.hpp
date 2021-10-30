@@ -15,64 +15,51 @@ see Tuple or ArrayList.
 /* *********************************************
 DEFINES:
 	SET_HPP
-	STD
 MACROS:
 
 STRUCTS:
-
+	set.h
 ENUMS:
 
 TYPES:
-
-CLASSES:
-	Set<T>
+	Set
+OPERATORS:
+	+
+	=
+	*
+	/
+METHODS:
+	See PSICollection
 ********************************************* */ 
-
-#ifndef SET_HPP
-#define SET_HPP
 
 #include "Map.hpp"
 
-#ifndef STD
-#define STD
-    #include "stdlib.h"
-    #include "stdio.h"
-    #include "string"
-	#include <iostream>
-    using namespace std;
-#endif
-
-class Set {
+class Set : public PSICollection{
 	public:
 		/* CONSTRUCTORS */
 		Set(){};
-		int intType(int i){
-
-		}
-		double doubleType(double d){
-
-		}
-		Set setType(Set s){
-		}
+		int intType(int i);
+		double doubleType(double d);
+		Set setType(Set s);
 		template <typename T>
-		void push(T t) {}
+		void input(T in);
 		template <typename T, typename... Args>
-		void push(T t, Args... args) {
-			push(t);
-			push(args...);
+		void input(T t, Args... args_in) {
+			input(in);
+			input(args_in...);
 		}
 		template <typename T>
-		Set(T t){
-			push(t); 
+		Set(T in){
+			input(in);
 		};
 		template <typename T, typename... Args>
-		Set(T t, Args... args) {
-			push(t);
-			push(args...);
+		Set(T t, Args... args_in) {
+			input(in);
+			input(args_in...);
 		};
 		template<typename ... Args>   
-		Set(Args... args){
-			push(args);
+		Set(Args... args_in){
+			input(args_in);
 		};
 		~Set(){
 			this->counter = 0;
@@ -88,20 +75,10 @@ class Set {
 		int size;
 		int counter;
 		/* METHODS */
-		template <>
-		void push(int i){ intType(i); }
-		void push(double d){ doubleType(d); }
-		void push(Set s){ setType(s); }
 		// GETTER
-		template<class T>
-		T get_Item(size_t pos) {}
-		template<>	long get_Item(size_t pos) { return (integer.count(pos) != 0) ? integer[pos].to_long() : _NULL; }
-		template<>	std::string get_Item(size_t pos) { return (string.count(pos) != 0) ? string[pos].to_string() : "-1"; }
+		template<class T> T get_Item(size_t pos) {}
 		// SETTER
-		template<typename T>
-		void set_Item(size_t pos, T Item) { }
-		template<> 	void set_Item(size_t pos, long Item) { integer.at(pos) = Item; }
-		template<> 	void set_Item(size_t pos, int Item) { integer.at(pos) = Item; }
+		template<typename T> void set_Item(size_t pos, T Item) { }
 		/* OPERATORS */	
 		/*
 		Name:	
@@ -284,6 +261,14 @@ class Set {
 		void indexedGroupedPermuation();
 		void randomGroupedPermutation();
 	private:
-	protected:
 };
+
+template<> void Set::input(int i){ Set::intType(i); }
+template<> void Set::input(double d){ Set::doubleType(d); }
+template<> void Set::input(Set s){ Set::setType(s); }
+template<> void Set::set_Item(size_t pos, long Item) {}
+template<> void Set::set_Item(size_t pos, int Item) {}
+template<> long Set::get_Item(size_t pos) {}
+template<> std::string Set::get_Item(size_t pos) {}
+		
 #endif

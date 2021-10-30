@@ -1,9 +1,8 @@
 
-ALL: BUILD RUN
+ALL: BUILD
 
 BUILD:
-	tsc $(file).ts
-	tsc --module commonjs $(file).ts
+	tsc
 
 RUN:
 	node $(file).js
@@ -11,7 +10,11 @@ RUN:
 PUBLISH:
 	npm publish
 
-VERSIONS:
+VERSION_PATCH:
 	npm version patch
+
+VERSION_MINOR:
 	npm version minor
+
+VERSION_MAJOR:
 	npm version major

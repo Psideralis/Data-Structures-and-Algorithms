@@ -17,30 +17,48 @@ ENUMS:
 TYPES:
 
 ********************************************* */
-
 using System;
+using System.Collections.Generic;
 
-
-namespace CSharp_structures
+class PSISet<T> : IEnumerable<string>
 {
-    class Set<T>
+    public int size {get; set;}
+    public T[] entry;
+    private List<string> internalList = new List<string>();
+    public IEnumerator<string> GetEnumerator() => internalList.GetEnumerator();
+    System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() => internalList.GetEnumerator();
+    /* CONSTRUCTORS */
+    public PSISet(params T[] entry){
+        this.size = size;
+        this.entry = entry;
+    }
+    ~PSISet(){
+        this.size = 0;
+        this.entry = null;
+    }
+    public void Add(params T[] n)
     {
-        /* CONSTRUCTORS */
-        Set(int size, T[] entry){
-            this.size = size;
-            this.entry = entry;
+    }
+    public int this[int[] n]
+    {
+        get{
+            return 0;
+        } set{
+            
         }
-        ~Set(){
-            this.size = 0;
-            this.entry = null;
-        }
-        /* ATRIBUTES */
-        int size;
-        T[] entry;
-        /* METHODS */
-        void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");    
-        }
+    }
+    /* ATRIBUTES */
+
+    /* METHODS */
+}
+public class EXEC{
+    public static void Main(string[] args)
+    {
+        PSISet<object> MySet1 = new PSISet<object> {2,1,3};
+        PSISet<object> MySet2 = new PSISet<object> {'a',1,3};
+        PSISet<object> MySet3 = new PSISet<object> {{1,2,3},1,3};
+        PSISet<object> MySet4 = new PSISet<object> {'a',{1,"a"},3};
+        int[] n = new int[] {1,2,3};
+        int m = MySet4[n];
     }
 }

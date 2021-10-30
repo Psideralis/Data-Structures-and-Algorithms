@@ -23,17 +23,19 @@ A Typescript collection of data structures and classic algorithms.
 
 ## Manual
 ### Compilation
-    tsc
+    In root project folder:
+        tsc
 ### Installation
     Local:
-    npm install --save psi_collection
+        npm install --save psideralisdatastructures_ts_collection
     Global:
-    npm install -g psi_collection
+        npm install -g psideralisdatastructures_ts_collection
 ### Uninstallation
-    npm uninstall --save psi_collection
+        npm uninstall --save psideralisdatastructures_ts_collection
     Global:
-    npm uninstall -g psi_collection
+        npm uninstall -g psideralisdatastructures_ts_collection
 ### Test
-    node test.js
+    In /dist folder:
+        node test.js
 ### Benchmark
-    node benchmark.js
+        node benchmark.js

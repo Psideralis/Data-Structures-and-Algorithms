@@ -6,26 +6,28 @@ Description:
 ********************************************* */
 
 /* *********************************************
-DEFINES:
-
-MACROS:
-
+NAMESPACE:
+    PsideralisDataStructures_Primitives
+ENUMS:
+    BOOL_e
+    RET_e
 STRUCTS:
 
-ENUMS:
-
-TYPES:
+CLASSES:
+    PSI
+METHODS:
 
 ********************************************* */
 
-
 namespace PsideralisDataStructures_Primitives
 {
-    static public class PSI{
+    static public class PSI_Base{
+
         public enum BOOL_e{
             PSI_true = 1,
             PSI_false = 0
         };
+
         public enum RET_e{
             EOF_EXCP = 6,
             UNEXCPECTEDOUT_EXCP = 5,
@@ -41,5 +43,6 @@ namespace PsideralisDataStructures_Primitives
             NOTALLOC_ERROR = -5,
             NOTDEALLOC_ERROR = -6
         };
+        
     }
 }

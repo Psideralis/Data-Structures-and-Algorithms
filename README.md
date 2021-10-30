@@ -21,8 +21,8 @@ Public - Progress 25%
 	- Python		☐ 	2%
 	- Ruby			☐ 	2%
 	- Rust			☐ 	2%
-	- Javascript		☐	2%
-	- Typescript		☐ 	10%
+	- Javascript		☐	35%
+	- Typescript		☐ 	35%
 ## Data Types
 	- Bit
 	- Byte
@@ -111,6 +111,7 @@ Public - Progress 25%
 	- Pantographs w/FunctionCost
 
 ### Non-classic Data Structures
+- Not included. Contact Psideralis for further information.
 #### Media:
 	- Color
 	- Texture2D, Texture3D, Texture4D
@@ -122,15 +123,16 @@ Public - Progress 25%
 	- Scene
 	- Light
 	- Vertex Sequencer
+	- Mesher
 	- Shader
 	- Tracer
-	- Filters
+	- Filter
 	- Audio
 	- Equalizer
-	- Effects
 #### Human Recognition:
 	- Face
 	- Voice
+	- Body
 	- Movement
 ## Netstructures
 - Structures that operate natively with the network via IP, port and certificate. Not included. Contact Psideralis for further information.

@@ -1,6 +1,17 @@
 #ifndef STATICPP_STRUCTS
 #define STATICPP_STRUCTS
 
+#ifndef STD
+#define STD
+    #include <stdlib.h>
+    #include <stdarg.h>
+    #include <stdio.h>
+    #include <string>
+	#include <iostream>
+    #include <cstddef>
+    using namespace std;
+#endif
+
 #include "../Static/ArrayList.hpp"
 #include "../Static/BidimensionalArrayGrid.hpp"
 #include "../Static/BidimensionalGrid.hpp"

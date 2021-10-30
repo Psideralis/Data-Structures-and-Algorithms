@@ -13,13 +13,13 @@ A Javascript collection of data structures and classic algorithms.
     - Boolean
     - Object
     - Function
+    - Error
     - Undefined
 ### User Defined
     - Object
-        - Number
-        - String
-        - Boolean
         - Array
+        - ArrayBuffer
+        - Set
         - Math
         - RegExp
 
@@ -33,4 +33,3 @@ A Javascript collection of data structures and classic algorithms.
 ### Test
 
 ### Benchmark
-

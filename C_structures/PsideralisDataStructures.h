@@ -7,13 +7,9 @@ Description:
 
 /* *********************************************
 INCLUDES:
-    stdlib.h
-    stdio.h
-    string.h
-    stdarg.h
+    CSTD
 MACROS:
     PSIDERALIS_CSTRUCTS
-    CSTD
     PSI_NULL
 STRUCTS:
 
@@ -38,10 +34,11 @@ TYPES:
     ptr_oword_t
     ptr_hword_t
 FUNCTIONS:
-    asm_add
-    asm_res
-    asm_mul
-    asm_div
+    AsseblyOpertives.asm
+        asm_add
+        asm_res
+        asm_mul
+        asm_div
 ********************************************* */ 
 
 #ifndef PSIDERALIS_CSTRUCTS
@@ -49,10 +46,10 @@ FUNCTIONS:
 
 #ifndef CSTD
 #define CSTD
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdarg.h>
+    #include <stdlib.h>
+    #include <stdio.h>
+    #include <stdarg.h>
+    #include <string.h>
 #endif
 
 #define PSI_NULL ((void*)0);
@@ -66,6 +63,7 @@ typedef enum PSI_BOOL_e{
     PSI_true = 1,
     PSI_false = 0
 } PSI_BOOL_t;
+
 typedef enum PSI_RET_e{
     EOF_EXCP = 6,
     UNEXCPECTEDOUT_EXCP = 5,
@@ -81,8 +79,10 @@ typedef enum PSI_RET_e{
     NOTALLOC_ERROR = -5,
     NOTDEALLOC_ERROR = -6
 } PSI_RET_t;
+
 typedef char* PSI_string;
 typedef PSI_string* PSI_chord;
+
 typedef unsigned char byte_t;
 typedef byte_t word_t[2];
 typedef word_t dword_t[2];
