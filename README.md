@@ -14,12 +14,10 @@ Public - Progress 25%
 	- C			☐ 	25%
 	- C++			☐ 	25%
 	- C#			☐ 	2%
-	- Objective-C		☐ 	2%
-	- Objective-C++		☐ 	2%
+	- Objective-C(C++)		☐ 	2%
 	- Swift			☐ 	2%
 	- Java			☐ 	2%
 	- Python		☐ 	2%
-	- Ruby			☐ 	2%
 	- Rust			☐ 	2%
 	- Javascript		☐	35%
 	- Typescript		☐ 	35%

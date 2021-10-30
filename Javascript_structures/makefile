@@ -1,15 +1,15 @@
 
-ALL: BUILD
-
-BUILD:
-	tsc
+ALL: RUN
 
 RUN:
 	node $(file).js
-
+	
 TEST:
-	node Test.js
+	node ./Test/Test.js
 
+BENCHMARK:
+	node ./Benchmark/Benchmark.js
+	
 PUBLISH:
 	npm publish
 
