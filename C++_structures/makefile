@@ -1,6 +1,9 @@
 
 ALL: build 
 
+wasm:
+	emcc -I /usr/include/python3.7 PsideralisDataStructures.cpp -s STANDALONE_WASM -o PsideralisDataStructures.wasm
+
 test:	
 ifeq ($(platform),LINUX)
 	gcc ./Test/test.c -o test -I ./

@@ -52,6 +52,13 @@ FUNCTIONS:
     #include <string.h>
 #endif
 
+#ifndef CPYTHON
+#define CPYTHON
+    #define PY_SSIZE_T_CLEAN
+    #include <Python.h>
+#endif
+
+
 #define PSI_NULL ((void*)0);
 
 extern int asm_add(int a, int b);

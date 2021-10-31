@@ -104,16 +104,41 @@ METHODS:
 
 #ifndef STD
 #define STD
-#include <iostream>
-#include <string>
-#include <initializer_list>
+    #include <iostream>
+    #include <string>
+    #include <initializer_list>
 using namespace std;
-
-#define PSI_NULL ((void*)0);
+#endif
 
 #ifdef PSIDERALIS_CDT
     #include "PsideralisDataStructures.h"
 #endif
+
+#ifndef CPYTHON
+#define CPYTHON
+    #define PY_SSIZE_T_CLEAN
+    #include <python3.7/Python.h>
+    PyObject* tanh_impl(PyObject* /* unused module reference */, PyObject* o) {
+        double tanh_x = 0;
+        return PyFloat_FromDouble(tanh_x);
+    }
+    static PyMethodDef PsideralisDataStructures_methods[] = {
+        { "fast_tanh", (PyCFunction)tanh_impl, METH_O, nullptr },
+        { nullptr, nullptr, 0, nullptr }
+    };
+    static PyModuleDef PsideralisDataStructures_module = {
+        PyModuleDef_HEAD_INIT,
+        "PsideralisDataStructures",
+        "Provides some functions, but faster",
+        0,
+        PsideralisDataStructures_methods
+    };
+    PyMODINIT_FUNC PyInit_PsideralisDataStructures() {
+        return PyModule_Create(&PsideralisDataStructures_module);
+    }
+#endif
+
+#define PSI_NULL ((void*)0);
 
 typedef enum PSI_BOOL_e{
     PSI_true = 1,

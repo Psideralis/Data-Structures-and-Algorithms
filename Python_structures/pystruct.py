@@ -46,6 +46,10 @@ __maintainer__ = "Psideralis"
 __email__ = "psideralis@gmail.com"
 __status__ = "Development"
 
+from ctypes import cdll
+lib = cdll.LoadLibrary('./CPPPsideralisDataStructures.so')
+
+import js2py
 
 # STATIC STRUCTURES
 class Set:

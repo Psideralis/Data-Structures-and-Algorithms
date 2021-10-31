@@ -1,3 +1,8 @@
+WebAssembly.instantiateStreaming(fetch('PsideralisDataSturctures.wasm'), importObject)
+.then(results => {
+
+});
+
 function include(file) {
     var script  = document.createElement('script');
     script.src  = file;

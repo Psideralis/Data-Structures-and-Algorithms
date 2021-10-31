@@ -21,3 +21,9 @@ VERSION_MINOR:
 
 VERSION_MAJOR:
 	npm version major
+
+DYNAMIC_DLL:
+	node-gyp
+
+STATIC_DLL:
+	node-gyp

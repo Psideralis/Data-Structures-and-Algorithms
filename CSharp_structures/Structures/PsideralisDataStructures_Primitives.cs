@@ -18,11 +18,13 @@ CLASSES:
 METHODS:
 
 ********************************************* */
+using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
+using System.Runtime.InteropServices;
 
 namespace PsideralisDataStructures_Primitives
 {
     static public class PSI_Base{
-
         public enum BOOL_e{
             PSI_true = 1,
             PSI_false = 0
@@ -43,6 +45,27 @@ namespace PsideralisDataStructures_Primitives
             NOTALLOC_ERROR = -5,
             NOTDEALLOC_ERROR = -6
         };
-        
     }
+    public class PythonEngine{
+        [DllImport("JSPsideralisDataStructures.dll")]
+        public static extern object someTSFunction(object input);
+        [DllImport("JSPsideralisDataStructures.dll")]
+        public static extern object someJSFunction(object input);
+        [DllImport("CPPPsideralisDataStructures.dll")]
+        public static extern object someAsmFunction(object input);
+        [DllImport("CPPPsideralisDataStructures.dll")]
+        public static extern object someCFunction(object input);
+        [DllImport("CPPPsideralisDataStructures.dll")]
+        public static extern object someCppFunction(object input);
+        public void foo(){
+            ScriptEngine eng = Python.CreateEngine();
+            var scope = eng.CreateScope();
+            eng.Execute(@"
+            def greetings(name):
+                return 'Hello ' + name.title() + '!'
+            ", scope);
+            dynamic greetings = scope.GetVariable("greetings");
+            System.Console.WriteLine(greetings("world"));
+        }     
+    }      
 }

@@ -11,16 +11,15 @@ Public - Progress 25%
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
 ## Languages
-	- C			☐ 	25%
-	- C++			☐ 	25%
-	- C#			☐ 	2%
-	- Objective-C(C++)		☐ 	2%
-	- Swift			☐ 	2%
-	- Java			☐ 	2%
-	- Python		☐ 	2%
-	- Rust			☐ 	2%
-	- Javascript		☐	35%
+	- C			☐ 	25% + Interop: Assembly
+	- C++			☐ 	25% + Interop: C,Assembly
+	- C#			☐ 	2% + Interop: Typescript,Javascript,Python,C++,C,Assembly
+	- Python		☐ 	2% + Interop: Javascript,Assembly,C++,C
+	- Javascript		☐	35% + Interop: Typescript,Python,C++,C,Assembly
 	- Typescript		☐ 	35%
+	- Java			☐ 	2%
+	- Objective-C(C++)	☐ 	2%
+	- Swift			☐ 	2%
 ## Data Types
 	- Bit
 	- Byte

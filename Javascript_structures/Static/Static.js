@@ -8,8 +8,9 @@ Description:
 CLASSES:
 
 ********************************************* */ 
+package PSI_Static;
 
-class PSI_JS_Set{
+export class PSI_JS_Set{
     constructor(size, set){
         this.size = size;
         this.set = set;
