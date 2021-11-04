@@ -1,20 +1,13 @@
 ;/* *********************************************
 ;Author: Psideralis
 ;License: GNU GPL 3.0
-;File name: 
-;Description: 
+;File name: psideralis.mac
+;Description:
 ;
 ;TODO:
 ;
 ;********************************************* */ 
 
-.ifndef MACROS_MAC
-    .def MACROS_MAC
-
-        .macro my_Macro
-
-        .endm
-
-
-
-.endif
+INCLUDE psideralis_masm_static.mac
+INCLUDE psideralis_masm_dynamic.mac
+INCLUDE psideralis_masm_graph.mac

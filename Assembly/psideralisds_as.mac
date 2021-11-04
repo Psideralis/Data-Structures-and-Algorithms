@@ -1,0 +1,13 @@
+;/* *********************************************
+;Author: Psideralis
+;License: GNU GPL 3.0
+;File name: 
+;Description:
+;
+;TODO:
+;
+;********************************************* */ 
+
+.include "psideralis_as_static.mac"
+.include "psideralis_as_dynamic.mac"
+.include "psideralis_as_graph.mac"

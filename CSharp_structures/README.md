@@ -35,9 +35,22 @@ A C# collection of data structures and classic algorithms.
 ## Manual
 
 ### Installation
+    nuget Install-Package PsideralisSharpStructures
 
+    or
+
+    dotnet add package PsideralisSharpStructures
 ### Uninstallation
-
+    nuget Uninstall-Package  PsideralisSharpStructures
+    
+    or
+    
+    dotnet remove package PsideralisSharpStructures
 ### Test
-
+    cd Tools
+    cd Test
+    ./Test
 ### Benchmark
+    cd Tools
+    cd Benchmark
+    ./Benchmark

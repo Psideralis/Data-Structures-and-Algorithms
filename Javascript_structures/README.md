@@ -25,11 +25,20 @@ A Javascript collection of data structures and classic algorithms.
 
 ## Manual
 ### Compilation
-
+    make build
 ### Installation
-
+    Local:
+        npm install --save psideralisdatastructures_js_collection
+    Global:
+        npm install -g psideralisdatastructures_js_collection
 ### Uninstallation
-
+    Local:
+        npm uninstall --save psideralisdatastructures_js_collection
+    Global:
+        npm uninstall -g psideralisdatastructures_js_collection
 ### Test
-
+    In /Test folder:
+        node test.js
 ### Benchmark
+    In /Benchmark folder:
+        node benchmark.js

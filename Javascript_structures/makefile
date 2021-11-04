@@ -1,5 +1,5 @@
 
-ALL: RUN
+ALL: DYNAMIC_DLL
 
 RUN:
 	node $(file).js

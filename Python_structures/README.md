@@ -51,11 +51,18 @@ GNU General Public License 3.0 & Psideralis Copyright Privative License
 
 ### Test
     python psi_test.py
+    
+    or
+    cd Tools
     ./psi_test
 
 
 ### Benchmark
     python psi_benchmark.py
+    
+    or
+    
+    cd Benchmark
     ./psi_benchmark
 
 ### Examples

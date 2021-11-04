@@ -1,0 +1,13 @@
+;/* *********************************************
+;Author: Psideralis
+;License: GNU GPL 3.0
+;File name: psideralis_S.mac
+;Description:
+;
+;TODO:
+;
+;********************************************* */ 
+
+%include "psideralis_nasm_static.mac"
+%include "psideralis_nasm_dynamic.mac"
+%include "psideralis_nasm_graph.mac"
