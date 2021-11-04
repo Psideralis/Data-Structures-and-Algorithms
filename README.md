@@ -6,6 +6,7 @@ GNU General Public License 3.0 & Psideralis Commune Public License
 ## Version
 00.00.000.006
 ## Status
+UNFINISHED UNRELEASED
 Public - Progress 25%
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
@@ -26,7 +27,8 @@ Public - Progress 25%
 		-Oword
 	- Boolean
 	- Character
-	- String
+		- String
+		- Chord
 	- Numeric
 		-Unsigned
 		-Signed
