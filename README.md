@@ -4,22 +4,19 @@ Psideralis
 ## License
 GNU General Public License 3.0 & Psideralis Commune Public License
 ## Version
-00.00.000.005
+00.00.000.006
 ## Status
 Public - Progress 25%
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
 ## Languages
-	- C			☐ 	25% + Interop: Assembly
-	- C++			☐ 	25% + Interop: C,Assembly
-	- C#			☐ 	2% + Interop: Typescript,Javascript,Python,C++,C,Assembly
-	- Python		☐ 	2% + Interop: Javascript,Assembly,C++,C
-	- Javascript		☐	35% + Interop: Typescript,Python,C++,C,Assembly
+	- C			☐ 	25% + Interop: Assembly[extern]
+	- C++			☐ 	25% + Interop: Python[python.h, extern dll],C[extern dll],Assembly[extern dll]
+	- C#			☐ 	2%  + Interop: Typescript[dll],Javascript[dll],Python[IronPython, dll],C++[dll],C[dll],Assembly[dll]
+	- Python		☐ 	2%  + Interop: Typescript[dll, js2py],Javascript[dll, js2py],C#[dll],C++[dll],C[dll],Assembly[dll]
+	- Javascript		☐	35% + Interop: Typescript[nodejs],Python[dll],C++[wasm],C[wasm],Assembly[wasm]
 	- Typescript		☐ 	35%
-	- Java			☐ 	2%
-	- Objective-C(C++)	☐ 	2%
-	- Swift			☐ 	2%
 ## Data Types
 	- Bit
 	- Byte
@@ -46,6 +43,7 @@ Public - Progress 25%
 	- Union*
 	- Object*
 	- Interface*
+	- Delegate*
 *Not primitive data types but data elements in data structures.
 
 ## Control Structures
@@ -61,8 +59,7 @@ Public - Progress 25%
 	- Algebraic
 	- Geometric
 	- Statistical
-	- Analog Signal Processing
-	- Digital Signal Processing
+	- Analog/Digital Signal Processing
 	- Artificial Intelligence
 
 # DATA STRUCTURES
@@ -151,7 +148,7 @@ Public - Progress 25%
 ## Netartifacts
 - Artifacts that operate natively with the network. Not included. Contact Psideralis for further information.
 ## Cryptoartifacts
-- Artifacts that operate natively with security standard. Not included. Contact Psideralis for further information.
+- Artifacts that operate natively with security standards. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math & Binary Utilities.
 ## Netcryptoartifacts
 - Artifacts that operate natively with network and security standards. Not included. Contact Psideralis for further information.

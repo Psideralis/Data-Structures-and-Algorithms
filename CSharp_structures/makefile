@@ -1,6 +1,9 @@
 
 ALL: build 
 
+dll:
+	csc /t:library $(file).cs
+
 test:	
 ifeq ($(platform),LINUX)
 	csc /target:exe /out:test test.cs

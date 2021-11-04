@@ -12,11 +12,11 @@ GNU General Public License 3.0 & Psideralis Copyright Privative License
     - int
     - float
     - complex
-    - list - Mutable,Ordered []
-    - tuple - Unmutable,Ordered ()
+    - list
+    - tuple
     - range
-    - dict {key: item,... }
-    - set - Unordered { }
+    - dict
+    - set
     - frozenset
     - bool
     - bytes
@@ -50,10 +50,13 @@ GNU General Public License 3.0 & Psideralis Copyright Privative License
         uninstall.sh
 
 ### Test
-    psi_test.py
+    python psi_test.py
+    ./psi_test
+
 
 ### Benchmark
-    psi_benchmark.py
+    python psi_benchmark.py
+    ./psi_benchmark
 
 ### Examples
     # usr/bin/python

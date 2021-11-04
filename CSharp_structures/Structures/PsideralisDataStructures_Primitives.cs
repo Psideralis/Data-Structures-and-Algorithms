@@ -57,6 +57,8 @@ namespace PsideralisDataStructures_Primitives
         public static extern object someCFunction(object input);
         [DllImport("CPPPsideralisDataStructures.dll")]
         public static extern object someCppFunction(object input);
+        [DllImport("PyPsideralisDataStructures.dll")]
+        public static extern object somePyFunction(object input);
         public void foo(){
             ScriptEngine eng = Python.CreateEngine();
             var scope = eng.CreateScope();

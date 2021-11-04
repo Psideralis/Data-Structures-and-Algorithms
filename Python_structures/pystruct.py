@@ -8,30 +8,6 @@
 # *********************************************
 #CLASSES:
 
-# CLASSICAL DATA STRUCTURES
-    # STATIC STRUCTURES
-        # Set
-        # List
-        # ArrayList
-        # Ordered List
-        # Stack
-        # Queues
-        # Dictionary
-        # Multimap
-    # DYNAMIC STRUCTURES
-        # Linked Lists
-        # Double Linked Lists
-        # Generalized Linked Lists
-        # Dynamic Table
-        # Heap
-        # Stack
-        # Dynamic Queues
-        # Dynamic Multimap
-    # GRAPHS
-        # Binary Tree
-        # Balanced Tree
-    	# Graphs
-        # Digraphs  
 #*********************************************  
 
 #!/usr/bin/env python
@@ -47,9 +23,14 @@ __email__ = "psideralis@gmail.com"
 __status__ = "Development"
 
 from ctypes import cdll
-lib = cdll.LoadLibrary('./CPPPsideralisDataStructures.so')
+lib = cdll.LoadLibrary('./PsideralisDataStructures.dll')
 
 import js2py
+f = js2py.eval_js( "function $(name) {return name.length}" )
+f = js2py.eval_js()
+js2py.translate_file('example.js', 'example.py')
+#from example import example
+js = js2py.eval_js('d = {a:1, b:2}')
 
 # STATIC STRUCTURES
 class Set:

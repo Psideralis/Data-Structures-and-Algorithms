@@ -4,29 +4,19 @@ Finish Daily 001, 002, 003, 004, 005, 006:
         - C skeleton & formating & README.md
         - C++ skeleton & formating & README.md
         - C# skeleton & formating & README.md
-        - Objective-C skeleton & formating & README.md
-        - Swift skeleton & formating & README.md
-        - Java skeleton & formating & README.md
         - Javascript skeleton & formating & README.md
         - Typescript skeleton & formating & README.md
         - Python skeleton & formating & README.md
-        - Rust skeleton & formating & README.md
-
+ 
 Entry 14/12/2020
 Finish Nigthly 001:
     Pendant:
         -C content                          ☐
         -C++ content                        ☐
-        --------------------- MILESTONE 1
         -C# content                         ☐  
-        -Objective-C/C++ content            ☐
-        --------------------- MILESTONE 2
-        -Java content                       ☐
-        -Python content                     ☐
-        -Swift content                      ☐
-        -Rust content                       ☐
-        --------------------- MILESTONE 3
         -Javascript-Typescript content      ☐
+        -Python content                     ☐
+        --------------------- MILESTONE 1
 
     Option (?):
 	-Benchmark (Time[Processing, Scheduling],Space[Memory],Language,Collections,Compilers,Architectures[64,ARM],Operative Systems[Windows, MacOS, Linux])

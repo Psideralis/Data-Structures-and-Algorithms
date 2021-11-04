@@ -36,6 +36,7 @@ A Typescript collection of data structures and classic algorithms.
         npm uninstall -g psideralisdatastructures_ts_collection
 ### Test
     In /dist folder:
-        node test.js
+        node ./Test/test.js
 ### Benchmark
-        node benchmark.js
+    In /dist folder:
+        node ./Benchmark/benchmark.js

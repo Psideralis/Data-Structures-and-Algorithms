@@ -1,1 +1,0 @@
-var PSITSDataStructures = require('./dist/PsideralisDataStructures.js');
