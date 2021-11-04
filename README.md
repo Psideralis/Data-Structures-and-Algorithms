@@ -12,12 +12,12 @@ Public - Progress 25%
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
 ## Languages
-	- C			☐ 	25% + Interop: Assembly[extern]
-	- C++			☐ 	25% + Interop: Python[python.h, extern dll],C[extern dll],Assembly[extern dll]
-	- C#			☐ 	2%  + Interop: Typescript[dll],Javascript[dll],Python[IronPython, dll],C++[dll],C[dll],Assembly[dll]
-	- Python		☐ 	2%  + Interop: Typescript[dll, js2py],Javascript[dll, js2py],C#[dll],C++[dll],C[dll],Assembly[dll]
-	- Javascript		☐	35% + Interop: Typescript[nodejs],Python[dll],C++[wasm],C[wasm],Assembly[wasm]
-	- Typescript		☐ 	35%
+- C			☐ 	25% + Interop: Assembly[extern]
+- C++			☐ 	25% + Interop: Python[python.h, extern dll],C[extern dll],Assembly[extern dll]
+- C#			☐ 	2%  + Interop: Typescript[dll],Javascript[dll],Python[IronPython, dll],C++[dll],C[dll],Assembly[dll]
+- Python		☐ 	2%  + Interop: Typescript[dll, js2py],Javascript[dll, js2py],C#[dll],C++[dll],C[dll],Assembly[dll]
+- Javascript		☐	35% + Interop: Typescript[nodejs],Python[dll],C++[wasm],C[wasm],Assembly[wasm]
+- Typescript		☐ 	35%
 ## Data Types
 	- Bit
 	- Byte
