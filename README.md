@@ -8,6 +8,10 @@ GNU General Public License 3.0 & Psideralis Commune Public License
 ## Status
 UNFINISHED UNRELEASED
 Public - Progress 25%
+CURRENTLY WORKING ON
+C and C++
+NEXT...
+C# and Javascript/Typescript
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
