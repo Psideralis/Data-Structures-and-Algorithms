@@ -58,6 +58,19 @@ A C collection of data structures and classic algorithms.
         TODO
     */
 
+### Shared Library
+#### Static
+
+    PsideralisDataStructures.lib: Windows
+    PsideralisDataStructures.s: Linux & Android & MacOS & iOS
+
+#### Dynamic
+
+    PsideralisDataStructures.dll: Windows
+    PsideralisDataStructures.so: Linux & Android
+    PsideralisDataStructures.dylib: MacOS & iOS
+
+
 ### Install
 
     make build platform="LINUX" OR "WINDOWS" OR "MAC"

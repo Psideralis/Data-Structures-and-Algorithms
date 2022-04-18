@@ -2,7 +2,7 @@
 ## Author
 Psideralis
 ## License
-GNU General Public License 3.0 & Psideralis Commune Public License
+Psideralis Commune Public License
 ## Version
 00.00.000.007
 ## Status
@@ -12,12 +12,31 @@ Public - Progress 25%
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
 ## Languages
-- C			☐ 	25% + Interop: Assembly[extern]
-- C++			☐ 	25% + Interop: Python[python.h, extern dll],C[extern dll],Assembly[extern dll]
-- C#			☐ 	2%  + Interop: Typescript[dll],Javascript[dll],Python[IronPython, dll],C++[dll],C[dll],Assembly[dll]
-- Python		☐ 	2%  + Interop: Typescript[dll, js2py],Javascript[dll, js2py],C#[dll],C++[dll],C[dll],Assembly[dll]
-- Javascript		☐	35% + Interop: Typescript[nodejs],Python[dll],C++[wasm],C[wasm],Assembly[wasm]
-- Typescript		☐ 	35%
+	- C					☐  45%
+	- C++				☐  45%
+	- C#				☐  25%
+	- Python			☐  25%
+	- Javascript		☐  15% 
+	- Typescript		☐  15%
+	- Java				☐   2%
+	- Ruby				☐   2%
+	- Rust				☐   2%
+	- Swift				☐   2%
+	- Objective-C		☐   2%
+	- Fortran
+##	Interops
+	- C: Assembly
+	- C++: Assembly, C, Python, Java, Rust	
+	- C#: Assembly, C, C++, Python, Javascript, Typescript, Java, Rust
+	- Python: Assembly, C, C++, C#, Javascript, Typescript, Java, Rust
+	- Javascript: Assembly, C, C++, C#, Javascript, Typescript, Java, Rust		
+	- Typescript: Assembly, C, C++, C#, Javascript, Typescript, Java, Rust		
+	- Java: Assembly, C, C++				
+	- Ruby: Assembly, C, C++, C#		
+	- Rust: Assembly, C, C++, C#, Python, Javascript, Typescript				
+	- Swift: Assembly, C, C++	
+	- Objective-C: Assembly, C, C++	
+	- Fortran: Assembly, C, C++
 ## Data Types
 	- Bit
 	- Byte
@@ -46,6 +65,12 @@ Public - Progress 25%
 	- Object*
 	- Interface*
 	- Delegate*
+	- Protocol*
+	- Function*
+	- Process*
+	- Macro*
+	- Event*
+	- Agent*
 *Not primitive data types but data elements in data structures.
 
 ## Control Structures
@@ -57,25 +82,26 @@ Public - Progress 25%
 
 ## Operations
 	- Logical
-	- Arithmetical
+	- Arithmetic
 	- Algebraic
 	- Geometric
 	- Statistical
 	- Analog/Digital Signal Processing
 	- Artificial Intelligence
+	- Domain Specific
 
 # DATA STRUCTURES
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
-	- Point2D, Point3D, Point4D, PointND		(Psideralis Math Utilities)
-	- Vector2D, Vector3D, Vector4D, VectorND	(Psideralis Math Utilities)
-	- Matrix2D, Matrix3D, Matrix4D, MatrixND	(Psideralis Math Utilities)
-	- TensorO3	(Psideralis Math Utilities)
+	- Point2D, Point3D, Point4D, PointND				(Psideralis Math Utilities)
+	- Vector2D, Vector3D, Vector4D, VectorND			(Psideralis Math Utilities)
+	- Matrix2D, Matrix3D, Matrix4D, MatrixND			(Psideralis Math Utilities)
+	- 3DTensorO2, 3DTensorO3, 3DTensorO4, 3DTensorON	(Psideralis Math Utilities)
 	- Set
-	- Ordered Set	(Psideralis Math Utilities)
-	- Tuple
-	- Ordered Tuple	(Psideralis Math Utilities)
+	- Ordered Set										(Psideralis Math Utilities)
+	- Tuple [Ordered Pair]
+	- Ordered Tuple										(Psideralis Math Utilities)
 	- Array List
 	- Ordered List
 	- Stack
@@ -109,27 +135,33 @@ Public - Progress 25%
 ### Non-classic Data Structures
 - Not included. Contact Psideralis for further information.
 #### Media:
-	- Color
-	- Texture2D, Texture3D, Texture4D
 	- Image
-	- UI Control
-	- Window
-	- Graphic Enviroment
 	- Video
+	- UI Control (Widget)
+	- Window
+	- Graphic Desktop Enviroment
+	- Color (RGB,RGBA,HSLA)
+	- Texture2D, Texture3D, Texture4D
+	- Material
+	- Color (RGB,RGBA)
+	- Texture2D, Texture3D, Texture4D
 	- Scene
+	- Camera
 	- Light
 	- Vertex Sequencer
 	- Mesher
 	- Shader
 	- Tracer
-	- Filter
 	- Audio
+	- Audio Filter
+	- Audio Smapler
 	- Equalizer
-#### Human Recognition:
+#### Human Recognition & Robotics:
 	- Face
 	- Voice
 	- Body
-	- Movement
+	- Movement (Joints)
+	
 ## Netstructures
 - Structures that operate natively with the network via IP, port and certificate. Not included. Contact Psideralis for further information.
 ## Cryptostructures
@@ -137,23 +169,6 @@ Public - Progress 25%
 	- Uses Psideralis Math & Binary Utilities.
 ## Netcryptostructures
 - Structures that operate natively with network and security standards. Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math & Binary Utilities.
-
-# DATA ARTIFACTS
-	Data artifact := Data Structures + Complex Structure + Complex Operations
-	-  Not included. Contact Psideralis for further information.
-		- Data Constructs
-		- Data Architectures
-		- Data Complexes
-		- Data Conglomerates
-		- Data Constrictions
-## Netartifacts
-- Artifacts that operate natively with the network. Not included. Contact Psideralis for further information.
-## Cryptoartifacts
-- Artifacts that operate natively with security standards. Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math & Binary Utilities.
-## Netcryptoartifacts
-- Artifacts that operate natively with network and security standards. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math & Binary Utilities.
 
 # ALGORITHMS
@@ -240,3 +255,24 @@ Public - Progress 25%
 
 ## Non-classic Algorithms
 	- Not included. Contact Psideralis for further information.
+
+# ARTEFACTUM DATAE
+	Data artifact := Data Structures + Complex Structure + Complex Operations
+-  Not included. Contact Psideralis for further information.
+	- Data Constructs
+	- Data Architectures
+	- Data Complexes
+	- Data Conglomerates
+	- Data Constrictions
+## Netartifacts
+- Artifacts that operate natively with the network. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math Utilities & Binary Toolkit.
+## Cryptoartifacts
+- Artifacts that operate natively with security standards. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math Utilities & Binary Toolkit.
+## Netcryptoartifacts
+- Artifacts that operate natively with network and security standards. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math Utilities & Binary Toolkit.
+## Artefactum Datae Algorithms
+- Artifacts alrogithms that operate natively in artifacts for transactions and operations. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math Utilities & Binary Toolkit.

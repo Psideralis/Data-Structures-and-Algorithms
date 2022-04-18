@@ -23,7 +23,10 @@ VERSION_MAJOR:
 	npm version major
 
 DYNAMIC_DLL:
-	node-gyp
+	node-gyp configure
 
 STATIC_DLL:
-	node-gyp
+	node-gyp configure
+
+WASM:
+	em++ -std=c++11 $(file).cpp -Os -s WASM=1 -s SIDE_MODULE=1 -o $(file).wasm

@@ -67,4 +67,24 @@ typedef struct tuple_s{
     void* tuple_t_link;
 }tuple_t;
 
+void tuple_t_zinit(){}
+void tuple_t_init(){}
+void tuple_t_new(){}
+void tuple_t_del(){}
+void tuple_t_get(){}
+void tuple_t_emptyTuple(){}
+void tuple_t_resizeEmptyTuple(){}
+void tuple_t_isempty(){}
+void tuple_t_getSize(){}
+void tuple_t_setSize(){}
+void tuple_t_getKey(){}
+void tuple_t_setKey(){}
+void tuple_t_addKey(){}
+void tuple_t_delKey(){}
+void tuple_t_getValue(){}
+void tuple_t_setValue(){}
+void tuple_t_addValue(){}
+void tuple_t_delValue(){}
+void tuple_t_exchangeValue(){}
+
 #endif

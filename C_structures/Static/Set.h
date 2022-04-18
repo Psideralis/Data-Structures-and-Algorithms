@@ -84,8 +84,8 @@ Memory load:
 
             Defined     Full
     int:    4bytes ->  same
-    map_t*: 8bytes ->  8bytes:key+8bytes:value+4bytes*keys+[4,12]*values;
-    void*:  8bites ->  uknown
+    map_t*: 8bytes ->  8bytes:key+8bytes:value+4bytes*keys+[4,12]bytes*values;
+    void*:  8bites ->  unknown
     Total:  20bytes->  min: 36bytes+4bytes*keys+[4,12]*values, max: uknown
 
     2 000 000 000 int entries no link:
@@ -146,6 +146,33 @@ Memory load:
 typedef struct carrier_set_s{
     long double size;
     void* entry;
+    void* carrier_set_t_link;
+}carrier_set_t;
+
+/*
+Name: xcarrier_set_t	
+Description: A carrier set struct.
+Properties:
+    size: an long double size.
+    entry: a pointer to a map_t struct that holds
+        an integer with the position in the set
+        and the correspondent entry.
+    set_t_link: a void pointer for linking 
+        porposes.
+Memory load:
+
+            Defined     Full
+    int:    4bytes ->  same
+    void*:  8bytes ->  8bytes:entry+[4,8]*entries;
+    void*:  8bites ->  uknown
+    Total:  20bytes->  min: 28bytes+[4,8]*entries, max: uknown
+
+    2 000 000 000 long double entries no link:
+       12GB (12 000 000 028)
+*/
+typedef struct carrier_set_s{
+    long double size;
+    map_t* entry;
     void* carrier_set_t_link;
 }carrier_set_t;
 

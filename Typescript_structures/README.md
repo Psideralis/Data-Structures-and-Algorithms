@@ -14,6 +14,7 @@ A Typescript collection of data structures and classic algorithms.
     - Void
     - Null
     - Undefined
+    - Any
 ### User Defined
     - Enumerations
     - Classes

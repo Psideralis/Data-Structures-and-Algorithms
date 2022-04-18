@@ -22,6 +22,7 @@ A C# collection of data structures and classic algorithms.
     - char
     - bool
     - object
+    - dynamic
     - string
     - DateTime
 

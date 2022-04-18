@@ -1,7 +1,36 @@
-WebAssembly.instantiateStreaming(fetch('PsideralisDataSturctures.wasm'), importObject)
-.then(results => {
+/*
+extern "C" {
+    // Wrapper for our JavaScript function
+    extern void consoleLog(int sum);
+    int Sum(int a, int b) {
+    int sum = a + b;
+    consoleLog(sum);
+    return sum;
+    }
+}
+*/
+
+const importObject = {
+    env: {
+        consoleLog: console.log,
+    }
+};
+
+WebAssembly.instantiateStreaming(
+    fetch('PsideralisDataSturctures.wasm'),
+    importObject
+    ).then(result => {
+    const Sum = result.instance.exports.Sum;
 
 });
+
+var ffi = require('ffi');
+
+var libm = ffi.Library('libm', {
+    'ceil': [ 'double', [ 'double' ] ]
+});
+
+libm.ceil(1.5); // 2
 
 function include(file) {
     var script  = document.createElement('script');

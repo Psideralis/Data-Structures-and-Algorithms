@@ -11,6 +11,7 @@ INCLUDES:
 MACROS:
     PSIDERALIS_CSTRUCTS
     PSI_NULL
+    CPYTHON
 STRUCTS:
 
 ENUMS:
@@ -34,8 +35,18 @@ TYPES:
     ptr_oword_t
     ptr_hword_t
 FUNCTIONS:
-    AsseblyOpertives.asm
         asm_add
+        asm_unsigned_add
+        asm_128_add
+        asm_128_unsigned_add
+        asm_256_add
+        asm_256_unsigned_add
+        asm_512_add
+        asm_512_unsigned_add
+        asm_1024_add
+        asm_1024_unsigned_add
+        asm_2048_add
+        asm_2048_unsigned_add
         asm_res
         asm_mul
         asm_div
@@ -52,12 +63,13 @@ FUNCTIONS:
     #include <string.h>
 #endif
 
+/*
 #ifndef CPYTHON
 #define CPYTHON
     #define PY_SSIZE_T_CLEAN
     #include <Python.h>
 #endif
-
+*/
 
 #define PSI_NULL ((void*)0);
 
