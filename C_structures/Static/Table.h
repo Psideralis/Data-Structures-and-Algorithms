@@ -16,6 +16,39 @@ ENUMS:
 
 TYPES:
 
+FUNCTIONS:
+    BASICS
+        zero_alloc
+        null_init
+        range_init
+            int
+            double
+        init
+            int
+            double
+            set_t
+        new
+            args_list
+        dealloc
+        del
+    MISCELANEOUS
+        empty
+        set
+        get
+        resizeEmpty
+        resizeZero
+    ALGORITHMS
+        INMUTATIVE:
+            search
+            selection
+        MUTATIVE:
+            setter
+            addition or remove
+            exchange
+            substitution
+            classification
+        TRANSMUTATIVE:
+            combinatorics
 ********************************************* */ 
 #ifndef TABLE_C
 #define TABLE_C
@@ -33,24 +66,62 @@ typedef struct table_s{
     void* table_t_link;
 } table_t;
 
-void table_t_zinit(){}
-void table_t_init(){}
-void table_t_new(){}
-void table_t_del(){}
-void table_t_get(){}
-void table_t_emptyTable(){}
-void table_t_resizeEmptyTable(){}
-void table_t_isempty(){}
-void table_t_getSize(){}
-void table_t_setSize(){}
-void table_t_getKey(){}
-void table_t_setKey(){}
-void table_t_addKey(){}
-void table_t_delKey(){}
-void table_t_getValue(){}
-void table_t_setValue(){}
-void table_t_addValue(){}
-void table_t_delValue(){}
-void table_t_exchangeValue(){}
+PSI_RET_t table_t_zinit(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_init(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_new(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_del(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_get(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_emptyTable(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_resizeEmptyTable(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_isempty(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_getSize(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_setSize(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_getKey(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_setKey(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_addKey(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_delKey(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_getValue(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_setValue(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_addValue(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_delValue(table_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t table_t_exchangeValue(table_t* self){
+    return NO_ERROR;
+}
 
 #endif

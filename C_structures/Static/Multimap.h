@@ -16,6 +16,39 @@ ENUMS:
 
 TYPES:
 
+FUNCTIONS:
+    BASICS
+        zero_alloc
+        null_init
+        range_init
+            int
+            double
+        init
+            int
+            double
+            set_t
+        new
+            args_list
+        dealloc
+        del
+    MISCELANEOUS
+        empty
+        set
+        get
+        resizeEmpty
+        resizeZero
+    ALGORITHMS
+        INMUTATIVE:
+            search
+            selection
+        MUTATIVE:
+            setter
+            addition or remove
+            exchange
+            substitution
+            classification
+        TRANSMUTATIVE:
+            combinatorics
 ********************************************* */ 
 
 #include "Map.h"
@@ -30,24 +63,62 @@ typedef struct multiMap_s{
     void* multiMap_t_link;
 } multiMap_t;
 
-void multiMap_t_zinit(){}
-void multiMap_t_init(){}
-void multiMap_t_new(){}
-void multiMap_t_del(){}
-void multiMap_t_get(){}
-void multiMap_t_emptyMultiMap(){}
-void multiMap_t_resizeEmptyMultiMap(){}
-void multiMap_t_isempty(){}
-void multiMap_t_getSize(){}
-void multiMap_t_setSize(){}
-void multiMap_t_getKey(){}
-void multiMap_t_setKey(){}
-void multiMap_t_addKey(){}
-void multiMap_t_delKey(){}
-void multiMap_t_getValue(){}
-void multiMap_t_setValue(){}
-void multiMap_t_addValue(){}
-void multiMap_t_delValue(){}
-void multiMap_t_exchangeValue(){}
+PSI_RET_t multiMap_t_zinit(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_init(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_new(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_del(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_get(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_emptyMultiMap(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_resizeEmptyMultiMap(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_isempty(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_getSize(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_setSize(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_getKey(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_setKey(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_addKey(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_delKey(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_getValue(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_setValue(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_addValue(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_delValue(multiMap_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t multiMap_t_exchangeValue(multiMap_t* self){
+    return NO_ERROR;
+}
 
 #endif

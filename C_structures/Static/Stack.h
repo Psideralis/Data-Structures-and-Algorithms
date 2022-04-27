@@ -16,6 +16,39 @@ ENUMS:
 
 TYPES:
 
+FUNCTIONS:
+    BASICS
+        zero_alloc
+        null_init
+        range_init
+            int
+            double
+        init
+            int
+            double
+            set_t
+        new
+            args_list
+        dealloc
+        del
+    MISCELANEOUS
+        empty
+        set
+        get
+        resizeEmpty
+        resizeZero
+    ALGORITHMS
+        INMUTATIVE:
+            search
+            selection
+        MUTATIVE:
+            setter
+            addition or remove
+            exchange
+            substitution
+            classification
+        TRANSMUTATIVE:
+            combinatorics
 ********************************************* */ 
 #ifndef STACK_C
 #define STACK_C
@@ -34,12 +67,12 @@ typedef struct stack_s{
     void* stack_t_link;
 }stack_t;
 
-void stack_t_push(stack_t* self, element_t element){
-
+PSI_RET_t stack_t_push(stack_t* self, element_t element){
+    return NO_ERROR;
 }
 
-void stack_t_pop(stack_t* self, element_t element){
-
+PSI_RET_t stack_t_pop(stack_t* self, element_t element){
+    return NO_ERROR;
 }
 
 #endif

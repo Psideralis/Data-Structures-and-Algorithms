@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: SingleContainer.hpp
 Description:
 ********************************************* */ 
 
@@ -17,14 +17,12 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef LINKEDLIST_C
-#define LINKEDLIST_C
+#ifndef SINGLECONTAINER_C
+#define SINGLECONTAINER_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct singleContainer_s{
 
-    };
-} TLinkedList;
+} singleContainer_t;
+
 
 #endif

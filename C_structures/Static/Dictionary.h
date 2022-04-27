@@ -16,6 +16,39 @@ ENUMS:
 
 TYPES:
 
+FUNCTIONS:
+    BASICS
+        zero_alloc
+        null_init
+        range_init
+            int
+            double
+        init
+            int
+            double
+            set_t
+        new
+            args_list
+        dealloc
+        del
+    MISCELANEOUS
+        empty
+        set
+        get
+        resizeEmpty
+        resizeZero
+    ALGORITHMS
+        INMUTATIVE:
+            search
+            selection
+        MUTATIVE:
+            setter
+            addition or remove
+            exchange
+            substitution
+            classification
+        TRANSMUTATIVE:
+            combinatorics
 ********************************************* */ 
 #ifndef DICTIONARY_C
 #define DICTIONARY_C
@@ -32,24 +65,62 @@ typedef struct dictionary_s{
     void* dictionary_t_link;
 } dictionary_t;
 
-void dictionary_t_zinit(){}
-void dictionary_t_init(){}
-void dictionary_t_new(){}
-void dictionary_t_del(){}
-void dictionary_t_get(){}
-void dictionary_t_emptyDictionary(){}
-void dictionary_t_resizeEmptyDictionary(){}
-void dictionary_t_isempty(){}
-void dictionary_t_getSize(){}
-void dictionary_t_setSize(){}
-void dictionary_t_getKey(){}
-void dictionary_t_setKey(){}
-void dictionary_t_addKey(){}
-void dictionary_t_delKey(){}
-void dictionary_t_getValue(){}
-void dictionary_t_setValue(){}
-void dictionary_t_addValue(){}
-void dictionary_t_delValue(){}
-void dictionary_t_exchangeValue(){}
+PSI_RET_t dictionary_t_zinit(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_init(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_new(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_del(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_get(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_emptyDictionary(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_resizeEmptyDictionary(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_isempty(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_getSize(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_setSize(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_getKey(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_setKey(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_addKey(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_delKey(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_getValue(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_setValue(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_addValue(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_delValue(dictionary_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t dictionary_t_exchangeValue(dictionary_t* self){
+    return NO_ERROR;
+}
 
 #endif

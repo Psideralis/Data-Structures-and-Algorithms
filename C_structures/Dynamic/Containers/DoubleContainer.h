@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: DoubleContainer.hpp
 Description:
 ********************************************* */ 
 
@@ -17,14 +17,12 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef LINKEDLIST_C
-#define LINKEDLIST_C
+#ifndef DOUBLECONTAINER_C
+#define DOUBLECONTAINER_C
 
-typedef struct SLinkedList{
-    TLinkedList* next;
-    void myFunction(){
+typedef struct doubleContainer_s{
 
-    };
-} TLinkedList;
+} doubleContainer_t;
+
 
 #endif

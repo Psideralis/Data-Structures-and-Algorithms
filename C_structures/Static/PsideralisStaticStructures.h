@@ -21,6 +21,15 @@ TYPES:
 #ifndef STATIC_C_STRUCTS
 #define STATIC_C_STRUCTS
 
+#ifndef CSTD
+#define CSTD
+    #include <stdlib.h>
+    #include <stdio.h>
+    #include <stdarg.h>
+    #include <string.h>
+    #include <cstdint>
+#endif
+
 
 #include "Static/Set.h"
 #include "Static/Tuple.h"

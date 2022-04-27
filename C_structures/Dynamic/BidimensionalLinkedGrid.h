@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: LinkedList2D.h
+File name: linkedGrid2D_t.h
 Description:
 ********************************************* */ 
 
@@ -17,33 +17,82 @@ ENUMS:
 TYPES:
 
 ********************************************* */ 
-#ifndef BILINKEDLIST_H
-#define BILINKEDLIST_H
+#ifndef BLINKEDGRID_H
+#define BLINKEDGRID_H
 
 typedef struct element_s{
-    Bit_t isEmpty;
     void* item;
 } element_t;
 
-typedef struct LinkedList2D_s{
-    Bit_t isEmpty;
-    int size;
-    element_t* entry;
-    PSI_RET (*new_LinkedList2D_t)(LinkedList2D_t, int, element_t);
-    PSI_RET (*del_LinkedList2D_t)(LinkedList2D_t);
-}LinkedList2D_t;
+typedef struct linkedGrid2D_s{
+    void* item;
+}linkedGrid2D_t;
 
-PSI_RET new_LinkedList2D_t(LinkedList2D_t self, int size, element_t* entry){
-    self.size = size;
-    self.entry = entry;
-    for (int i = 0; i < size; i++){
-        self.entry[i] = entry[i];
-    }
-}
+PSI_RET_t new_linkedGrid2D_t(linkedGrid2D_t self, int size, element_t* entry){
+    return NO_ERROR;
+}   
     
-PSI_RET del_LinkedList2D_t(LinkedList2D_t self){
-    self.size = 0;
-    self.entry = PSI_null;
+PSI_RET_t del_linkedGrid2D_t(linkedGrid2D_t self){
+    return NO_ERROR;
+}
+
+
+PSI_RET_t linkedGrid2D_t_zinit(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_init(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_new(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_del(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_get(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_emptyTable(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_resizeEmptyTable(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_isempty(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_getSize(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_setSize(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_getKey(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_setKey(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_addKey(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_delKey(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_getValue(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_setValue(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_addValue(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_delValue(linkedGrid2D_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t linkedGrid2D_t_exchangeValue(linkedGrid2D_t* self){
+    return NO_ERROR;
 }
 
 #endif

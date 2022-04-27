@@ -21,6 +21,16 @@ TYPES:
 #ifndef GRAPH_C_STRUCTS
 #define GRAPH_C_STRUCTS
 
+#ifndef CSTD
+#define CSTD
+    #include <stdlib.h>
+    #include <stdio.h>
+    #include <stdarg.h>
+    #include <string.h>
+    #include <cstdint>
+#endif
+
+
 #include "Graph/BinaryTree.h"
 #include "Graph/Digraph.h"
 #include "Graph/Graph.h"

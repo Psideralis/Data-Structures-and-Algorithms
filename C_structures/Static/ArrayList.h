@@ -147,27 +147,27 @@ PSI_RET arrayList_t_del(arrayList_t* self){
     free(self);
 }
 
-void arrayList_t_set_voidptr(arrayList_t* self, int i, void* value){
+PSI_RET_t arrayList_t_set_voidptr(arrayList_t* self, int i, void* value){
     self->entry[i].item = value;
 };
 
-void arrayList_t_set_char(arrayList_t* self, int i, char value){
+PSI_RET_t arrayList_t_set_char(arrayList_t* self, int i, char value){
     self->entry[i].item = (void*)&value;
 };
 
-void arrayList_t_set_string(arrayList_t* self, int i, PSI_string value){
+PSI_RET_t arrayList_t_set_string(arrayList_t* self, int i, PSI_string value){
     self->entry[i].item = (void*)&value;
 };
 
-void arrayList_t_set_chord(arrayList_t* self, int i, PSI_chord value){
+PSI_RET_t arrayList_t_set_chord(arrayList_t* self, int i, PSI_chord value){
     self->entry[i].item = (void*)&value;
 };
 
-void arrayList_t_set_int(arrayList_t* self, int i, int value){
+PSI_RET_t arrayList_t_set_int(arrayList_t* self, int i, int value){
     self->entry[i].item = (void*)&value;
 };
 
-void arrayList_t_set_double(arrayList_t* self, int i, double value){
+PSI_RET_t arrayList_t_set_double(arrayList_t* self, int i, double value){
     self->entry[i].item = (void*)&value;
 };
 

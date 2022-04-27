@@ -16,6 +16,39 @@ ENUMS:
 
 TYPES:
 
+FUNCTIONS:
+    BASICS
+        zero_alloc
+        null_init
+        range_init
+            int
+            double
+        init
+            int
+            double
+            set_t
+        new
+            args_list
+        dealloc
+        del
+    MISCELANEOUS
+        empty
+        set
+        get
+        resizeEmpty
+        resizeZero
+    ALGORITHMS
+        INMUTATIVE:
+            search
+            selection
+        MUTATIVE:
+            setter
+            addition or remove
+            exchange
+            substitution
+            classification
+        TRANSMUTATIVE:
+            combinatorics
 ********************************************* */ 
 #ifndef MAP_C
 #define MAP_C
@@ -32,24 +65,62 @@ typedef struct map_s{
     void* map_t_link;
 } map_t;
 
-void map_t_zinit(){}
-void map_t_init(){}
-void map_t_new(){}
-void map_t_del(){}
-void map_t_get(){}
-void map_t_emptyMap(){}
-void map_t_resizeEmptyMap(){}
-void map_t_isempty(){}
-void map_t_getSize(){}
-void map_t_setSize(){}
-void map_t_getKey(){}
-void map_t_setKey(){}
-void map_t_addKey(){}
-void map_t_delKey(){}
-void map_t_getValue(){}
-void map_t_setValue(){}
-void map_t_addValue(){}
-void map_t_delValue(){}
-void map_t_exchangeValue(){}
+PSI_RET_t map_t_zinit(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_init(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_new(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_del(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_get(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_emptyMap(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_resizeEmptyMap(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_isempty(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_getSize(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_setSize(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_getKey(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_setKey(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_addKey(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_delKey(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_getValue(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_setValue(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_addValue(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_delValue(map_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t map_t_exchangeValue(map_t* self){
+    return NO_ERROR;
+}
 
 #endif

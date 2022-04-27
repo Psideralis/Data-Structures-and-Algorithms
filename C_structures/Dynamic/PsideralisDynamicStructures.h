@@ -21,6 +21,16 @@ TYPES:
 #ifndef DYNAMIC_C_STRUCTS
 #define DYNAMIC_C_STRUCTS
 
+#ifndef CSTD
+#define CSTD
+    #include <stdlib.h>
+    #include <stdio.h>
+    #include <stdarg.h>
+    #include <string.h>
+    #include <cstdint>
+#endif
+
+
 #include "Dynamic/BidimensionalLinkedGrid.h"
 #include "Dynamic/DoubleLinkedList.h"
 #include "Dynamic/DynamicTable.h"
