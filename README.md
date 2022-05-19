@@ -18,18 +18,18 @@ Python
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
 ## Languages
-    - C			☐  45%
+    - C			    ☐  45%
 	- C++				☐  45%
 	- C#				☐  25%
 	- Python			☐  25%
-	- Javascript		    ☐  15% 
-	- Typescript		    ☐  15%
+	- Javascript		        ☐  15% 
+	- Typescript		        ☐  15%
 	- Java				☐   2%
 	- Ruby				☐   2%
 	- Rust				☐   2%
 	- Swift				☐   2%
-	- Objective-C		    ☐   2%
-	- Fortran           ☐   2%
+	- Objective-C		        ☐   2%
+	- Fortran                   ☐   2%
 ##	Interops
 	- C: Assembly
 	- C++: Assembly, C, Python, Java, Rust	
