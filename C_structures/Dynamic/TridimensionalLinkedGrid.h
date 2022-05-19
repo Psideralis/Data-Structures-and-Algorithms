@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: LinkedList3D.h
+File name: TridimensionalLinkedGrid.h
 Description:
 ********************************************* */ 
 

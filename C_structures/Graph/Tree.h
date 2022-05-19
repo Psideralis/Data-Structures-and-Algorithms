@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: ArrayList.hpp
+File name: Tree.hpp
 Description:
 ********************************************* */ 
 

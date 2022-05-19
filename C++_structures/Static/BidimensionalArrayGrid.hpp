@@ -7,7 +7,7 @@ of the same type, especialized for numbers but
 a set can have any type as long as all its
 elements are of the same type. It is not
 natively ordered neither it has repeated
-elements. For repeated elements see: ArrayList,
+elements. For repeated elements see: ArrayGrid2D,
 for ordered elementes see: OrderedList.
 There is an OrderedSet in Psideralis math
 utilities if needed.
@@ -33,8 +33,8 @@ CLASSES:
 	Set<T>
 ********************************************* */ 
 
-#ifndef GRID2D_HPP
-#define GRID2D_HPP
+#ifndef ARRAYGRID2D_HPP
+#define ARRAYGRID2D_HPP
 
 #include "../Static/Element.hpp"
 
@@ -48,10 +48,10 @@ CLASSES:
 #endif
 
 template <typename T>
-class Grid2D {
+class ArrayArrayGrid2D {
 	public:
 		/* CONSTRUCTORES */
-		Grid2D(int size, T set){
+		ArrayGrid2D(int size, T set){
             this->entry = new T*[size];
             for (int i = 0; i < size ; i++){
                 this->entry[i] = new T[size]; 
@@ -62,65 +62,193 @@ class Grid2D {
                 }
             }
         };
-		~Grid2D(){
+		~ArrayGrid2D(){
 		};
-		Grid2D(const Grid2D &cpy){
+		ArrayGrid2D(const ArrayGrid2D &cpy){
 		};
 		/* ATRIBUTOS */
 		T* entry;
 		int size;	
-		/* MÉTODOS */
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Element& operator[](const int index){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator==(const ArrayGrid2D &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator=(const ArrayGrid2D &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator=(const ArrayGrid2D* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator+(const ArrayGrid2D &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator+(const ArrayGrid2D* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator-(const ArrayGrid2D &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator-(const ArrayGrid2D* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator*(const int &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator*(const int* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator*(const ArrayGrid2D &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator*(const ArrayGrid2D* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator/(const int &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator/(const int* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator/(const ArrayGrid2D &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		ArrayGrid2D& operator/(const ArrayGrid2D* &rhs){};
+		/* ALGORITHMS */
 			/* NON MUTATIVE */
 				/* SEARCH */
-		void generalSearch();
-		void localSearch();
-		void generalGroupedSearch();
-		void localGroupedSearch();
-		void MaxSearch();
-		void MinSearch();
-		void localMaxSearch();
-		void localMinSearch();
-		void nMaxSearch();
-		void nMINearch();
+		PSI_RET_t generalSearch();
+		PSI_RET_t localSearch();
+		PSI_RET_t generalGroupedSearch();
+		PSI_RET_t localGroupedSearch();
+		PSI_RET_t MaxSearch();
+		PSI_RET_t MinSearch();
+		PSI_RET_t localMaxSearch();
+		PSI_RET_t localMinSearch();
+		PSI_RET_t nMaxSearch();
+		PSI_RET_t nMINearch();
 				/* SELECTION */
-		void indexedSelection();
-		void randomSelection();
-		void indexedGroupedSelection();
-		void randomGroupedSelection();
+		PSI_RET_t indexedSelection();
+		PSI_RET_t randomSelection();
+		PSI_RET_t indexedGroupedSelection();
+		PSI_RET_t randomGroupedSelection();
 			/* MUTATIVE */
 				/* ADDITION */
-		void insert();
-		void remove();
-		void groupedInsert();
-		void groupedRemove();
+		PSI_RET_t insert();
+		PSI_RET_t remove();
+		PSI_RET_t groupedInsert();
+		PSI_RET_t groupedRemove();
 				/* SUBSTITUTION */
-		void indexedSubstitution();
-		void randomSubstitution();
-		void indexedGroupedSubstitution();
-		void randomGroupedSubstitution();
+		PSI_RET_t indexedSubstitution();
+		PSI_RET_t randomSubstitution();
+		PSI_RET_t indexedGroupedSubstitution();
+		PSI_RET_t randomGroupedSubstitution();
 				/* CLASSIFICATION */
-		void randomSorting();
-		void ascendentSorting();
-		void descendentSorting();
-		void localAscendentSorting();
-		void localDescendentSorting();
-		void indexedGroupingSorting();
-		void splittedGroupingSorting();
-		void joinedGroupingSorting();
+		PSI_RET_t randomSorting();
+		PSI_RET_t ascendentSorting();
+		PSI_RET_t descendentSorting();
+		PSI_RET_t localAscendentSorting();
+		PSI_RET_t localDescendentSorting();
+		PSI_RET_t indexedGroupingSorting();
+		PSI_RET_t splittedGroupingSorting();
+		PSI_RET_t joinedGroupingSorting();
 			/* TRANSMUTATIVE */
 				/* COMBINATORICS */
-		void generalCombination();
-		void localCombination();
-		void indexedGroupingCombination();
-		void randomGroupingCombination();
-		void generalOrderedList();
-		void localOrderedList();
-		void indexedGroupedOrderedList();
-		void randomGroupedOrderedList();
-		void generalPermuation();
-		void localPermutation();
-		void indexedGroupedPermuation();
-		void randomGroupedPermutation();
+		PSI_RET_t generalCombination();
+		PSI_RET_t localCombination();
+		PSI_RET_t indexedGroupingCombination();
+		PSI_RET_t randomGroupingCombination();
+		PSI_RET_t generalOrderedList();
+		PSI_RET_t localOrderedList();
+		PSI_RET_t indexedGroupedOrderedList();
+		PSI_RET_t randomGroupedOrderedList();
+		PSI_RET_t generalPermuation();
+		PSI_RET_t localPermutation();
+		PSI_RET_t indexedGroupedPermuation();
+		PSI_RET_t randomGroupedPermutation();
 	private:
 	protected:
 };

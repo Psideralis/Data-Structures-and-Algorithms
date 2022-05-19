@@ -30,7 +30,6 @@ TYPES:
     #include <cstdint>
 #endif
 
-
 #include "Static/Set.h"
 #include "Static/Tuple.h"
 #include "Static/ArrayList.h"

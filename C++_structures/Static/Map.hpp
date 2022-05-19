@@ -8,7 +8,7 @@ and it have no repeated elements.
 
 There is an OrderedSet in Psideralis math
 utilities if needed. For repeated elements
-see Tuple or ArrayList.
+see Tuple or Map.
 
 ********************************************* */ 
 
@@ -44,10 +44,10 @@ class Map{
     Map(...){};
     template<typename ... Args>
     Map(std::initializer_list<Args ...>){};
-    Map(int key_size, void* values){
+    Map(int key_size, PSI_RET_t* values){
         this->key_size = key_size;
         this->key = new int[this->key_size];
-        this->value = new void*[this->key_size];
+        this->value = new PSI_RET_t*[this->key_size];
     };
     ~Map(){};
     template<typename ... Args>
@@ -72,20 +72,199 @@ class Map{
         return this;
     };
     /*
-    void* operator new(size_t size){
+    PSI_RET_t* operator new(size_t size){
         return NULL;
     };
-    void  operator delete(void*){
+    PSI_RET_t  operator delete(PSI_RET_t*){
     };
-    void* operator new[](size_t count ){
+    PSI_RET_t* operator new[](size_t count ){
         return NULL;
     };
     */
     /* ATRIBUTES */
     unsigned int key_size;
     int* key;
-    void* value;
-    /* MÉTHODS */
+    PSI_RET_t* value;
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Element& operator[](const int index){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator==(const Map &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator=(const Map &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator=(const Map* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator+(const Map &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator+(const Map* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator-(const Map &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator-(const Map* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator*(const int &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator*(const int* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator*(const Map &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator*(const Map* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator/(const int &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator/(const int* &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator/(const Map &rhs){};
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		Map& operator/(const Map* &rhs){};
+		/* ALGORITHMS */
+			/* NON MUTATIVE */
+				/* SEARCH */
+		PSI_RET_t generalSearch();
+		PSI_RET_t localSearch();
+		PSI_RET_t generalGroupedSearch();
+		PSI_RET_t localGroupedSearch();
+		PSI_RET_t MaxSearch();
+		PSI_RET_t MinSearch();
+		PSI_RET_t localMaxSearch();
+		PSI_RET_t localMinSearch();
+		PSI_RET_t nMaxSearch();
+		PSI_RET_t nMINearch();
+				/* SELECTION */
+		PSI_RET_t indexedSelection();
+		PSI_RET_t randomSelection();
+		PSI_RET_t indexedGroupedSelection();
+		PSI_RET_t randomGroupedSelection();
+			/* MUTATIVE */
+				/* ADDITION */
+		PSI_RET_t insert();
+		PSI_RET_t remove();
+		PSI_RET_t groupedInsert();
+		PSI_RET_t groupedRemove();
+				/* SUBSTITUTION */
+		PSI_RET_t indexedSubstitution();
+		PSI_RET_t randomSubstitution();
+		PSI_RET_t indexedGroupedSubstitution();
+		PSI_RET_t randomGroupedSubstitution();
+				/* CLASSIFICATION */
+		PSI_RET_t randomSorting();
+		PSI_RET_t ascendentSorting();
+		PSI_RET_t descendentSorting();
+		PSI_RET_t localAscendentSorting();
+		PSI_RET_t localDescendentSorting();
+		PSI_RET_t indexedGroupingSorting();
+		PSI_RET_t splittedGroupingSorting();
+		PSI_RET_t joinedGroupingSorting();
+			/* TRANSMUTATIVE */
+				/* COMBINATORICS */
+		PSI_RET_t generalCombination();
+		PSI_RET_t localCombination();
+		PSI_RET_t indexedGroupingCombination();
+		PSI_RET_t randomGroupingCombination();
+		PSI_RET_t generalOrderedList();
+		PSI_RET_t localOrderedList();
+		PSI_RET_t indexedGroupedOrderedList();
+		PSI_RET_t randomGroupedOrderedList();
+		PSI_RET_t generalPermuation();
+		PSI_RET_t localPermutation();
+		PSI_RET_t indexedGroupedPermuation();
+		PSI_RET_t randomGroupedPermutation();
     private:
     protected:
 };

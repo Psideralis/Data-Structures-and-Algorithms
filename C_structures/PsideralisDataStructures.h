@@ -72,6 +72,15 @@ FUNCTIONS:
 #endif
 */
 
+#ifndef CSTD
+#define CSTD
+    #include <stdlib.h>
+    #include <stdio.h>
+    #include <stdarg.h>
+    #include <string.h>
+    #include <cstdint>
+#endif
+
 #define PSI_NULL ((void*)0);
 
 extern int asm_add(int a, int b);

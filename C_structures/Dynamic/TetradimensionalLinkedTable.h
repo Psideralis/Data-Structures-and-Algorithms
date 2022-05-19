@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: LinkedList2D.h
+File name: TetradimensionalLinkedTable.h
 Description:
 ********************************************* */ 
 

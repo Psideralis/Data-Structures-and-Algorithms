@@ -40,6 +40,11 @@ A C collection of data structures and classic algorithms.
     - double
     - long double
     - long long double
+    . uint_8
+    - uint_16
+    - uint_32
+    - uint_64
+    - size_t
 
 ### User Defined:
     - unions

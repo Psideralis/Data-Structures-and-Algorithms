@@ -181,14 +181,14 @@ Name: set_emptySet
 Description: Initialize set_t with size defined
     with index null values.
 Input: a set_t struct.
-Output: PSI_RET
+Output: PSI_RET_t
     NO_ERROR
     NULLPTR_ERROR
     NOTINIT_ERROR
 Example:
 
 */
-PSI_RET set_t_emptySet(set_t* self){
+PSI_RET_t set_t_emptySet(set_t* self){
     if (self->size != 0){
         if(self->entry != NULL){
             for(int i = 0 ; i < self->size; i++){
@@ -215,7 +215,7 @@ Output:
 Example:
 
 */
-PSI_RET set_t_zero_alloc(set_t* self){
+PSI_RET_t set_t_zero_alloc(set_t* self){
     if(self->entry != NULL){
         set_t_emptySet(self);
         self->entry->key = (int*) NULL;
@@ -241,7 +241,7 @@ Output:
 Example:
     
 */
-PSI_RET set_t_emptyKeys(set_t* self){
+PSI_RET_t set_t_emptyKeys(set_t* self){
     if (self->size != 0){
         if(self->entry != NULL){
             for(int i =0 ; i < self->size; i++){
@@ -268,7 +268,7 @@ Output:
     NOTINIT_ERROR
 Example:
 */
-PSI_RET set_t_emptyValues(set_t* self){
+PSI_RET_t set_t_emptyValues(set_t* self){
     if (self->size != 0){
         if(self->entry != NULL){
             for(int i =0 ; i < self->size; i++){
@@ -295,7 +295,7 @@ Output:
 Example:
 
 */
-PSI_RET set_t_null_init(set_t* self, int size){ 
+PSI_RET_t set_t_null_init(set_t* self, int size){ 
     if(self->entry != NULL){
         self->size = size;
         set_t_emptySet(self);
@@ -335,7 +335,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_rangeinit_Int(set_t* self, int size, int start, int end, int jump){ 
+PSI_RET_t set_t_rangeinit_Int(set_t* self, int size, int start, int end, int jump){ 
     if(self->entry != NULL){
         self->size = size;
         set_t_emptySet(self);
@@ -375,7 +375,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_rangeinit_Double(set_t* self, int size, double start, double end, double jump){ 
+PSI_RET_t set_t_rangeinit_Double(set_t* self, int size, double start, double end, double jump){ 
     if(self->entry != NULL){
         self->size = size;
         set_t_emptySet(self);
@@ -415,7 +415,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_init_IntArray(set_t* self, int size, int n[]){
+PSI_RET_t set_t_init_IntArray(set_t* self, int size, int n[]){
     if(self->entry != NULL){
         self->size = size;
         set_t_emptySet(self);
@@ -456,7 +456,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_init_DoubleArray(set_t* self, int size, double n[]){
+PSI_RET_t set_t_init_DoubleArray(set_t* self, int size, double n[]){
     if(self->entry != NULL){
         self->size = size;
         set_t_emptySet(self);
@@ -497,7 +497,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_init_SetArray(set_t* self, int size, set_t n[]){
+PSI_RET_t set_t_init_SetArray(set_t* self, int size, set_t n[]){
     if(self->entry != NULL){
         self->size = size;
         set_t_emptySet(self);
@@ -537,7 +537,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_new(set_t* self,int size, const char* fmt, ...){
+PSI_RET_t set_t_new(set_t* self,int size, const char* fmt, ...){
     va_list args;
     va_start(args, fmt);
     if(self->entry != NULL){
@@ -613,7 +613,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_dealloc(set_t* self){
+PSI_RET_t set_t_dealloc(set_t* self){
     free(self->entry->key);
     free(self->entry->value);
     free(self->entry);
@@ -627,7 +627,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_del(set_t* self){
+PSI_RET_t set_t_del(set_t* self){
     self->size = 0;
     set_t_emptySet(self);
     set_t_dealloc(self);
@@ -655,7 +655,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_setIntEntry(set_t self, int i, int entry){
+PSI_RET_t set_t_setIntEntry(set_t self, int i, int entry){
     *((int*)(self.entry->value[i])) = entry;
     return NO_ERROR;
 }
@@ -667,7 +667,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_setDoubleEntry(set_t self, int i, double entry){
+PSI_RET_t set_t_setDoubleEntry(set_t self, int i, double entry){
     *((double*)(self.entry->value[i])) = entry;
     return NO_ERROR;
 }
@@ -679,7 +679,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_setSet_tEntry(set_t self, int i, set_t entry){
+PSI_RET_t set_t_setSet_tEntry(set_t self, int i, set_t entry){
     *((set_t*)(self.entry->value[i])) = entry;
     return NO_ERROR;
 }
@@ -773,7 +773,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_resizeZero(set_t* self, int size){
+PSI_RET_t set_t_resizeZero(set_t* self, int size){
     int tempSize = self->size;
     self->size = size;
     if(self->entry != NULL){
@@ -807,7 +807,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_resizeEmpty(set_t* self, int size){
+PSI_RET_t set_t_resizeEmpty(set_t* self, int size){
     if(self->entry != NULL){
         set_t_emptySet(self);
         self->size = size;
@@ -833,7 +833,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_removeEntry(set_t* self, int i){
+PSI_RET_t set_t_removeEntry(set_t* self, int i){
     if(self->entry != NULL){
         map_t* temp = self->entry;
         set_t_emptySet(self);
@@ -866,7 +866,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_addIntEntry(set_t* self, int i, int n){
+PSI_RET_t set_t_addIntEntry(set_t* self, int i, int n){
     if(self->entry != NULL){
         map_t* temp = self->entry;
         set_t_emptySet(self);
@@ -900,7 +900,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_addDoubleEntry(set_t* self, int i, double n){
+PSI_RET_t set_t_addDoubleEntry(set_t* self, int i, double n){
     if(self->entry != NULL){
         map_t* temp = self->entry;
         set_t_emptySet(self);
@@ -934,7 +934,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_addSetEntry(set_t* self, int i, set_t n){
+PSI_RET_t set_t_addSetEntry(set_t* self, int i, set_t n){
     if(self->entry != NULL){
         map_t* temp = self->entry;
         set_t_emptySet(self);
@@ -968,7 +968,7 @@ Input:
 Output:
 Example:
 */
-PSI_RET set_t_exchangeEntry(set_t* self, int i, int j){
+PSI_RET_t set_t_exchangeEntry(set_t* self, int i, int j){
     if(self->entry != NULL){
         return NO_ERROR;
     }else {

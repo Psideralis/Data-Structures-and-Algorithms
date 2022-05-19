@@ -75,4 +75,62 @@ PSI_RET_t stack_t_pop(stack_t* self, element_t element){
     return NO_ERROR;
 }
 
+PSI_RET_t stack_t_zinit(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_init(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_new(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_del(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_get(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_emptyTuple(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_resizeEmptyTuple(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_isempty(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_getSize(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_setSize(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_getKey(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_setKey(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_addKey(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_delKey(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_getValue(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_setValue(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_addValue(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_delValue(stack_t* self){
+    return NO_ERROR;
+}
+PSI_RET_t stack_t_exchangeValue(stack_t* self){
+    return NO_ERROR;
+}
+
 #endif

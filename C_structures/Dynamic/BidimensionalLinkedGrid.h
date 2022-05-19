@@ -1,7 +1,7 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: linkedGrid2D_t.h
+File name: BidimensionalLinkedGrid.h
 Description:
 ********************************************* */ 
 

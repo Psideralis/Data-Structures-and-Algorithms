@@ -12,22 +12,24 @@ CURRENTLY WORKING ON
 C and C++
 NEXT...
 C# and Javascript/Typescript
+NEXT...
+Python
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
 ## Languages
-	- C					☐  45%
+    - C			☐  45%
 	- C++				☐  45%
 	- C#				☐  25%
 	- Python			☐  25%
-	- Javascript		☐  15% 
-	- Typescript		☐  15%
+	- Javascript		    ☐  15% 
+	- Typescript		    ☐  15%
 	- Java				☐   2%
 	- Ruby				☐   2%
 	- Rust				☐   2%
 	- Swift				☐   2%
-	- Objective-C		☐   2%
-	- Fortran
+	- Objective-C		    ☐   2%
+	- Fortran           ☐   2%
 ##	Interops
 	- C: Assembly
 	- C++: Assembly, C, Python, Java, Rust	
@@ -71,18 +73,21 @@ C# and Javascript/Typescript
 	- Delegate*
 	- Protocol*
 	- Function*
-	- Process*
 	- Macro*
 	- Event*
+	- Transaction*
 	- Agent*
 *Not primitive data types but data elements in data structures.
 
 ## Control Structures
-	- Procedural 
+	- Procedural
 	- Functional
+	- Methodical
 	- Conditional
 	- Iterative 
 	- Recursive
+	- Transactional
+	- Eventual
 
 ## Operations
 	- Logical
@@ -147,19 +152,20 @@ C# and Javascript/Typescript
 	- Color (RGB,RGBA,HSLA)
 	- Texture2D, Texture3D, Texture4D
 	- Material
-	- Color (RGB,RGBA)
-	- Texture2D, Texture3D, Texture4D
 	- Scene
+	- Scene Filter
+	- Scene Sampler
+	- Pictoric Equalizer
 	- Camera
-	- Light
+	- Lights
 	- Vertex Sequencer
 	- Mesher
 	- Shader
 	- Tracer
 	- Audio
 	- Audio Filter
-	- Audio Smapler
-	- Equalizer
+	- Audio Sampler
+	- Sound Equalizer
 #### Human Recognition & Robotics:
 	- Face
 	- Voice
@@ -260,23 +266,23 @@ C# and Javascript/Typescript
 ## Non-classic Algorithms
 	- Not included. Contact Psideralis for further information.
 
-# ARTEFACTUM DATAE
-	Data artifact := Data Structures + Complex Structure + Complex Operations
+# ARTEFACTORIES DATAE
+	Data artifactory := Data Structures + Complex Structure + Complex Operations
 -  Not included. Contact Psideralis for further information.
 	- Data Constructs
 	- Data Architectures
 	- Data Complexes
 	- Data Conglomerates
 	- Data Constrictions
-## Netartifacts
-- Artifacts that operate natively with the network. Not included. Contact Psideralis for further information.
+## Netartifactories
+- Artifactories that operate natively with the network. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math Utilities & Binary Toolkit.
-## Cryptoartifacts
-- Artifacts that operate natively with security standards. Not included. Contact Psideralis for further information.
+## Cryptoartifactories
+- Artifactories that operate natively with security standards. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math Utilities & Binary Toolkit.
-## Netcryptoartifacts
-- Artifacts that operate natively with network and security standards. Not included. Contact Psideralis for further information.
+## Netcryptoartifactores
+- Artifactories that operate natively with network and security standards. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math Utilities & Binary Toolkit.
-## Artefactum Datae Algorithms
-- Artifacts alrogithms that operate natively in artifacts for transactions and operations. Not included. Contact Psideralis for further information.
+## Artefactories Datae Algorithms
+- Artifactories algorithms that operate natively in Artifactories for transactions and operations. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math Utilities & Binary Toolkit.

@@ -102,16 +102,23 @@ METHODS:
 #ifndef PSIDERALIS_CPPSTRUCTS
 #define PSIDERALIS_CPPSTRUCTS
 
+
+#ifdef PSIDERALIS_CDSA
+    #include "PsideralisDataStructures.h"
+#endif
+
 #ifndef STD
 #define STD
     #include <iostream>
     #include <string>
     #include <initializer_list>
-using namespace std;
-#endif
-
-#ifdef PSIDERALIS_CDT
-    #include "PsideralisDataStructures.h"
+    #include <stdio.h>
+    #include <string>
+	#include <iostream>
+    #include <cstddef>
+    #include <stdlib.h>
+    #include <stdarg.h>
+    using namespace std;
 #endif
 
 #ifndef CPYTHON
@@ -137,6 +144,11 @@ using namespace std;
         return PyModule_Create(&PsideralisDataStructures_module);
     }
 #endif
+
+extern "C" int asm_add(int a, int b);
+extern "C" int asm_res(int a, int b);
+extern "C" int asm_mul(int a, int b);
+extern "C" int asm_div(int a, int b);
 
 #define PSI_NULL ((void*)0);
 
@@ -164,23 +176,19 @@ typedef enum PSI_RET_e{
 typedef char* PSI_string;
 typedef PSI_string* PSI_chord;
 
-typedef unsigned char byte_t;
-typedef byte_t word_t[2];
-typedef word_t dword_t[2];
-typedef dword_t qword_t[2];
-typedef qword_t oword_t[2];
+typedef uint8_t byte_t;
+typedef uint16_t word_t;
+typedef uint32_t dword_t;
+typedef uint64_t qword_t;
+typedef uint64_t oword_t[2];
 typedef oword_t hword_t[2];
-typedef unsigned char* ptr_byte_t;
-typedef ptr_byte_t* ptr_word_t[2];
-typedef ptr_word_t* ptr_dword_t[2];
-typedef ptr_dword_t* ptr_qword_t[2];
+typedef uint8_t* ptr_byte_t;
+typedef uint16_t* ptr_word_t;
+typedef uint32_t* ptr_dword_t;
+typedef uint64_t* ptr_qword_t;
 typedef ptr_qword_t* ptr_oword_t[2];
 typedef ptr_oword_t* ptr_hword_t[2];
 
-extern "C" int asm_add(int a, int b);
-extern "C" int asm_res(int a, int b);
-extern "C" int asm_mul(int a, int b);
-extern "C" int asm_div(int a, int b);
 
 class PSICollection{
   	public: 
