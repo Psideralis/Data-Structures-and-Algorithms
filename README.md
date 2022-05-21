@@ -18,7 +18,7 @@ Python
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
 ## Languages
-    - C			            ☐  45%
+    - C			        ☐  45%
 	- C++				☐  45%
 	- C#				☐  25%
 	- Python			☐  25%
@@ -31,18 +31,18 @@ Python
 	- Objective-C		        ☐   2%
 	- Fortran                       ☐   2%
 ##	Interops
-	- C: Assembly
-	- C++: Assembly, C, Python, Java, Rust	
-	- C#: Assembly, C, C++, Python, Javascript, Typescript, Java, Rust
-	- Python: Assembly, C, C++, C#, Javascript, Typescript, Java, Rust
-	- Javascript: Assembly, C, C++, C#, Javascript, Typescript, Java, Rust		
-	- Typescript: Assembly, C, C++, C#, Javascript, Typescript, Java, Rust		
-	- Java: Assembly, C, C++				
-	- Ruby: Assembly, C, C++, C#		
-	- Rust: Assembly, C, C++, C#, Python, Javascript, Typescript				
-	- Swift: Assembly, C, C++	
+	- C:           Assembly
+	- C++:         Assembly, C, Python, Java, Rust	
+	- C#:          Assembly, C, C++, Python, Javascript, Typescript, Java, Rust
+	- Python:      Assembly, C, C++, C#, Javascript, Typescript, Java, Rust
+	- Javascript:  Assembly, C, C++, C#, Javascript, Typescript, Java, Rust		
+	- Typescript:  Assembly, C, C++, C#, Javascript, Typescript, Java, Rust		
+	- Java:        Assembly, C, C++				
+	- Ruby:        Assembly, C, C++, C#		
+	- Rust:        Assembly, C, C++, C#, Python, Javascript, Typescript				
+	- Swift:       Assembly, C, C++	
 	- Objective-C: Assembly, C, C++	
-	- Fortran: Assembly, C, C++
+	- Fortran:     Assembly, C, C++
 ## Data Types
 	- Bit
 	- Byte
@@ -50,6 +50,9 @@ Python
 		-Dword
 		-Qword
 		-Oword
+        -Xword
+        -Tword
+        -Hword
 	- Boolean
 	- Character
 		- String
@@ -67,6 +70,7 @@ Python
 	- Tuple*
 	- Enum*
 	- Struct*
+	- Record*
 	- Union*
 	- Object*
 	- Interface*
@@ -94,10 +98,16 @@ Python
 	- Arithmetic
 	- Algebraic
 	- Geometric
+	- Analytical
+	- Topological
 	- Statistical
 	- Analog/Digital Signal Processing
 	- Artificial Intelligence
 	- Domain Specific
+	    - Technoscientific
+	    - Engineering
+	    - Business
+	    - Artistic 
 
 # DATA STRUCTURES
 ## Data structures
@@ -143,7 +153,7 @@ Python
 
 ### Non-classic Data Structures
 - Not included. Contact Psideralis for further information.
-#### Media:
+#### Media (Graphics & Audio):
 	- Image
 	- Video
 	- UI Control (Widget)
@@ -158,19 +168,17 @@ Python
 	- Pictoric Equalizer
 	- Camera
 	- Lights
+	- Lights Equalizer
 	- Vertex Sequencer
-	- Mesher
-	- Shader
-	- Tracer
 	- Audio
 	- Audio Filter
 	- Audio Sampler
-	- Sound Equalizer
-#### Human Recognition & Robotics:
+	- Audio Equalizer
+#### Human Interface & Robotics:
 	- Face
 	- Voice
 	- Body
-	- Movement (Joints)
+	- Kinematics
 	
 ## Netstructures
 - Structures that operate natively with the network via IP, port and certificate. Not included. Contact Psideralis for further information.
