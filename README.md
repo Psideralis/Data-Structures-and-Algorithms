@@ -113,14 +113,8 @@ Python
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
-	- Point2D, Point3D, Point4D, PointND				(Psideralis Math Utilities)
-	- Vector2D, Vector3D, Vector4D, VectorND			(Psideralis Math Utilities)
-	- Matrix2D, Matrix3D, Matrix4D, MatrixND			(Psideralis Math Utilities)
-	- 3DTensorO2, 3DTensorO3, 3DTensorO4, 3DTensorON	(Psideralis Math Utilities)
 	- Set
-	- Ordered Set										(Psideralis Math Utilities)
-	- Tuple [Ordered Pair]
-	- Ordered Tuple										(Psideralis Math Utilities)
+	- Tuple
 	- Array List
 	- Ordered List
 	- Stack
@@ -151,37 +145,8 @@ Python
 	- Digraphs w/FunctionCost
 	- Pantographs w/FunctionCost
 
-### Non-classic Data Structures
-- Not included. Contact Psideralis for further information.
-#### Media (Graphics & Audio):
-	- Image
-	- Video
-	- UI Control (Widget)
-	- Window
-	- Graphic Desktop Enviroment
-	- Color (RGB,RGBA,HSLA)
-	- Texture2D, Texture3D, Texture4D
-	- Material
-	- Scene
-	- Scene Filter
-	- Scene Sampler
-	- Pictoric Equalizer
-	- Camera
-	- Lights
-	- Lights Equalizer
-	- Vertex Sequencer
-	- Audio
-	- Audio Filter
-	- Audio Sampler
-	- Audio Equalizer
-#### Human Interface & Robotics:
-	- Face
-	- Voice
-	- Body
-	- Kinematics
-	
 ## Netstructures
-- Structures that operate natively with the network via IP, port and certificate. Not included. Contact Psideralis for further information.
+- Structures that operate natively with the network via IP, port and certificates. Not included. Contact Psideralis for further information.
 ## Cryptostructures
 - Structures that operate natively with security standards via trusted certificates and digital signatures. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math & Binary Utilities.
@@ -193,89 +158,56 @@ Python
 ## Classic Algorithms
 ### Non-mutative
 #### Search
-	- General search
-	- Local search
-	- General grouped search
-	- Local grouped search
-	- Max
-	- Min
-	- Local max
-	- Local min
-	- N-max
-	- N-min
+	- General/Local Single/Grouped search
+	- General/Local Single.Grouped Min/Max
 	- Hierarchical
 	- Binary
 	- Level
 #### Selection
-	- Indexed
-	- Random
-	- Indexed grouped
-	- Random grouped
+	- Single/Grouped Indexed/Random
 	- Hierarchical
 	- Binary
 	- Level
 
 ### Mutative
 #### Setter
-	- Single item
-	- Grouped items
-	- Hierarchy item
-	- Binary item
-	- Level item
+	- Single/Grouped
+	- Hierarchy
+	- Binary
+	- Level
 #### Addition OR Removal
-	- Insert
-	- Remove
-	- Grouped insert
-	- Grouped remove
-	- Hierarchy insert / remove
-	- Binary insert / remove
-	- Level insert / remove
+	- Single/Grouped
+	- Hierarchy
+	- Binary
+	- Level
 #### Exchange
-	- Exhange
-	- Grouped exchange
-	- Hierarchy exchange
-	- Binary exchange
-	- Level exchange
+	- Single/Grouped
+	- Hierarchy
+	- Binary
+	- Level
 #### Substitution
-	- Indexed
-	- Random
-	- Indexed grouped
-	- Random grouped
+	- Single/Grouped Indexed/Random
 	- Hierarchy
 	- Binary
 	- Level
 #### Clasification
-	- Random sorting
-	- Ascendent sorting
-	- Descendent sorting
-	- Local ascendent sorting
-	- Local descendent sorting
-	- Indexed grouped sorting
-	- Splitted grouping
-	- Joined grouping
+	- General/Local Indexed/Random Descendent/Ascendent sorting
+	- Splitted/Joined grouping
 	- Hierarchy
 	- Binary
 	- Level
 ### Transmutative
 #### Combinatorics
-	- General combination
-	- Local combination
-	- Indexed grouped combination
-	- Random grouped combination
-	- General ordered list
-	- Local ordered list
-	- Indexed grouped ordered list
-	- Random grouped ordered list
-	- General permutation
-	- Local permutation
-	- Indexed grouped permutation
-	- Random grouped permutation
+	- General/Local Indexed/Random combination
+	- General/Local Indexed/Random ordered list
+	- General/Local Indexed/Random permutation
 
 ## Non-classic Algorithms
 	- Not included. Contact Psideralis for further information.
 
 # ARTEFACTORIES DATAE
 	Data artifactory := Data Structures + Complex Structure + Complex Operations
+
 -  Not included. Contact Psideralis for further information.
 	- Data Constructs
 	- Data Architectures

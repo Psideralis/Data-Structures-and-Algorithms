@@ -53,11 +53,44 @@ A C collection of data structures and classic algorithms.
     - arrays
     - typedef
 
+### Static Structures:
+	- Set: Numeric, non ordered, non repeated.
+	- Tuple: Alphanumeric + Structures, ordered, repeated.
+	- Array List: Alphanumeric + Structures, non ordered, repeated.
+	- Ordered List: Alphanumeric + Structures, ordered, non Crepeated.
+	- Stack
+	- Queue
+	- Map
+	- Dictionary
+	- Multimap
+	- Table
+	- Array Grid 3D
+	- Array Grid 4D
+#### Dynamic Structures:
+	- Single Linked List
+	- Double Linked List
+	- Triple Linked List
+	- Multiple Linked Linked List
+	- Multiple Linked Stacks
+	- Multiple Linked Queues
+	- Heap
+	- Multiple Linked Multimap
+	- Multiple Linked Table
+	- Linked Array Grid 3D
+	- Linked Array Grid 4D
+	- Multiple Linked Array Grid
+#### Graphs Structures:
+	- Binary Tree
+	- Balanced Tree
+	- Graphs w/FunctionCost
+	- Digraphs w/FunctionCost
+	- Pantographs w/FunctionCost
+
 ## Manual
 
 ### Include
 
-    #include "PsideralisDataStructures.h"
+    #include "PSI_DataStructures.h"
 
     /*
         TODO
