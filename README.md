@@ -46,26 +46,12 @@ Python
 ## Data Types
 	- Bit
 	- Byte
-	- Word
-		-Dword
-		-Qword
-		-Oword
-        -Xword
-        -Tword
-        -Hword
+	- Word: Dword, Qword, Oword, Xword, Tword, Hword
 	- Boolean
-	- Character
-		- String
-		- Chord
-	- Numeric
-		-Unsigned
-		-Signed
-	- Integer
-		-Short
-		-Long
-	- Float
-		-Single
-		-Double
+	- Character: String, Chord
+	- Numeric: Unsigned, Signed
+	- Integer: Short, Long
+	- Float: Single, Double
 	- Array*
 	- Tuple*
 	- Enum*
