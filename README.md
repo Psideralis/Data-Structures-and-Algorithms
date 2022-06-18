@@ -4,7 +4,7 @@ Psideralis
 ## License
 Psideralis Commune Public License
 ## Version
-00.00.000.007
+00.00.001.000
 ## Status
 UNFINISHED UNRELEASED
 Public - Progress 25%
