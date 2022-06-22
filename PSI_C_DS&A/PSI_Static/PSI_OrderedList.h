@@ -1,30 +1,26 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: Tuple.h
-Description: A tuple is a grouping of mixed
-elements. It is not natively ordered and can
-have repeated elements.
-
+File name: OrderedList.hpp
+Description:
 ********************************************* */ 
-
 
 /* *********************************************
 INCLUDES:
-	PSI_TUPLE_H
-MACROS:
 
+MACROS:
+    PSIORDEREDLIST_C
 STRUCTS:
-    tuple_s
+
 ENUMS:
 
 TYPES:
-    tuple_t
+
 FUNCTIONS:
     BASICS
-        zeroalloc
-        zeroinit
-        rangeinit
+        zero_alloc
+        null_init
+        range_init
             int
             double
         init
@@ -33,7 +29,6 @@ FUNCTIONS:
             set_t
         new
             args_list
-            set_array
         dealloc
         del
     MISCELANEOUS
@@ -69,14 +64,23 @@ FUNCTIONS:
     #include <stdint.h>
 #endif
 
-#ifndef PSI_TUPLE_H
-#define PSI_TUPLE_H
+#ifndef PSIORDEREDLIST_C
+#define PSIORDEREDLIST_C
 
-typedef struct tuple_s{
-    uint64_t tuple_size;
+/*
+Name: orderedList_t	
+Description: A orderedList struct.
+Properties:
+    size: an integer with the size of the orderedList.
+    entry: a void pointer to value. No indexing
+        included.
+    orderedList_t_link: a void pointer for linking 
+        porposes.
+*/
+typedef struct orderedList_s{
+    uint64_t orderedList_size;
     map_t* entry;
-    void* tuple_t_link;
-}tuple_t;
-
+    void* orderedList_t_link;
+}orderedList_t;
 
 #endif

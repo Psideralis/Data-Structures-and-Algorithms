@@ -70,12 +70,32 @@ FUNCTIONS:
 #ifndef PSIARRAYLIST_H
 #define PSIARRAYLIST_H
 
+/*
+Name: arrayElement_t	
+Description: A light array list struct.
+Properties:
+    size: an integer with the size of the arrayList.
+    entry: a void pointer to value. No indexing
+        included.
+    arrayList_t_link: a void pointer for linking 
+        porposes.
+*/
 typedef struct arrayElement_s{
     uint64_t item_size;
     void* item;
     void* arrayElement_t_link;
 }arrayElement_t;
 
+/*
+Name: arrayList_t	
+Description: A light arrayList struct.
+Properties:
+    size: an integer with the size of the arrayList.
+    entry: a void pointer to value. No indexing
+        included.
+    arrayList_t_link: a void pointer for linking 
+        porposes.
+*/
 typedef struct arrayList_s{
     uint64_t arrayList_size;
     arrayElement_t* entry;

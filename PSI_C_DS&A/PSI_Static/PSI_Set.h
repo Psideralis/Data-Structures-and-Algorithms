@@ -1,18 +1,14 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: Psi_Set.h
+File name: PSI_Set.h
 Description: A set is a grouping of numeric
 elements or sets. It is not natively ordered
 and it has no repeated elements.
 
-There is an OrderedSet in Psideralis math
-utilities if needed. For repeated elements
+There is an OrderedSet in Psideralis Math
+Utilities if needed. For repeated elements
 see Tuple or ArrayList.
-
-PENDANT:
-    NO REPEATED ELEMENT
-    ONLY NUMERIC OR SET
 ********************************************* */ 
 
 /* *********************************************

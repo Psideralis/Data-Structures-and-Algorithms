@@ -117,8 +117,8 @@ typedef uint64_t* ptr_qword_t;
 typedef ptr_qword_t* ptr_oword_t[2];
 typedef ptr_oword_t* ptr_hword_t[2];
 
-#include "Static/PSI_StaticStuctures.h"
-#include "Graph/PSI_GraphStructures.h"
-#include "Dynamic/PSI_DynamicStructures.h"
+#include "PSI_Static/PSI_StaticStuctures.h"
+#include "PSI_Graph/PSI_GraphStructures.h"
+#include "PSI_Dynamic/PSI_DynamicStructures.h"
 
 #endif
