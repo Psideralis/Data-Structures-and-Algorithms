@@ -3,33 +3,33 @@ ALL: build
 
 test:	
 ifeq ($(platform),LINUX)
-	gcc ./Test/test.c -o test -I ./
+	gcc
 else ifeq ($(platform),WINDOWS)
-	cl ./Test/test.c /Fe test /Zi -I ../
+	cl
 else ifeq ($(platform),MAC)
-	gcc ./Test/test.c -o test -I ./
+	clang
 else
-	echo "NO PLATFORM."
+	echo "NO PLATFORM."	
 endif
 
 benchmark:
 ifeq ($(platform),LINUX)
-	gcc ./Benchmark/benchmark.c -o benchmark -I ./
+	gcc
 else ifeq ($(platform),WINDOWS)
-	cl ./Benchmark/benchmark.c/Fe benchmark /Zi -I ../
+	cl
 else ifeq ($(platform),MAC)
-	gcc ./Benchmark/benchmark.c -o benchmark -I ./
+	clang
 else
 	echo "NO PLATFORM."	
 endif
 
 build:
 ifeq ($(platform),LINUX)
-	gcc main.c -o main -I ./
+	gcc
 else ifeq ($(platform),WINDOWS)
-	cl main.c /Fe main /Zi -I ../
+	cl
 else ifeq ($(platform),MAC)
-	gcc main.c -o main -I ./
+	clang
 else
 	echo "NO PLATFORM."	
 endif

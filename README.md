@@ -144,44 +144,24 @@ Python
 ## Classic Algorithms
 ### Non-mutative
 #### Search
-	- General/Local Single/Grouped search
-	- General/Local Single.Grouped Min/Max
-	- Hierarchical
-	- Binary
-	- Level
+	- General/Local Single/Grouped Search
+	- General/Local Single/Grouped Min/Max
 #### Selection
 	- Single/Grouped Indexed/Random
-	- Hierarchical
-	- Binary
-	- Level
 
 ### Mutative
 #### Setter
 	- Single/Grouped
-	- Hierarchy
-	- Binary
-	- Level
 #### Addition OR Removal
 	- Single/Grouped
-	- Hierarchy
-	- Binary
-	- Level
 #### Exchange
 	- Single/Grouped
-	- Hierarchy
-	- Binary
-	- Level
 #### Substitution
 	- Single/Grouped Indexed/Random
-	- Hierarchy
-	- Binary
-	- Level
 #### Clasification
 	- General/Local Indexed/Random Descendent/Ascendent sorting
 	- Splitted/Joined grouping
-	- Hierarchy
-	- Binary
-	- Level
+
 ### Transmutative
 #### Combinatorics
 	- General/Local Indexed/Random combination
@@ -212,3 +192,13 @@ Python
 ## Artefactories Datae Algorithms
 - Artifactories algorithms that operate natively in Artifactories for transactions and operations. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math Utilities & Binary Toolkit.
+
+# ARTEFACTORIES CIBERNAE
+	Control artefactory := Data Artefactories + Complex Control
+
+-  Not included. Contact Psideralis for further information.
+	- Control Constructs
+	- Control Architectures
+	- Control Complexes
+	- Control Conglomerates
+	- Control Constrictions

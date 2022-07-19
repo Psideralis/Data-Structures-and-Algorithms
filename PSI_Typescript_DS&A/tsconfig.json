@@ -7,5 +7,5 @@
     },
     "include": [
       "src/**/*",
-      "src/Test/Test.js"    ]
+      "src/PSITs_Test/Test.js"    ]
   }

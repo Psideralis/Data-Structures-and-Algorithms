@@ -121,11 +121,12 @@ METHODS:
     using namespace std;
 #endif
 
+/*
 #ifndef CPYTHON
 #define CPYTHON
     #define PY_SSIZE_T_CLEAN
     #include <python3.7/Python.h>
-    PyObject* tanh_impl(PyObject* /* unused module reference */, PyObject* o) {
+    PyObject* tanh_impl(PyObject*, PyObject* o) {
         double tanh_x = 0;
         return PyFloat_FromDouble(tanh_x);
     }
@@ -144,6 +145,7 @@ METHODS:
         return PyModule_Create(&PsideralisDataStructures_module);
     }
 #endif
+*/
 
 extern "C" int asm_add(int a, int b);
 extern "C" int asm_res(int a, int b);

@@ -44,6 +44,7 @@ A C collection of data structures and classic algorithms.
     - uint_16
     - uint_32
     - uint_64
+    - wchar_t
     - size_t
 
 ### User Defined:
@@ -54,10 +55,10 @@ A C collection of data structures and classic algorithms.
     - typedef
 
 ### Static Structures:
-	- Set: Numeric, non ordered, non repeated.
-	- Tuple: Alphanumeric + Structures, ordered, repeated.
-	- Array List: Alphanumeric + Structures, non ordered, repeated.
-	- Ordered List: Alphanumeric + Structures, ordered, non Crepeated.
+	- Set
+	- Tuple
+	- Array List
+	- Ordered List
 	- Stack
 	- Queue
 	- Map
