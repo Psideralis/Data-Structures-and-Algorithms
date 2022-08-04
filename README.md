@@ -10,10 +10,6 @@ UNFINISHED UNRELEASED
 Public - Progress 25%
 CURRENTLY WORKING ON
 C and C++
-NEXT...
-C# and Javascript/Typescript
-NEXT...
-Python
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
@@ -23,26 +19,12 @@ Python
 	- C#				☐  25%
 	- Python			☐  25%
 	- Javascript		        ☐  15% 
-	- Typescript		        ☐  15%
-	- Java				☐   2%
-	- Ruby				☐   2%
-	- Rust				☐   2%
-	- Swift				☐   2%
-	- Objective-C		        ☐   2%
-	- Fortran                       ☐   2%
 ##	Interops
 	- C:           Assembly
-	- C++:         Assembly, C, Python, Java, Rust	
-	- C#:          Assembly, C, C++, Python, Javascript, Typescript, Java, Rust
-	- Python:      Assembly, C, C++, C#, Javascript, Typescript, Java, Rust
-	- Javascript:  Assembly, C, C++, C#, Javascript, Typescript, Java, Rust		
-	- Typescript:  Assembly, C, C++, C#, Javascript, Typescript, Java, Rust		
-	- Java:        Assembly, C, C++				
-	- Ruby:        Assembly, C, C++, C#		
-	- Rust:        Assembly, C, C++, C#, Python, Javascript, Typescript				
-	- Swift:       Assembly, C, C++	
-	- Objective-C: Assembly, C, C++	
-	- Fortran:     Assembly, C, C++
+	- C++:         Assembly, C, Python
+	- C#:          Assembly, C, C++, Python, Javascript
+	- Python:      Assembly, C, C++, C#, Javascript
+	- Javascript:  Assembly, C, C++, C#, Javascript		
 ## Data Types
 	- Bit
 	- Byte
@@ -58,11 +40,11 @@ Python
 	- Struct*
 	- Record*
 	- Union*
-	- Object*
+	- Class*
 	- Interface*
-	- Delegate*
 	- Protocol*
 	- Function*
+	- Delegate*
 	- Macro*
 	- Event*
 	- Transaction*
@@ -85,17 +67,8 @@ Python
 	- Algebraic
 	- Geometric
 	- Analytical
-	- Topological
 	- Statistical
-	- Analog/Digital Signal Processing
-	- Artificial Intelligence
-	- Domain Specific
-	    - Technoscientific
-	    - Engineering
-	    - Business
-	    - Artistic 
 
-# DATA STRUCTURES
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
@@ -127,42 +100,43 @@ Python
 #### Graphs:
 	- Binary Tree
 	- Balanced Tree
-	- Graphs w/FunctionCost
-	- Digraphs w/FunctionCost
-	- Pantographs w/FunctionCost
+	- Graphs
+	- Digraphs
+	- Pantographs
 
 ## Netstructures
-- Structures that operate natively with the network via IP, port and certificates. Not included. Contact Psideralis for further information.
+- Structures that operate natively with the network. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math Utilities & Binary Toolkit.
 ## Cryptostructures
-- Structures that operate natively with security standards via trusted certificates and digital signatures. Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math & Binary Utilities.
+- Structures that operate natively with security standards. Not included. Contact Psideralis for further information.
+	- Uses Psideralis Math Utilities & Binary Toolkit.
 ## Netcryptostructures
 - Structures that operate natively with network and security standards. Not included. Contact Psideralis for further information.
-	- Uses Psideralis Math & Binary Utilities.
+	- Uses Psideralis Math Utilities & Binary Toolkit.
 
-# ALGORITHMS
 ## Classic Algorithms
 ### Non-mutative
 #### Search
 	- General/Local Single/Grouped Search
 	- General/Local Single/Grouped Min/Max
+	- General/Local Single/Grouped Sup/Inf
 #### Selection
 	- Single/Grouped Indexed/Random
 
 ### Mutative
 #### Setter
-	- Single/Grouped
+	- Single/Grouped Indexed/Random
 #### Addition OR Removal
-	- Single/Grouped
+	- Single/Grouped Indexed/Random
 #### Exchange
-	- Single/Grouped
-#### Substitution
 	- Single/Grouped Indexed/Random
 #### Clasification
-	- General/Local Indexed/Random Descendent/Ascendent sorting
-	- Splitted/Joined grouping
+	- General/Local Indexed/Random Descendent/Ascendent
 
 ### Transmutative
+#### Interactive
+	- Splitted/Joined grouping
+	- Splitted/Joined filtering
 #### Combinatorics
 	- General/Local Indexed/Random combination
 	- General/Local Indexed/Random ordered list
@@ -170,9 +144,25 @@ Python
 
 ## Non-classic Algorithms
 	- Not included. Contact Psideralis for further information.
+		- Artificial Intelligence
+			- Data Mining
+			- Machine Learning
+		- Analog/Digital Signal Processing
+			- Audio/Locution
+			- Image/Video
+		- Robotics
+		- Domain Specific
+			- Antropic
+			- Technoscientific
+			- Engineering
+			- Entreprise
+			- Artistic
+			- Cultural
 
-# ARTEFACTORIES DATAE
-	Data artifactory := Data Structures + Complex Structure + Complex Operations
+
+# ORGANON PROGRAMATORIAE
+## Artefactories Datae
+	Data artifactory := Data Structures + Complex Structure + Complex Operations + Complex Control
 
 -  Not included. Contact Psideralis for further information.
 	- Data Constructs
@@ -180,6 +170,17 @@ Python
 	- Data Complexes
 	- Data Conglomerates
 	- Data Constrictions
+
+## Artefactories Ciberniae
+	Control artefactory := Data Artefactories + Complex Control
+
+-  Not included. Contact Psideralis for further information.
+	- Control Constructs
+	- Control Architectures
+	- Control Complexes
+	- Control Conglomerates
+	- Control Constrictions
+
 ## Netartifactories
 - Artifactories that operate natively with the network. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math Utilities & Binary Toolkit.
@@ -192,13 +193,3 @@ Python
 ## Artefactories Datae Algorithms
 - Artifactories algorithms that operate natively in Artifactories for transactions and operations. Not included. Contact Psideralis for further information.
 	- Uses Psideralis Math Utilities & Binary Toolkit.
-
-# ARTEFACTORIES CIBERNAE
-	Control artefactory := Data Artefactories + Complex Control
-
--  Not included. Contact Psideralis for further information.
-	- Control Constructs
-	- Control Architectures
-	- Control Complexes
-	- Control Conglomerates
-	- Control Constrictions
