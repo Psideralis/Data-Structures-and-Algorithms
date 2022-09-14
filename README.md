@@ -10,6 +10,7 @@ UNFINISHED UNRELEASED
 Public - Progress 25%
 CURRENTLY WORKING ON
 C and C++
+VISITED THE WIKI FOR MORE INFORMATION ABOUT INSTALLATION, USE AND DERIVATES. A ZIP RELEASE IS DATED FOR THE END OF 2023.
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
