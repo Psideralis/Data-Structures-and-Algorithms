@@ -20,12 +20,6 @@ VISITED THE WIKI FOR MORE INFORMATION ABOUT INSTALLATION, USE AND DERIVATES. A Z
 	- C#				☐  25%
 	- Python			☐  25%
 	- Javascript		        ☐  15% 
-##	Interops
-	- C:           Assembly
-	- C++:         Assembly, C, Python
-	- C#:          Assembly, C, C++, Python, Javascript
-	- Python:      Assembly, C, C++, C#, Javascript
-	- Javascript:  Assembly, C, C++, C#, Javascript		
 	
 ## Data structures
 ### Classic Data Stuctures
