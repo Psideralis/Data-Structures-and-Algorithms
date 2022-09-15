@@ -27,6 +27,13 @@ ENUMS:
 TYPES:
     set_t
 FUNCTIONS:
+    AUXILIARY
+        emptySet
+        zeroSet
+        zeroKeys
+        zeroValues
+        new
+        del
     BASICS
         zeromem_alloc
         init
@@ -34,24 +41,39 @@ FUNCTIONS:
         range_init
         reinit
         dealloc
+        resizeEmpty
+        resizeZero
+        resizeRange
     MISCELANEOUS
-        empty
-        set
+        type
+        size
         get
+        set
         copy
-        resize
+        ref
+        isEmpty
+        isZero
     ALGORITHMS
         INMUTATIVE:
-            search
-            selection
+            find
+            max,min
+            sup,inf
+            at
+            random
         MUTATIVE:
-            setter
-            addition or remove
+            add
+            remove
             exchange
-            substitution
-            classification
+            substitute
+            sortDescendent
+            sortAscendent
+            sortRandom
         TRANSMUTATIVE:
-            combinatorics
+            join
+            split
+            combinations
+            permutations
+            ordered lists
 ********************************************* */ 
 
 #include "PSI_DataStructures.h"
@@ -69,7 +91,11 @@ FUNCTIONS:
 
 #ifndef PSI_SET_H
 #define PSI_SET_H
+/*******************************************************
 
+                            STRUCTS
+
+*******************************************************/
 /*
 Name: set_t	
 Description: A set struct.
@@ -91,7 +117,7 @@ typedef struct set_s{
 Name: xcarrier_set_t	
 Description: A carrier set struct.
 Properties:
-    size: an long double size.
+    size: an unsigned long long int with the size of the set.
     entry: a pointer to a map_t struct that holds
         an integer with the position in the set
         and the correspondent entry.
@@ -125,7 +151,7 @@ typedef struct light_set_s{
 Name: carrier_set_t	
 Description: A carrier set struct.
 Properties:
-    size: an long double size.
+    size: an unsigned long long int with the size of the set.
     entry: a void pointer to value. No indexing
         included.
     set_t_link: a void pointer for linking 
@@ -137,7 +163,11 @@ typedef struct carrier_set_s{
     void* carrier_set_t_link;
 }carrier_set_t;
 
+/*******************************************************
 
+                            AUXILIARY FUNCTIONS
+
+*******************************************************/
 /*
 Name: set_emptySet
 Description: Initialize set_t with size defined
@@ -166,9 +196,177 @@ PSI_RET_t set_t_emptySet(set_t* self){
         return NOTINIT_ERROR;
     }
 }
+/*
+Name: set_zeroSet
+Description: Initialize set_t with size defined
+    with zero index null values.
+Input: a set_t struct.
+Output: PSI_RET_t
+    NO_ERROR
+    NULLPTR_ERROR
+    NOTINIT_ERROR
+Example:
+
+*/
+PSI_RET_t set_t_zeroSet(set_t* self){
+    if (self->size != 0){
+        if(self->entry != NULL){
+            for(int i = 0 ; i < self->size; i++){
+                self->entry->key[i] = 0;
+                self->entry->value[i].value_size = 0;
+                self->entry->value[i].value = (void*)0;
+            }
+            return NO_ERROR;
+        }else {
+            return NULLPTR_ERROR;
+        }
+    }else{
+        return NOTINIT_ERROR;
+    }
+}
+/*
+Name: set_t_zeroKeys
+Description: Zero the keys of a set_t with size
+    defined and not null entry.
+Input: a set_t struct.
+Output:
+    NO_ERROR
+    NULLPTR_ERROR
+    NOTINIT_ERROR
+Example:
+    
+*/
+PSI_RET_t set_t_zeroKeys(set_t* self){
+    if (self->size != 0){
+        if(self->entry != NULL){
+            for(int i =0 ; i < self->size; i++){
+                self->entry->key[i] = 0;
+            }
+            return NO_ERROR;
+        }else {
+            return NULLPTR_ERROR;
+        }
+    }else{
+        return NOTINIT_ERROR;
+    }
+}
 
 /*
-Name: set_t_zero_alloc
+Name: set_t_zeroValues
+Description: Zero the values of a set_t with size
+    defined and not null entry.
+Input: a set_t struct.
+Output:
+    NO_ERROR
+    NULLPTR_ERROR
+    NOTINIT_ERROR
+Example:
+*/
+PSI_RET_t set_t_zeroValues(set_t* self){
+    if (self->size != 0){
+        if(self->entry != NULL){
+            for(int i =0 ; i < self->size; i++){
+                self->entry->value[i] = (void*)0;
+            }
+            return NO_ERROR;
+        }else {
+            return NULLPTR_ERROR;
+        }
+    }else{
+        return NOTINIT_ERROR;
+    }
+}
+/*
+Name: set_t_new
+Description: Alloc new empty set_t.
+Input:
+Output:
+Example:
+*/
+PSI_RET_t set_t_new(set_t* self,int size){
+    if(self->entry != NULL){
+        self->size = size;
+        set_t_zeroSet(self);
+        self->entry->key = (int *)realloc(self->size,sizeof(int));
+        self->entry->value = (value_t *)realloc(self->size,sizeof(value_t*));
+        if (self->entry->key == NULL || self->entry->value == NULL){
+            return NULLPTR_ERROR;
+        }
+        set_t_emptySet(self);
+        return NO_ERROR;
+    }else {
+        self->size = size;
+        self->entry = (map_t *)malloc(sizeof(map_t));
+        if (self->entry == NULL){
+            return NULLPTR_ERROR;
+        }
+        self->entry->key = (int *)calloc(self->size,sizeof(int));
+        self->entry->value = (value_t *)malloc(self->size,sizeof(value_t*));
+        if (self->entry->key == NULL || self->entry->value == NULL){
+            return NULLPTR_ERROR;
+        }
+        set_t_emptySet(self);
+        return NO_ERROR;
+    }
+}
+/*
+Name: set_t_new
+Description: Alloc new empty set_t.
+Input:
+Output:
+Example:
+*/
+PSI_RET_t set_t_new(set_t* self,int size, void* init_set){
+    if(self->entry != NULL){
+        self->size = size;
+        set_t_zeroSet(self);
+        self->entry->key = (int *)realloc(self->size,sizeof(int));
+        self->entry->value = (value_t *)realloc(self->size,sizeof(value_t*));
+        if (self->entry->key == NULL || self->entry->value == NULL){
+            return NULLPTR_ERROR;
+        }
+        set_t_emptySet(self);
+        return NO_ERROR;
+    }else {
+        self->size = size;
+        self->entry = (map_t *)malloc(sizeof(map_t));
+        if (self->entry == NULL){
+            return NULLPTR_ERROR;
+        }
+        self->entry->key = (int *)calloc(self->size,sizeof(int));
+        self->entry->value = (value_t *)malloc(self->size,sizeof(value_t*));
+        if (self->entry->key == NULL || self->entry->value == NULL){
+            return NULLPTR_ERROR;
+        }
+        set_t_emptySet(self);
+        return NO_ERROR;
+    }
+}
+/*
+Name: set_t_del
+Description: Dealloc set_t
+Input:
+Output:
+Example:
+*/
+PSI_RET_t set_t_del(set_t* self){
+    self->size = 0;
+    set_t_zeroSet(self);
+    free(self->entry->key);
+    free(self->entry->value);
+    free(self->entry);
+    self->entry->key = NULL;
+    self->entry->value = NULL;
+    self->entry = NULL;
+    return NO_ERROR;
+}
+/*
+
+    BASIC FUNCTIONS
+
+*/
+/*
+Name: set_t_zeromem_alloc
 Description: Initialize set_t with null index
     and null values if entry null, otherwise
     entry null.
@@ -192,60 +390,49 @@ PSI_RET_t set_t_zero_alloc(set_t* self){
 }
 
 /*
-Name: set_t_emptyKeys
-Description: Empty the keys of a set_t with size
-    defined, otherwise if entry not null keys
-    to zero.
-Input: a set_t struct.
+Name: set_t_init
+Description: Initialized a set_t with used defined size
+    and same value entries, otherwise if set_t not null
+    resize and fill with same value entries.
+Input: a set_t struct and int with set size.
 Output:
-    NO_ERROR
     NULLPTR_ERROR
-    NOTINIT_ERROR
+    NO_ERROR
 Example:
-    
+
 */
-PSI_RET_t set_t_emptyKeys(set_t* self){
-    if (self->size != 0){
-        if(self->entry != NULL){
-            for(int i =0 ; i < self->size; i++){
-                self->entry->key[i] = 0;
-            }
-            return NO_ERROR;
-        }else {
+PSI_RET_t set_t_init(set_t* self, int size){ 
+    if(self->entry != NULL){
+        self->size = size;
+        set_t_emptySet(self);
+        self->entry->key = (int *)realloc(self->entry->key, sizeof(int)*self->size);
+        self->entry->value = (void **)realloc(self->entry->value, sizeof(void*)*self->size);
+        if (self->entry->key == NULL || self->entry->value == NULL){
             return NULLPTR_ERROR;
         }
-    }else{
-        return NOTINIT_ERROR;
-    }
-}
-
-/*
-Name: set_t_emptyValues
-Description: Empty the values of a set_t with size
-    defined, otherwise if entry not null values
-    to zero.
-Input: a set_t struct.
-Output:
-    NO_ERROR
-    NULLPTR_ERROR
-    NOTINIT_ERROR
-Example:
-*/
-PSI_RET_t set_t_emptyValues(set_t* self){
-    if (self->size != 0){
-        if(self->entry != NULL){
-            for(int i =0 ; i < self->size; i++){
-                self->entry->value[i] = (void*)0;
-            }
-            return NO_ERROR;
-        }else {
+        for(int i =0 ; i < self->size; i++){
+            self->entry->key[i] = i;
+            self->entry->value[i] = (void*)0;
+        }
+        return NO_ERROR;
+    }else {
+        self->size = size;
+        self->entry = (map_t *)calloc(sizeof(map_t));
+        if (self->entry == NULL){
             return NULLPTR_ERROR;
         }
-    }else{
-        return NOTINIT_ERROR;
+        self->entry->key = (int *)malloc(sizeof(int)*self->size);
+        self->entry->value = (void **)malloc(sizeof(void*)*self->size);
+        if (self->entry->key == NULL || self->entry->value == NULL){
+            return NULLPTR_ERROR;
+        }
+        for(int i =0 ; i < self->size; i++){
+            self->entry->key[i] = i;
+            self->entry->value[i] = (void*)0;
+        }
+        return NO_ERROR;
     }
 }
-
 /*
 Name: set_t_null_init
 Description: Initialized a null set_t with used defined size
@@ -492,7 +679,6 @@ PSI_RET_t set_t_init_SetArray(set_t* self, int size, set_t n[]){
         return NO_ERROR;
     }
 }
-
 /*
 Name:	
 Description:
@@ -500,73 +686,11 @@ Input:
 Output:
 Example:
 */
-PSI_RET_t set_t_new(set_t* self,int size, const char* fmt, ...){
-    va_list args;
-    va_start(args, fmt);
-    if(self->entry != NULL){
-        self->size = size;
-        set_t_emptySet(self);
-        self->entry->key = (int *)realloc(self->entry->key, sizeof(int)*self->size);
-        self->entry->value = (void **)realloc(self->entry->value, sizeof(void*)*self->size);
-        if (self->entry->key == NULL || self->entry->value == NULL){
-            return NULLPTR_ERROR;
-        }
-        int i = 0;
-        while (*fmt != '\0') {
-            self->entry->key[i] = i;
-            if (*fmt == 'd') {
-                int n = va_arg(args, int);
-                *((int*)(self->entry->value[i])) = n;
-            } else if (*fmt == 'f') {
-                double n = va_arg(args, double);
-                *((double*)(self->entry->value[i])) = n;
-            }else if (*fmt == 'c') {
-                return TYPE_ERROR;
-            }else if (sizeof(*fmt) == sizeof(set_t)) {
-                set_t n = va_arg(args, set_t);
-                *((set_t*)(self->entry->value[i])) = n;
-            }else{
-                return TYPE_ERROR;
-            }
-            i++;
-            ++fmt;
-        }
-        va_end(args);
-        return NO_ERROR;
-    }else {
-        self->size = size;
-        self->entry = (map_t *)malloc(sizeof(map_t));
-        if (self->entry == NULL){
-            return NULLPTR_ERROR;
-        }
-        self->entry->key = (int *)malloc(sizeof(int)*self->size);
-        self->entry->value = (void **)malloc(sizeof(void*)*self->size);
-        if (self->entry->key == NULL || self->entry->value == NULL){
-            return NULLPTR_ERROR;
-        }
-        int i = 0;
-        while (*fmt != '\0') {
-            self->entry->key[i] = i;
-            if (*fmt == 'd') {
-                int n = va_arg(args, int);
-                *((int*)(self->entry->value[i])) = n;
-            } else if (*fmt == 'f') {
-                double n = va_arg(args, double);
-                *((double*)(self->entry->value[i])) = n;
-            }else if (*fmt == 'c') {
-                return TYPE_ERROR;
-            }else if (sizeof(*fmt) == sizeof(set_t)) {
-                set_t n = va_arg(args, set_t);
-                *((set_t*)(self->entry->value[i])) = n;
-            }else{
-                return TYPE_ERROR;
-            }
-            i++;
-            ++fmt;
-        }
-        va_end(args);
-        return NO_ERROR;
-    }
+PSI_RET_t set_t_reinit(set_t* self){
+    free(self->entry->key);
+    free(self->entry->value);
+    free(self->entry);
+    return NO_ERROR;
 }
 
 /*
@@ -582,6 +706,31 @@ PSI_RET_t set_t_dealloc(set_t* self){
     free(self->entry);
     return NO_ERROR;
 }
+/*
+Name:	
+Description:
+Input:
+Output:
+Example:
+*/
+PSI_RET_t set_t_resizeEmpty(set_t* self, int size){
+    if(self->entry != NULL){
+        set_t_emptySet(self);
+        self->size = size;
+        self->entry->key = (int *)realloc(self->entry->key, sizeof(int)*self->size);
+        self->entry->value = (void **)realloc(self->entry->value, sizeof(void*)*self->size);
+        if (self->entry->key == NULL || self->entry->value == NULL){
+            return NULLPTR_ERROR;
+        }
+        for(int i =0 ; i < self->size; i++){
+            self->entry->key[i] = i;
+            self->entry->value[i] = (void*)0;
+        }
+        return NO_ERROR;
+    }else {
+        return NULLPTR_ERROR;
+    }
+}
 
 /*
 Name:	
@@ -590,16 +739,37 @@ Input:
 Output:
 Example:
 */
-PSI_RET_t set_t_del(set_t* self){
-    self->size = 0;
-    set_t_emptySet(self);
-    set_t_dealloc(self);
-    self->entry->key = NULL;
-    self->entry->value = NULL;
-    self->entry = NULL;
+PSI_RET_t set_t_resizeZero(set_t* self, int size){
+    int tempSize = self->size;
+    self->size = size;
+    if(self->entry != NULL){
+        map_t* temp = self->entry;
+        set_t_emptySet(self);
+        self->entry->key = (int *)realloc(self->entry->key, sizeof(int)*self->size);
+        self->entry->value = (void **)realloc(self->entry->value, sizeof(void*)*self->size);
+        if (self->entry->key == NULL || self->entry->value == NULL){
+            return NULLPTR_ERROR;
+        }
+        for(int i =0 ; i < self->size; i++){
+            if (i < tempSize ){
+                self->entry->key[i] = i;
+                self->entry->value[i] = temp->value[i];
+            }else{
+                self->entry->key[i] = i;
+                self->entry->value[i] = (void*)0;
+            }
+        }
+        return NO_ERROR;
+    }else {
+        return NULLPTR_ERROR;
+    }
     return NO_ERROR;
 }
+/*
 
+    MISCELANEOUS FUNCTIONS
+
+*/
 /*
 Name:	
 Description:
@@ -610,7 +780,16 @@ Example:
 int set_t_getSize(set_t self){
     return self.size;
 }
-
+/*
+Name:	
+Description:
+Input:
+Output:
+Example:
+*/
+int set_t_setSize(set_t self){
+    return self.size;
+}
 /*
 Name:	
 Description:
@@ -665,7 +844,7 @@ Input:
 Output:
 Example:
 */
-int set_t_getSize(set_t self){
+int set_t_getSet(set_t self){
     return self.size;
 }
 
@@ -730,37 +909,37 @@ PSI_BOOL set_t_isEmpty(set_t self){
 }
 
 /*
+
+    ALGORITHMS
+
+*/
+/*
 Name:	
 Description:
 Input:
 Output:
 Example:
 */
-PSI_RET_t set_t_resizeZero(set_t* self, int size){
-    int tempSize = self->size;
-    self->size = size;
+PSI_RET_t set_t_addEntry(set_t* self, int i, int j){
     if(self->entry != NULL){
-        map_t* temp = self->entry;
-        set_t_emptySet(self);
-        self->entry->key = (int *)realloc(self->entry->key, sizeof(int)*self->size);
-        self->entry->value = (void **)realloc(self->entry->value, sizeof(void*)*self->size);
-        if (self->entry->key == NULL || self->entry->value == NULL){
-            return NULLPTR_ERROR;
-        }
-        for(int i =0 ; i < self->size; i++){
-            if (i < tempSize ){
-                self->entry->key[i] = i;
-                self->entry->value[i] = temp->value[i];
-            }else{
-                self->entry->key[i] = i;
-                self->entry->value[i] = (void*)0;
-            }
-        }
         return NO_ERROR;
     }else {
         return NULLPTR_ERROR;
     }
-    return NO_ERROR;
+}
+/*
+Name:	
+Description:
+Input:
+Output:
+Example:
+*/
+PSI_RET_t set_t_exchangeEntry(set_t* self, int i, int j){
+    if(self->entry != NULL){
+        return NO_ERROR;
+    }else {
+        return NULLPTR_ERROR;
+    }
 }
 
 /*
@@ -770,25 +949,13 @@ Input:
 Output:
 Example:
 */
-PSI_RET_t set_t_resizeEmpty(set_t* self, int size){
+PSI_RET_t set_t_exchangeEntry(set_t* self, int i, int j){
     if(self->entry != NULL){
-        set_t_emptySet(self);
-        self->size = size;
-        self->entry->key = (int *)realloc(self->entry->key, sizeof(int)*self->size);
-        self->entry->value = (void **)realloc(self->entry->value, sizeof(void*)*self->size);
-        if (self->entry->key == NULL || self->entry->value == NULL){
-            return NULLPTR_ERROR;
-        }
-        for(int i =0 ; i < self->size; i++){
-            self->entry->key[i] = i;
-            self->entry->value[i] = (void*)0;
-        }
         return NO_ERROR;
     }else {
         return NULLPTR_ERROR;
     }
 }
-
 /*
 Name:	
 Description:
@@ -923,20 +1090,32 @@ PSI_RET_t set_t_addSetEntry(set_t* self, int i, set_t n){
         return NULLPTR_ERROR;
     }
 }
+#endif
 
 /*
-Name:	
-Description:
-Input:
-Output:
-Example:
-*/
-PSI_RET_t set_t_exchangeEntry(set_t* self, int i, int j){
-    if(self->entry != NULL){
-        return NO_ERROR;
-    }else {
-        return NULLPTR_ERROR;
-    }
-}
+int main(int argc, char const *argv[])
+{
+    set_t* mySet;
+    set_t_new(mySet, 10);
+    set_t_new(mySet, 10, {1,2,3,4,5,6,7,8,9,0});
+    set_t_add(mySet,{10});
+    set_t_remove(mySet,{3});
 
-#endif
+    set_t_new(mySet, 10, {0,0.5,1,1.5,2,2.5,3);
+    set_t_add(mySet,5.2);
+    set_t_remove(mySet,0);
+
+    set_t_new(mySet, 10, {{0,0},{1,0},{0,1},{1,1}});
+    set_t_add(mySet,{-1,-1});
+    set_t_remove(mySet,{0,0});
+
+    //
+    //
+    //    TODO
+    //
+    //
+
+    set_t_del(mySet);
+    return 0;
+}
+*/

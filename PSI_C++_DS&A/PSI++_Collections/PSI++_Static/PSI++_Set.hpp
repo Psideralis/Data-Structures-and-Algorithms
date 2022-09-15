@@ -1,47 +1,72 @@
 /* *********************************************
 Author: Psideralis
 License: GNU GPL 3.0
-File name: Set.hpp
-Description: A set is a grouping of numeric
-elements or sets. It is not natively ordered
+File name: PSI_Set.hpp
+Description: A PSI_Set is a grouping of numeric
+elements or PSI_Sets. It is not natively ordered
 and it have no repeated elements. 
 
-There is an OrderedSet in Psideralis math
+There is an OrderedPSI_Set in Psideralis math
 utilities if needed. For repeated elements
-see Tuple or Set.
+see Tuple or PSI_Set.
 
 ********************************************* */ 
 
 /* *********************************************
 DEFINES:
-	SET_HPP
+    PSI_DataStructures
 MACROS:
-
-STRUCTS:
-	set.h
-ENUMS:
-
-TYPES:
-	Set
+    CSTD
+	PSI_PSI_Set_HPP
+CLASSES:
+    PSI_PSI_Set
 OPERATORS:
-	+
+	[]
+	==
 	=
+	+
+	-
 	*
 	/
 METHODS:
-	See PSICollection
+    AUXILIARY
+
+    BASICS
+
+    MISCELANEOUS
+
+    ALGORITHMS
+        INMUTATIVE:
+            find
+            max,min
+            sup,inf
+            at
+            random
+        MUTATIVE:
+            add
+            remove
+            exchange
+            substitute
+            sortDescendent
+            sortAscendent
+            sortRandom
+        TRANSMUTATIVE:
+            join
+            split
+            combinations
+            permutations
+            ordered lists
 ********************************************* */ 
 
-#include "PSI++_DataStructures.hpp"
-#include "Map.hpp"
+#include "PSI++_Map.hpp"
 
-class Set : public PSICollection{
+class PSI_Set : public PSICollection{
 	public:
 		/* CONSTRUCTORS */
-		Set(){};
+		PSI_Set(){};
 		int intType(int i);
 		double doubleType(double d);
-		Set setType(Set s);
+		PSI_Set PSI_SetType(PSI_Set s);
 		template <typename T>
 		PSI_RET_t input(T in);
 		template <typename T, typename... Args>
@@ -50,23 +75,23 @@ class Set : public PSICollection{
 			input(args_in...);
 		}
 		template <typename T>
-		Set(T in){
+		PSI_Set(T in){
 			input(in);
 		};
 		template <typename T, typename... Args>
-		Set(T t, Args... args_in) {
+		PSI_Set(T t, Args... args_in) {
 			input(in);
 			input(args_in...);
 		};
 		template<typename ... Args>   
-		Set(Args... args_in){
+		PSI_Set(Args... args_in){
 			input(args_in);
 		};
-		~Set(){
+		~PSI_Set(){
 			this->counter = 0;
 			this->size = 0;
 		};
-		Set(const Set &cpy){
+		PSI_Set(const PSI_Set &cpy){
 			this->counter = counter;
 			this->entry = cpy.entry;
 			this->size = cpy.size;
@@ -78,8 +103,8 @@ class Set : public PSICollection{
 		/* METHODS */
 		// GETTER
 		template<class T> T get_Item(size_t pos) {}
-		// SETTER
-		template<typename T> PSI_RET_t set_Item(size_t pos, T Item) { }
+		// PSI_SetTER
+		template<typename T> PSI_RET_t PSI_Set_Item(size_t pos, T Item) { }
 		/* OPERATORS */	
 		/*
 		Name:	
@@ -96,7 +121,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator==(const Set &rhs){};
+		PSI_Set& operator==(const PSI_Set &rhs){};
 		/*
 		Name:	
 		Description:
@@ -104,7 +129,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator=(const Set &rhs){};
+		PSI_Set& operator=(const PSI_Set &rhs){};
 		/*
 		Name:	
 		Description:
@@ -112,7 +137,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator=(const Set* &rhs){};
+		PSI_Set& operator=(const PSI_Set* &rhs){};
 		/*
 		Name:	
 		Description:
@@ -120,7 +145,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator+(const Set &rhs){};
+		PSI_Set& operator+(const PSI_Set &rhs){};
 		/*
 		Name:	
 		Description:
@@ -128,7 +153,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator+(const Set* &rhs){};
+		PSI_Set& operator+(const PSI_Set* &rhs){};
 		/*
 		Name:	
 		Description:
@@ -136,7 +161,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator-(const Set &rhs){};
+		PSI_Set& operator-(const PSI_Set &rhs){};
 		/*
 		Name:	
 		Description:
@@ -144,7 +169,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator-(const Set* &rhs){};
+		PSI_Set& operator-(const PSI_Set* &rhs){};
 		/*
 		Name:	
 		Description:
@@ -152,7 +177,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator*(const int &rhs){};
+		PSI_Set& operator*(const int &rhs){};
 		/*
 		Name:	
 		Description:
@@ -160,7 +185,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator*(const int* &rhs){};
+		PSI_Set& operator*(const int* &rhs){};
 		/*
 		Name:	
 		Description:
@@ -168,7 +193,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator*(const Set &rhs){};
+		PSI_Set& operator*(const PSI_Set &rhs){};
 		/*
 		Name:	
 		Description:
@@ -176,7 +201,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator*(const Set* &rhs){};
+		PSI_Set& operator*(const PSI_Set* &rhs){};
 		/*
 		Name:	
 		Description:
@@ -184,7 +209,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator/(const int &rhs){};
+		PSI_Set& operator/(const int &rhs){};
 		/*
 		Name:	
 		Description:
@@ -192,7 +217,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator/(const int* &rhs){};
+		PSI_Set& operator/(const int* &rhs){};
 		/*
 		Name:	
 		Description:
@@ -200,7 +225,7 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator/(const Set &rhs){};
+		PSI_Set& operator/(const PSI_Set &rhs){};
 		/*
 		Name:	
 		Description:
@@ -208,68 +233,192 @@ class Set : public PSICollection{
 		Output:
 		Example:
 		*/
-		Set& operator/(const Set* &rhs){};
+		PSI_Set& operator/(const PSI_Set* &rhs){};
 		/* ALGORITHMS */
-			/* NON MUTATIVE */
-				/* SEARCH */
-		PSI_RET_t generalSearch();
-		PSI_RET_t localSearch();
-		PSI_RET_t generalGroupedSearch();
-		PSI_RET_t localGroupedSearch();
-		PSI_RET_t MaxSearch();
-		PSI_RET_t MinSearch();
-		PSI_RET_t localMaxSearch();
-		PSI_RET_t localMinSearch();
-		PSI_RET_t nMaxSearch();
-		PSI_RET_t nMINearch();
-				/* SELECTION */
-		PSI_RET_t indexedSelection();
-		PSI_RET_t randomSelection();
-		PSI_RET_t indexedGroupedSelection();
-		PSI_RET_t randomGroupedSelection();
-			/* MUTATIVE */
-				/* ADDITION */
-		PSI_RET_t insert();
+		/* NON MUTATIVE */
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t find();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t max();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t min();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t sup();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t inf();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t at();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t random();
+		/* MUTATIVE */
+		PSI_RET_t add();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
 		PSI_RET_t remove();
-		PSI_RET_t groupedInsert();
-		PSI_RET_t groupedRemove();
-				/* SUBSTITUTION */
-		PSI_RET_t indexedSubstitution();
-		PSI_RET_t randomSubstitution();
-		PSI_RET_t indexedGroupedSubstitution();
-		PSI_RET_t randomGroupedSubstitution();
-				/* CLASSIFICATION */
-		PSI_RET_t randomSorting();
-		PSI_RET_t ascendentSorting();
-		PSI_RET_t descendentSorting();
-		PSI_RET_t localAscendentSorting();
-		PSI_RET_t localDescendentSorting();
-		PSI_RET_t indexedGroupingSorting();
-		PSI_RET_t splittedGroupingSorting();
-		PSI_RET_t joinedGroupingSorting();
-			/* TRANSMUTATIVE */
-				/* COMBINATORICS */
-		PSI_RET_t generalCombination();
-		PSI_RET_t localCombination();
-		PSI_RET_t indexedGroupingCombination();
-		PSI_RET_t randomGroupingCombination();
-		PSI_RET_t generalOrderedList();
-		PSI_RET_t localOrderedList();
-		PSI_RET_t indexedGroupedOrderedList();
-		PSI_RET_t randomGroupedOrderedList();
-		PSI_RET_t generalPermuation();
-		PSI_RET_t localPermutation();
-		PSI_RET_t indexedGroupedPermuation();
-		PSI_RET_t randomGroupedPermutation();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t exchange();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t substitute();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t sortDescendent();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t sortAscendent();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t sortRandom();
+		/* TRANSMUTATIVE */
+		PSI_RET_t join();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t split();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t combinations();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t permutations();
+		/*
+		Name:	
+		Description:
+		Input:
+		Output:
+		Example:
+		*/
+		PSI_RET_t orderedLists();
 	private:
 };
 
-template<> PSI_RET_t Set::input(int i){ Set::intType(i); }
-template<> PSI_RET_t Set::input(double d){ Set::doubleType(d); }
-template<> PSI_RET_t Set::input(Set s){ Set::setType(s); }
-template<> PSI_RET_t Set::set_Item(size_t pos, long Item) {}
-template<> PSI_RET_t Set::set_Item(size_t pos, int Item) {}
-template<> long Set::get_Item(size_t pos) {}
-template<> std::string Set::get_Item(size_t pos) {}
+template<> PSI_RET_t PSI_Set::input(int i){ PSI_Set::intType(i); }
+template<> PSI_RET_t PSI_Set::input(double d){ PSI_Set::doubleType(d); }
+template<> PSI_RET_t PSI_Set::input(PSI_Set s){ PSI_Set::PSI_SetType(s); }
+template<> PSI_RET_t PSI_Set::PSI_Set_Item(size_t pos, long Item) {}
+template<> PSI_RET_t PSI_Set::PSI_Set_Item(size_t pos, int Item) {}
+template<> long PSI_Set::get_Item(size_t pos) {}
+template<> std::string PSI_Set::get_Item(size_t pos) {}
 		
 #endif
+
+/*
+int main(int argc, char const *argv[])
+{
+    PSI_PSI_Set myPSI_Set = new PSI_PSI_Set({0,1,2,3,4,5,6,7,8,9});
+	myPSI_Set.add();
+	myPSI_Set.remove();
+	//
+	//
+	//
+	//	
+	delete myPSI_Set;
+
+	PSI_PSI_Set myPSI_Set = new PSI_PSI_Set({0,0.5,1,1.5,2,2.5});
+	myPSI_Set.add();
+	myPSI_Set.remove();
+	//
+	//
+	//
+	//
+	delete myPSI_Set;
+	
+	PSI_PSI_Set myPSI_Set = new PSI_PSI_Set({0,0},{0,1},{1,0},{1,1});
+	myPSI_Set.add();
+	myPSI_Set.remove();
+	PSI_PSI_Set* myPerms = myPSI_Set.permutations();
+	//
+	//
+	//
+	//
+	delete myPSI_Set;
+	return 0;
+}
+*/

@@ -254,8 +254,8 @@ class PSICollection{
 		virtual void randomGroupedPermutation() = 0;  
 }
 
-#include "Dynamic/PsideralisDynamicStructures.hpp"
-#include "Graph/PsideralisGraphsStructures.hpp"
-#include "Static/PsideralisStaticStructures.hpp"
+#include "PSI++_Collections/PSI++_Static/PSI++_PsideralisStaticStructures.hpp"
+#include "PSI++_Collections/PSI++_Dynamic/PSI++_PsideralisDynamicStructures.hpp"
+#include "PSI++_Collections/PSI++_Graph/PSI++_PsideralisGraphsStructures.hpp"
 
 #endif
