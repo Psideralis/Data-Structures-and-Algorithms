@@ -10,6 +10,7 @@ UNFINISHED UNRELEASED
 Public - Progress 25%
 CURRENTLY WORKING ON
 C and C++
+VISITED THE WIKI FOR MORE INFORMATION ABOUT INSTALLATION, USE AND DERIVATES. A ZIP RELEASE IS DATED FOR THE END OF 2023.
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
 		Data structure := Data Types + Structures
@@ -19,7 +20,11 @@ C and C++
 	- C#				☐  25%
 	- Python			☐  25%
 	- Javascript		        ☐  15% 
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> a826fad3ee3627b90e4cd1706ca88672cfa889e0
 ## Data structures
 ### Classic Data Stuctures
 #### Static:
@@ -52,4 +57,8 @@ C and C++
 	- Binary Tree
 	- Graphs
 	- Digraphs
+<<<<<<< HEAD
 	- Pantographs
+=======
+	- Pantographs
+>>>>>>> a826fad3ee3627b90e4cd1706ca88672cfa889e0
