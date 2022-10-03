@@ -3,11 +3,11 @@
 Psideralis
 ## License
 Psideralis Commune Public License
-## Version
-00.00.001.000
 ## Status
 UNFINISHED UNRELEASED
 Public - Progress 25%
+## Version
+00.00.001.000
 VISITED THE WIKI FOR MORE INFORMATION ABOUT INSTALLATION, USE AND DERIVATES. A ZIP RELEASE IS DATED FOR THE END OF 2023.
 ## Description
 	Algorithm = Control structures + Data Structures + Operations
@@ -25,30 +25,33 @@ VISITED THE WIKI FOR MORE INFORMATION ABOUT INSTALLATION, USE AND DERIVATES. A Z
 	- Set
 	- Tuple
 	- Array List
-	- Ordered List
 	- Stack
 	- Queue
 	- Map
 	- Dictionary
 	- Multimap
 	- Table
-	- Array Grid 3D
-	- Array Grid 4D
+	- Array Grid
 #### Dynamic:
-	- Single Linked List
-	- Double Linked List
-	- Triple Linked List
+	- Linked List
 	- Multiple Linked Linked List
+	- Linked Stacks
 	- Multiple Linked Stacks
+	- Linked Queues
 	- Multiple Linked Queues
-	- Heap
+	- Linked Multimaps
 	- Multiple Linked Multimap
+	- Linked Tables
 	- Multiple Linked Table
-	- Linked Array Grid 3D
-	- Linked Array Grid 4D
+	- Linked Array Grid
 	- Multiple Linked Array Grid
+	- Heap
 #### Graphs:
 	- Binary Tree
+	- Tree
+	- Multiple Linked Trees
 	- Graphs
-	- Digraphs
-	- Pantographs
+	- Directed Graphs
+	- Linked Graphs
+	- Linked Directed Graphs
+	- Multipled Linked Directed Graphs
