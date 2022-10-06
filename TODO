@@ -14,7 +14,6 @@ Finish Nigthly 001:
         -C++ content                        ☐
         -C# content                         ☐  
         -Javascript content                 ☐
-        -Python content                     ☐
 
     Option (?):
 	-Benchmark (Time[Processing, Scheduling],Space[Memory],Language,Collections,Compilers,Architectures[64,ARM],Operative Systems[Windows, MacOS, Linux])
