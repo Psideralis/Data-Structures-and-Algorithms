@@ -16,7 +16,6 @@ VISITED THE WIKI FOR MORE INFORMATION ABOUT INSTALLATION, USE AND DERIVATES. A Z
     - C			        ☐  45%
 	- C++				☐  45%
 	- C#				☐  25%
-	- Javascript		        ☐  15% 
 	
 ## Data structures
 ### Classic Data Stuctures
