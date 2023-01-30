@@ -15,7 +15,6 @@ VISITED THE WIKI FOR MORE INFORMATION ABOUT INSTALLATION, USE AND DERIVATES. A Z
 ## Languages
     - C			        ☐  45%
 	- C++				☐  45%
-	- C#				☐  25%
 	
 ## Data structures
 ### Classic Data Stuctures
