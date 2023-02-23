@@ -52,3 +52,4 @@ VISITED THE WIKI FOR MORE INFORMATION ABOUT INSTALLATION, USE AND DERIVATES. A Z
 	- Linked Graphs
 	- Linked Directed Graphs
 	- Multipled Linked Directed Graphs
+	- Graphors
